@@ -5,10 +5,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
@@ -17,11 +17,11 @@
                 Posters
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="poster-link">
-                <a href="" class="dropdown-item">Abstract</a>
-                <a href="" class="dropdown-item">Children</a>
-                <a href="" class="dropdown-item">Motivational</a>
-                <a href="" class="dropdown-item">Nature</a>
-                <a href="" class="dropdown-item">All Posters</a>
+                <a href="{% url 'products' %}?category=abstract&size=80x120-cm" class="dropdown-item">Abstract</a>
+                <a href="{% url 'products' %}?category=children&size=80x120-cm" class="dropdown-item">Children</a>
+                <a href="{% url 'products' %}?category=motivational&size=80x120-cm" class="dropdown-item">Motivational</a>
+                <a href="{% url 'products' %}?category=nature&size=80x120-cm" class="dropdown-item">Nature</a>
+                <a href="{% url 'products' %}?category=abstract,children,motivational,nature&size=80x120-cm" class="dropdown-item">All Posters</a>
             </div>
         </li>
 
@@ -30,11 +30,11 @@
                 Prints
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="prints-link">
-                <a href="" class="dropdown-item">Abstract</a>
-                <a href="" class="dropdown-item">Children</a>
-                <a href="" class="dropdown-item">Motivational</a>
-                <a href="" class="dropdown-item">Nature</a>
-                <a href="" class="dropdown-item">All Prints</a>
+                <a href="{% url 'products' %}?category=abstract" class="dropdown-item">Abstract</a>
+                <a href="{% url 'products' %}?category=children" class="dropdown-item">Children</a>
+                <a href="{% url 'products' %}?category=motivational" class="dropdown-item">Motivational</a>
+                <a href="{% url 'products' %}?category=nature" class="dropdown-item">Nature</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Prints</a>
             </div>
         </li>
 
@@ -43,10 +43,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=arrivals,deals,clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>

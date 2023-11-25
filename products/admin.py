@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Product, Category, Size
 
-
+        
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name', 'slug']
@@ -22,4 +22,4 @@ class ProductAdmin(admin.ModelAdmin):
         if db_field.name == "sizes":
              kwargs["queryset"] = Size.objects.all()
         return super().formfield_for_manytomany(db_field, request, **kwargs)
-        prepopulated_fields = {'slug': ('name',)}
+    prepopulated_fields = {'slug': ('name',)}
