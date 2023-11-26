@@ -1,60 +1,49 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.crypto import get_random_string
+
 
 class Category(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200,
-                            unique=True)
-
+                            unique=True, null=True, blank=True)
+    friendly_name = models.CharField(max_length=200, null=True, blank=True)
     class Meta:
         ordering = ['name']
  
-        verbose_name = 'category'
         verbose_name_plural = 'categories'
 
     def __str__(self):
         return self.name
 
-    def get_absolute_url(self):
-        """use in templates to generate a link category page, 
-        instead of hard-coding the URL"""
-        return reverse('products:product_list_by_category',
-                       args=[self.slug])
+    def get_friendly_name(self):
+        return self.friendly_name
 
 
 class Size(models.Model):
-    name = models.CharField(max_length=10)
-    code = models.CharField(max_length=10)
-    price = models.DecimalField(default=9.95, max_digits=10, decimal_places=2)
+    name = models.CharField(max_length=15)
+    code = models.CharField(max_length=15)
+    price = models.DecimalField(default=9.95, 
+                                max_digits=10, decimal_places=2)
 
 
 class Product(models.Model):
-    category = models.ForeignKey(Category,
-                                 related_name='products',
-                                 on_delete=models.CASCADE)
-    sku = models.CharField(max_length=200, null=True, blank=True)
+    sku = models.CharField(max_length=15, 
+                           default=get_random_string, 
+                           null=True, blank=True)
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)  
     image = models.ImageField(null=True, blank=True)
     description = models.TextField(blank=True)
     sizes = models.ManyToManyField(Size)
+    category = models.ForeignKey('Category', null=True, 
+                                 blank=True, on_delete=models.SET_NULL)
     available = models.BooleanField(default=True)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, 
+                                 null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        
-        index_together = (('id', 'slug'),) # add index_together
-        ordering = ['name']
-
-        verbose_name = 'product'
-        verbose_name_plural = 'products'
 
 
     def __str__(self):
         return self.name
-
-    def get_absolute_url(self):
-        return reverse('products:product_detail',
-                       args=[self.id, self.slug])
