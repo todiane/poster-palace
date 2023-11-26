@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/pp-homepage-image.png') no-repeat center center fixed;
+    background: url('/media/images/image4-homepage.webp') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -28,7 +28,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #212529;
     color: white;
     min-width: 260px;
 }
@@ -53,11 +53,11 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #212529 !important;
 }
 
 .bg-black {
-    background: #000 !important;
+    background: #212529 !important;
 }
 
 .overlay {
@@ -68,6 +68,11 @@ body {
 	position: fixed;
 	background: white;
 	z-index: -1;
+}
+
+a.category-badge > span.badge:hover {
+    background: #212529 !important;
+    color: #fff !important;
 }
 
 /* Media Queries */
