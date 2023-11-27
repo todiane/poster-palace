@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Size
+from .models import Product, Category
 
         
 @admin.register(Category)
@@ -8,18 +8,10 @@ class CategoryAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
 
 
-@admin.register(Size)
-class SizeAdmin(admin.ModelAdmin):
-    list_display = ['name', 'code', 'price']
-    list_editable = ['code', 'price']
-
-
-@admin.register(Product)  
+@admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
-    filter_horizontal = ('sizes',)
-
-    def formfield_for_manytomany(self, db_field, request, **kwargs):
-        if db_field.name == "sizes":
-             kwargs["queryset"] = Size.objects.all()
-        return super().formfield_for_manytomany(db_field, request, **kwargs)
+    list_display = ['name', 'slug', 'price',
+                    'available', 'created', 'updated']
+    list_filter = ['available', 'created', 'updated']
+    list_editable = ['price', 'available']
     prepopulated_fields = {'slug': ('name',)}

@@ -10,6 +10,7 @@ body {
     font-family: 'Mulish', sans-serif;
 }
 
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -28,7 +29,7 @@ body {
 }
 
 .shop-now-button {
-    background: #212529;
+    background: black;
     color: white;
     min-width: 260px;
 }
@@ -36,6 +37,19 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
 }
 
 .shop-now-button:hover,
@@ -53,11 +67,11 @@ body {
 }
 
 .border-black {
-    border: 1px solid #212529 !important;
+    border: 1px solid black !important;
 }
 
 .bg-black {
-    background: #212529 !important;
+    background: #000 !important;
 }
 
 .overlay {
@@ -87,27 +101,16 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-/* Media Queries */
+/* -------------------------------- Media Queries */
 
-/* padding for collapsed navbar */
-@media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
-
-    body {
-        height: calc(100vh - 116px);
-    }
-}
-
-/* larger container for xl screens */
+/* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
     max-width: 80%;
   }
 }
 
-/* navbar fixed on screens larger than 992px */
+/* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -119,5 +122,16 @@ a.category-badge > span.badge:hover {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
