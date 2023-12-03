@@ -24,9 +24,9 @@ class Order(models.Model):
         blank=False
     )
     last_name = models.CharField(
-    max_length=70,
-    null=False,
-    blank=False
+        max_length=70,
+        null=False,
+        blank=False
     )
     email = models.EmailField(
         max_length=254,
@@ -49,9 +49,9 @@ class Order(models.Model):
         blank=True
     )
     town_or_city = models.CharField(
-    max_length=40,
-    null=False,
-    blank=False
+        max_length=40,
+        null=False,
+        blank=False
     )
     county = models.CharField(
         max_length=80,
@@ -59,14 +59,15 @@ class Order(models.Model):
         blank=True
     )
     postcode = models.CharField(
-    max_length=20,
-    null=True,
-    blank=True
+        max_length=20,
+        null=True,
+        blank=True
     )
     country = CountryField(
-    blank_label="Country *",
-    null=False,
-    blank=False
+        default='GB', 
+        blank_label="Country *", 
+        null=False, 
+        blank=False
     )
     created = models.DateTimeField(
         auto_now_add=True
@@ -97,7 +98,12 @@ class Order(models.Model):
         blank=False,
         default=''
     )
-
+    stripe_pid = models.CharField(
+        max_length=254,
+        null=False,
+        blank=False,
+        default=''
+    )
 
     class Meta:
         ordering = ['-created']
