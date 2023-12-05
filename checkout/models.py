@@ -7,16 +7,24 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from products.models import Product
+from profiles.models import BuyerProfile
 
 
 class Order(models.Model):
     """
-    Model to create orders
+    Model to create orders and profile
     """
     order_number = models.CharField(
         max_length=32,
         null=False,
         editable=False
+    )
+    buyer_profile = models.ForeignKey(
+        BuyerProfile,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='orders'
     )
     first_name = models.CharField(
         max_length=50,
