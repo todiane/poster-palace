@@ -5,6 +5,7 @@ from django.conf import settings
 
 from .models import Order, OrderLineItem
 from products.models import Product
+from profiles.models import UserProfile
 
 import json
 import time
@@ -49,8 +50,8 @@ class StripeWH_Handler:
         intent = event.data.object
         print(intent)
 
-    # Process for creating an order if the user closes the window
-    # before the payment has gone through
+    # Order creation process if buyer closes the window
+    # before payment has gone through
         intent = event.data.object
         pid = intent.id
         bag = intent.metadata.bag
@@ -65,31 +66,43 @@ class StripeWH_Handler:
         shipping_details = intent.shipping
         grand_total = round(stripe_charge.amount / 100, 2)
 
-        # Clean up empty data fields from shipping details
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
 
-        order_exists = False
+        # Update profile information if save_info was checked
+        profile = None
+        username = intent.metadata.username
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
+            if save_info:
+                profile.default_street_address1 = (
+                    shipping_details.address.line1)
+                profile.default_street_address2 = (
+                    shipping_details.address.line2)
+                profile.default_town_or_city = shipping_details.address.city
+                profile.default_county = shipping_details.address.state
+                profile.default_postcode = shipping_details.address.postal_code
+                profile.default_country = shipping_details.address.country
+                profile.default_phone_number = shipping_details.phone
+                profile.save()
 
-        # Tries to find the object for 5 seconds in a loop
-        # This avoids the object being created twice where
-        # the views.py object is just slow being created
+        order_exists = False
         attempt = 1
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    first_name__iexact=shipping_details.name,
-                    last_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.email,
-                    phone_number__iexact=shipping_details.phone,
-                    street_address1__iexact=shipping_details.address.line1,
-                    street_address2__iexact=shipping_details.address.line2,
-                    town_or_city__iexact=shipping_details.address.city,
-                    county__iexact=shipping_details.address.state,
-                    postcode__iexact=shipping_details.address.postal_code,
-                    country__iexact=shipping_details.address.country,
-                    grand_total=grand_total,
+                    first_name=shipping_details.name,
+                    last_name=shipping_details.name,
+                    user_profile=profile,
+                    email=billing_details.email,
+                    street_address1=shipping_details.address.line1,
+                    street_address2=shipping_details.address.line2,
+                    town_or_city=shipping_details.address.city,
+                    county=shipping_details.address.state,
+                    postcode=shipping_details.address.postal_code,
+                    country=shipping_details.address.country,
+                    phone_number=shipping_details.phone,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
@@ -97,11 +110,7 @@ class StripeWH_Handler:
                 break
 
             # If the order doesn't exist create it
-            # Same process as in views.py
-            # This handles a user closing the browser before payment is taken
             except Order.DoesNotExist:
-                # rests for 1 second before running loop again
-                # Happens 5 times over 5 seconds
                 attempt += 1
                 time.sleep(1)
 
@@ -115,16 +124,17 @@ class StripeWH_Handler:
             order = None
             try:
                 order = Order.objects.create(
-                    first_name__iexact=shipping_details.name,
-                    last_name__iexact=shipping_details.name,
-                    email__iexact=billing_details.email,
-                    phone_number__iexact=shipping_details.phone,
-                    street_address1__iexact=shipping_details.address.line1,
-                    street_address2__iexact=shipping_details.address.line2,
-                    town_or_city__iexact=shipping_details.address.city,
-                    county__iexact=shipping_details.address.state,
-                    postcode__iexact=shipping_details.address.postal_code,
-                    country__iexact=shipping_details.address.country,
+                    first_name=shipping_details.name,
+                    last_name=shipping_details.name,
+                    user_profile=profile,
+                    email=billing_details.email,
+                    street_address1=shipping_details.address.line1,
+                    street_address2=shipping_details.address.line2,
+                    town_or_city=shipping_details.address.city,
+                    county=shipping_details.address.state,
+                    postcode=shipping_details.address.postal_code,
+                    country=shipping_details.address.country,
+                    phone_number=shipping_details.phone,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
