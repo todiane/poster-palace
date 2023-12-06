@@ -14,7 +14,7 @@ class OrderAdmin(admin.ModelAdmin):
                        'grand_total', 'original_bag', 'stripe_pid',
                        )
 
-    fields = ('order_number', 'created', 'updated', 'first_name', 'last_name',
+    fields = ('order_number', 'created', 'updated', 'full_name', 
               'email', 'phone_number', 'street_address1', 
               'street_address2',  'town_or_city', 
               'county', 'postcode', 'country',  
@@ -22,7 +22,7 @@ class OrderAdmin(admin.ModelAdmin):
               'stripe_pid',
               )
 
-    list_display = ('order_number', 'created', 'first_name', 'last_name',
+    list_display = ('order_number', 'created', 'full_name', 
                     'order_total', 'delivery_cost',
                     'grand_total', 'updated',)
 

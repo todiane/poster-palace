@@ -26,13 +26,8 @@ class Order(models.Model):
         blank=True,
         related_name='orders'
     )
-    first_name = models.CharField(
+    full_name = models.CharField(
         max_length=50,
-        null=False,
-        blank=False
-    )
-    last_name = models.CharField(
-        max_length=70,
         null=False,
         blank=False
     )
