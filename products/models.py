@@ -28,7 +28,6 @@ class Product(models.Model):
     name = models.CharField(max_length=200)
     slug = models.SlugField(max_length=200, unique=True)  
     image = models.ImageField(null=True, blank=True)
-    image2 = models.ImageField(null=True, blank=True)
     description = models.TextField(blank=True)
     sizes = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(default=9.95, max_digits=8, decimal_places=2)
