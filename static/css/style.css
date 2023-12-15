@@ -1,24 +1,23 @@
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
-    /* background: url('/media/images/image4-homepage.webp') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px); */
     color: #555;
     font-family: 'Mulish', sans-serif;
+    height: 100vh;
 }
 
-.Site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-  
-  .Site-content {
-    flex: 1;
-  }
+/* -------------------------------- Sticky Footer */
+
+/* .sticky-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #45526e;
+    padding: 10px; 
+} */
+
 
 /*  ------------------------------- from Bulma */
 .icon {
@@ -51,7 +50,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: #45526e !important; /* use important to override link colors for <a> elements */
+    color: #45526e !important; 
     border: 1px solid #45526e;
 }
 
@@ -185,7 +184,10 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+
 /* -------------------------------- Media Queries */
+
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
