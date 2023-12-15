@@ -35,7 +35,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    '8000-todiane-posterpalace-wd30ehl1bdo.ws-eu107.gitpod.io',
+    '8000-todiane-posterpalace-82jufbr0xsd.ws-eu107.gitpod.io',
     'posterpalace-a7414f135cf3.herokuapp.com/',
     'localhost',
 ]
@@ -43,7 +43,7 @@ ALLOWED_HOSTS = [
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-todiane-posterpalace-wd30ehl1bdo.ws-eu107.gitpod.io/',
+    'https://8000-todiane-posterpalace-82jufbr0xsd.ws-eu107.gitpod.io/',
     'https://posterpalace-a7414f135cf3.herokuapp.com/',
 ]
 
@@ -203,4 +203,4 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_PUBLIC_KEY = os.environ.get('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
-DEFAULT_FROM_EMAIL = 'posterpalace@example.com'
+DEFAULT_FROM_EMAIL = 'poster@posterpalace.com'
