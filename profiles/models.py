@@ -8,7 +8,7 @@ from django_countries.fields import CountryField
 
 class BuyerProfile(models.Model):
     """
-    User profile for maintaining default
+    Buyer profile for maintaining default
     ORDER history and DELIVERY information  
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
