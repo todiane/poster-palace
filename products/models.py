@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.utils.crypto import get_random_string
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -34,11 +35,23 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, 
                                  blank=True, on_delete=models.SET_NULL)
     available = models.BooleanField(default=True)
-    rating = models.DecimalField(max_digits=7, decimal_places=2, 
-                                 null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
+    rating = models.IntegerField()
+    comment = models.TextField(max_length=1200)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self) -> str:
+        return f'Review by {self.author.username} for {self.product.name}: {self.content}'
