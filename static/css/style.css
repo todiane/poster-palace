@@ -1,21 +1,28 @@
-html {
-    height: 100%
-  }
-  
-  *{
-    font-family: 'Mulish', sans-serif;
-  }
-
 body {
+    margin: 0;
+    padding: 0;
+    font-family: Mulish, sans-serif;
+    background-size: cover;
     min-height: 100vh;
-    color: #555;
-    display: flex;
-    flex-direction: column;
-  }
+}
 
 
-  
-/* -------------------------------- Sticky Footer */
+/* General Styles */
+
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6 {
+    font-family: 'Mulish', sans-serif;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ /* -------------------------------- Sticky Footer */
 
 .footer-dark {
     padding:30px 0;
@@ -36,10 +43,9 @@ body {
 .btn-outline-light:hover {
     background-color: #fff !important;
     color: #000 !important;
-  }
+  } 
+
   
-
-
 /*  ------------------------------- from Bulma */
 .icon {
     align-items: center;
@@ -155,6 +161,7 @@ input[name='q']::placeholder {
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
+
 .arrow-up {
     width: 0; 
     height: 0; 
@@ -209,9 +216,15 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries */
 
+@media (max-width: 1199px) {
+    .footer-dark {
+        position: static; /* Change to static positioning for smaller screens */
+    }
+}
+
 
 /* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .container {
     max-width: 80%;
   }

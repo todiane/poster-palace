@@ -41,28 +41,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-RATING = (
-    (1,  "★☆☆☆☆"),
-    (2,  "★★☆☆☆"),
-    (3,  "★★★☆☆"),
-    (4,  "★★★★☆"),
-    (5,  "★★★★★"),
-)
-
-class Review(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='reviews')
-    user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True)
-    rating = models.IntegerField(choices=RATING, default=None)
-    comment = models.TextField(max_length=1200)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        ordering = ['-created_at']
-
-    def __str__(self):
-        return f'Review by {self.user} for {self.product.name}'
-    
-    @property
-    def get_rating_range(self):
-        return range(self.rating or 1)
