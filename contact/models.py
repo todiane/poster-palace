@@ -6,11 +6,11 @@ class Contact(models.Model):
 
     CONTACT_CHOICES = [
         ('', 'Reason for Contact'),
-        ('PRODUCT', 'Product Enquiry'),
-        ('ORDER', 'Order Enquiry'),
-        ('CS', 'Customer Service'),
-        ('SUGGESTIONS', 'Suggestions'),
-        ('OTHER', 'Other'),
+        ('Product Enquiry', 'Product Enquiry'),
+        ('Order Enquiry', 'Order Enquiry'),
+        ('Customer Service', 'Customer Service'),
+        ('Suggestions', 'Suggestions'),
+        ('Other', 'Other'),
 
     ]
     contact_purpose = models.CharField(max_length=24, choices=CONTACT_CHOICES)
