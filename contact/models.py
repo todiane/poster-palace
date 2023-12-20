@@ -23,5 +23,7 @@ class Contact(models.Model):
     class Meta:
         ordering = ['-date_submitted']
 
+        verbose_name = 'Messages from User'
+
     def __str__(self):
         return self.email
