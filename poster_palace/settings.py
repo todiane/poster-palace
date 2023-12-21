@@ -36,6 +36,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-todiane-posterpalace-82jufbr0xsd.ws-eu107.gitpod.io',
+    'posterpalace-a7414f135cf3.herokuapp.com',
     'localhost',
 
 ]
