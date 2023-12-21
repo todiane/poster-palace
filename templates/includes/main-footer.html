@@ -1,47 +1,52 @@
 <!-- Adapted code for footer taken from MD Bootstrap. -->
 <!-- https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/ -->
 
-    <!-- Footer -->
-    <div class="footer-dark mt-5">
-      <footer class="pb-xl-0 pb-md-5 py-sm-5 text-white" style="background-color: #45526e">
-          <div class="container">
-              <div class="row ">
-                  <div class="col-sm-12 col-md-6 item">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
-                      <p><i class="fas fa-home mr-3"></i><a href="{% url 'home' %}" style="color: white;">Home</a> </p>
-                      <p><i class="far fa-address-card mr-3"></i><a href="{% url 'about' %}" style="color: white;">About</a> </p>
-                      <p><i class="fas fa-envelope mr-3"></i><a href="{% url 'contact' %}" style="color: white;">Contact Us HERE</a></p>
-                      <p><i class="far fa-newspaper mr-3"></i><a href="{% url 'subscription' %}" style="color: white;">Newsletter</a></p>
-                  </div>
+<!-- Footer -->
+
+<footer class="pb-xl-0 pb-md-5 py-sm-5" style="background-color: #45526e">
+        <div class="footer-dark container">
+            <div class="row ">
+                <div class="col-sm-12 col-md-6 item">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+                    <p><i class="fas fa-home mr-3"></i><a href="{% url 'home' %}" style="color: white;">Home</a> </p>
+                    <p><i class="far fa-address-card mr-3"></i><a href="{% url 'about' %}" style="color: white;">About</a> </p>
+                    <p><i class="fas fa-envelope mr-3"></i><a href="{% url 'contact' %}" style="color: white;">Contact Us HERE</a></p>
+                    <p><i class="far fa-newspaper mr-3"></i><a href="{% url 'subscription' %}" style="color: white;">Newsletter</a></p>
+                </div>
                   <div class="col-md-6 item">
-                      <p> Poster Palace is the best place to buy posters online. We provide beautiful posters for all rooms in large and
+                        <p> Poster Palace is the best place to buy posters online. We provide beautiful posters for all rooms in large and
                           extra large sizes. Enjoy browsing our posters for adults and children covering nature, animals,
-                          motivational quotes and more.</p>
-                      </div>
-  
-              <div class="col-md-5 text-md-end">
-             <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                  <i class="fab fa-facebook-f"></i>
-              </a>
-              
-              <!-- Twitter -->
-              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                  <i class="fab fa-twitter"></i>
-              </a>
-              
-              <!-- Google -->
-              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                  <i class="fab fa-google"></i>
-              </a>
-              
-              <!-- Instagram -->
-              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                  <i class="fab fa-instagram"></i>
-              </a>
-    
-              </div>
-              <p class="copyright text-white"> This is a fictional site created as part of a project - Developer: Diane Corriette © 2023</p>
+                          motivational quotes and more.
+                        </p>
+                    </div>
+                <!-- Social Media Buttons -->
+                    <div class="col-md-5 text-md-end">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                        <!-- Twitter -->
+                        <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        
+                        <!-- Google -->
+                        <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1 text-white" role="button">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                <!-- Footer Disclaimer -->   
+                    <div>
+                        <p class="copyright text-white"> This is a fictional site created as part of a project - Developer: Diane Corriette © 2023</p>
+                    </div>
           </div>
-      </footer>
-  </div>
+        </div>
+    
+    </div>
+</footer>

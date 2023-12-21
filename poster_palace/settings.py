@@ -37,6 +37,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '8000-todiane-posterpalace-82jufbr0xsd.ws-eu107.gitpod.io',
     'localhost',
+
 ]
 
 # CSRF_TRUSTED
@@ -225,10 +226,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
-
-
-# MAILCHIMP CREDENTIALS
-MAILCHIMP_API_KEY = os.environ.get('MAILCHIMP_API_KEY', '')
-MAILCHIMP_DATA_CENTER = os.environ.get('MAILCHIMP_DATA_CENTER', '')    # last_3_characters_of_your_api_key
-MAILCHIMP_EMAIL_LIST_ID = os.environ.get('MAILCHIMP_EMAIL_LIST_ID', '')  # audience_id_goes_here
