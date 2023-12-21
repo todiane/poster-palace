@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'marketing',
     'django_countries',
     'crispy_forms',
 ]
@@ -203,7 +204,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-# Stripe
+# STRIPE CREDENTIALS
 FREE_DELIVERY_THRESHOLD = 40
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'gbp'
@@ -212,7 +213,7 @@ STRIPE_SECRET_KEY = os.environ.get('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.environ.get('STRIPE_WH_SECRET', '')
 
 
-
+# EMAIL CREDENTIALS
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'poster@posterpalace.com'
@@ -224,3 +225,10 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+
+# MAILCHIMP CREDENTIALS
+MAILCHIMP_API_KEY = os.environ.get('MAILCHIMP_API_KEY', '')
+MAILCHIMP_DATA_CENTER = os.environ.get('MAILCHIMP_DATA_CENTER', '')    # last_3_characters_of_your_api_key
+MAILCHIMP_EMAIL_LIST_ID = os.environ.get('MAILCHIMP_EMAIL_LIST_ID', '')  # audience_id_goes_here
