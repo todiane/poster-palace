@@ -35,6 +35,8 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, 
                                  blank=True, on_delete=models.SET_NULL)
     available = models.BooleanField(default=True)
+    rating = models.DecimalField(max_digits=7, decimal_places=2, 
+                                 null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
