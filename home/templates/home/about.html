@@ -11,20 +11,20 @@
 {% endblock %}
 
 {% block content %}
+<div class="container-fluid col-10">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+        </ol>
+    </nav>
+</div>
 <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    {% if about.image %}
-                        <a href="{{ about.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ about.image.url }}" alt="{{ about.title }}">
-                        </a>
-                        {% else %}
-                        <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ about.title }}">
-                        </a>
-                    {% endif %}
+                <img class="card-img-top img-fluid" src="{{ about.image.url }}" alt="{{ about.title }}">
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">

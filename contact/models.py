@@ -9,7 +9,9 @@ class Contact(models.Model):
         ('Product Enquiry', 'Product Enquiry'),
         ('Order Enquiry', 'Order Enquiry'),
         ('Customer Service', 'Customer Service'),
-        ('Suggestions', 'Suggestions'),
+        ('Diverse Design', 'Diverse Design Event'),
+        ('Complaint', 'Complaint'),
+        ('Feedback', 'Feedback'),
         ('Other', 'Other'),
 
     ]
