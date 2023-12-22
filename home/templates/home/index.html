@@ -15,32 +15,28 @@ Poster Palace
 
 {% block content %}
 
-   <!-- Home Page information box start-->
-   <div class="background-image-container d-flex align-items-center justify-content-center">
+<!-- Home Page information box start-->
+<div class="background-image-container d-flex align-items-center justify-content-center">
     <div class="container mt-3 site-content">
         <div class="d-flex align-items-center justify-content-center">
             <div class="col-md-10 shadow-lg bg-white lead text-center px-3 pt-3 py-3">
-                <h1 class="display-4 logo-font text-black">
-                    Poster Palace
-                </h1>
+                <h1 class="display-4 logo-font text-black">Poster Palace</h1>
                 <h2 class="display-6">Beautify your room. Uplift your spirit.</h2>
-                <img src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1703176270/cG9zdGVycy1vbmxpbmUtaGVhZGVyX3Y2bHltbg==/grid_landscape" class="img-fluid py-3" alt="buy poster online image">
-                <p>At Poster Palace you can buy beautiful posters online for all rooms in large and extra large sizes. Shop our
-                    collection of stunning posters ranging from artwork for children to abstract and motivational art.
-                    
+                <img src="https://t.ly/oVZm3" class="img-fluid py-3" alt="buy poster online image">
+                <p>At Poster Palace you can buy beautiful posters online for all rooms in large and extra large sizes.
+                    Shop our collection of stunning posters ranging from artwork for children to abstract and 
+                    inspirational art.
                 </p>
                 <h4>
                     <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
                 </h4>
-  
             </div>
         </div>
     </div>
 </div>
-
 <!-- Home Page information box end-->
 
-  <!-- info section start -->
+  <!-- 3 box info section start -->
 <div class="services py-2" id="services">
     <div class="container-lg py-4">
       <div class="row justify-content-center">
@@ -77,202 +73,21 @@ Poster Palace
   </div>
   <!-- info section end -->
 
-<!-- New Arrivals Section-->
-<section class="py-5">
-    <h2 class="display-8 logo-font text-black text-center">
-        Featured Posters
-    </h2>
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1702048947/bWVkaWEvbW90aXZhdGlvbmFsLWhvcGUtbXVsdGktY29sb3JlZC1wb3N0ZXJfdWNrNHN3/grid_landscape" alt="hope" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Hope Poster</h5>
-                            <!-- Product price-->
-                            &#163;19.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=2 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1701940993/bWVkaWEvbW90aXZhdGlvbmFsLXBvc3Rlci1qb3lfaWJkMm4z/grid_landscape" alt="joy motivational poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Joy Poster</h5>
-                            <!-- Product price-->
-                            &#163;9.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=11 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">New</div>
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1702044220/bWVkaWEvZmVlZC1iZWVfa3JqenBs/grid_landscape" alt="feed the bee poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Feed The Bee</h5>
-                            <!-- Product price-->
-                            &#163;25.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=15 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1701940736/bWVkaWEvYWJzdHJhY3QtcHVycGxlLXNoYXJkc19xZ3Boa2g=/grid_landscape" alt="purple shards" />
-                    <!-- Sale badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Top Seller</div>
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Purple Shards</h5>
-                            <!-- Product price-->
-                            &#163;19.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=8 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-</section>
-
-<!-- New Arrivals Section end-->
+  {% include "home/featured.html" %}
 
  <!-- Paragraph section start -->
-
-
-   <div class="row gx-5 justify-content-center">
-        <div class="col-lg-10 px-5">
-            <p class="text-black">Our wide range of quality large and extra large posters are specifically designed to meet
-                high quality standards and can be hung using a stylish frame. Here, you can buy low cost, high quality,
-                beautiful posters online for your living room, hallway, kitchen or bedrooms. Make your statement wall the talk
-                of the dinner party. Combine them with your smaller prints to create a custom gallery or photo wall. Let your
-                imagination run wild.
-            </p>
+<div class="row gx-5 justify-content-center">
+    <div class="col-lg-10 px-5">
+        <p class="text-black">Our wide range of quality large and extra large posters are specifically designed to meet
+            high quality standards and can be hung using a stylish frame. Here, you can buy low cost, high quality,
+            beautiful posters online for your living room, hallway, kitchen or bedrooms. Make your statement wall the talk
+            of the dinner party. Combine them with your smaller prints to create a custom gallery or photo wall. Let your
+            imagination run wild.
+        </p>
     </div>
-  </div>
+</div>
   <!-- paragraph section end -->
 
-  <!-- Most Popular Section start-->
-<section class="py-5">
-    <h2 class="display-8 logo-font text-black text-center">
-        Most Popular
-    </h2>
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1702642072/Y2hpbGRyZW4tYXJ0LWVsZXBoYW50LWdpcmFmZmUyX3Z2eXFxbQ==/grid_landscape" alt="dancing elephant children's poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Dancing Elephant</h5>
-                            <!-- Product price-->
-                            &#163;19.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=5 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Top Seller</div>
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1701940590/bWVkaWEvY2hpbGRyZW4tcG9zdGVyX3c3ZnNtdA==/grid_landscape" alt="cute cat children's poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Cute Cat</h5>
-                            <!-- Product price-->
-                            &#163;27.50
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=16 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Sale badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1702642070/YWJzdHJhY3QtYXJ0LWRvZy1tdWx0aWNvbG9yZWRfa3plcTdl/grid_landscape" alt="abstract dog poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Abstract Dog</h5>
-                            <!-- Product price-->
-                            &#163;19.00
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=12 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <img class="card-img-top" src="https://res-console.cloudinary.com/dka7n7ady/thumbnails/v1/image/upload/v1702044220/bWVkaWEvZmVlZC1iZWVfa3JqenBs/grid_landscape" alt="feed the bee poster" />
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Feed The Bee</h5>
-                            <!-- Product price-->
-                            &#163;25.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'product_detail' product_id=15 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-
-</section>
-
-<!-- Most Popular Section end-->
+  {% include "home/popular.html" %}
                         
 {% endblock %}
