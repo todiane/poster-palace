@@ -13,9 +13,9 @@ function handleEnableDisable(itemId, size) {
     }
 
     // Ensure the quantity doesn't go below 1
-    if (currentValue < 1 || isNaN(currentValue)) {
-        currentValue = 1;
-    }
+    // if (currentValue < 1 || isNaN(currentValue)) {
+    //     currentValue = 1;
+    // }
 
     var minusDisabled = currentValue < 2;
     var plusDisabled = currentValue > 98;
