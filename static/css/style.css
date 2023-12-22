@@ -15,11 +15,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
     line-height: 1.6;
+    font-size: 18px;
 }
 
  /* -------------------------------- Footer */
@@ -27,7 +28,6 @@ p {
 .footer-dark {
     padding:20px 20px;
     color:#f0f9ff;
-    font-size:12px;
     background-color:#45526e;
   }
   
@@ -35,7 +35,7 @@ p {
   .footer-dark .copyright {
     text-align:left;
     padding-top:14px;
-    font-size:12px;
+    font-size:14px;
     margin-bottom:0;
   }
 

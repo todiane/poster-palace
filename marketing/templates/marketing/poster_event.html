@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block title %}
+Diverse Design Poster Event
+{% endblock title%}
+
 
 {% block page_header %}
     <div class="container header-container">
@@ -11,31 +15,29 @@
 {% endblock %}
 
 {% block content %}
+
+<div class="container-fluid col-10">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Diverse Design</li>
+        </ol>
+    </nav>
+</div>
 <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
-                    <img src="https://res.cloudinary.com/dka7n7ady/image/upload/v1701940590/media/children-poster_w7fsmt.png" class="img-fluid py-3" alt="buy poster online image">
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5">
-                    <div class="col-12 col-md-6 mt-5">
-            
-                        <h1 class="logo-font mb-4">Newsletter</h1>
-                        
-                    </div>
-                    <p class="pl-4">Join the Poster Palace newsletter tribe and enjoy surprise money-off coupons and exclusive
-                        offers.
-                        Take part in our regular <a href="{% url 'poster_event' %}">'Poster Palace Diverse Design'</a> events and win prizes
-                        along with an opportunity to have your work featured in our store and on our social media page.
-                    </p>
-                    <p class="pl-4">
-                        Rest assured, subscribing to our newsletter is hassle-free, and there's no 
-                        commitment so you can easily unsubscribe at any time. Your privacy is important to us, 
-                        and we never sell or share your details with third parties.
-                    </p>
+    <div class="container-fluid my-5 col-10">
+                        <h1 class="logo-font mb-4">Diverse Design</h1>
+                    
+                    <p>Diverse design is an event run by Poster Palace, usually seasonal (Spring, Summer, Autumn, Winter) but also to celebrate specific events.
+                        It's an event started by our newsletter subscribers and is resevered solely for them, so you
+                        only find out about details of any upcoming events if you have subscribed to our newsletter. The
+                        idea is that either as an individual or a small group (3-5 people) you can design and submit
+                        ideas for new posters. There is a cash prize to be won as well as the kudos of your design being
+                        made available to buy on our website and some social media promotion.
+                        </p>
+
+                        <p>To take part, and to receive regular updates, join our newsletter using the form below:
+                            </p>
                 <!--Email subscription Form -->
                 <div id="mc_embed_shell">
                     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
@@ -68,15 +70,19 @@
               </div>
               <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div>
               
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
+                    <!-- <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
                         <span class="text-uppercase">Start Shopping</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
     </div>
+</div>
+<!--next section-->
+
+{% include "marketing/event_updates.html" %}
     
 {% endblock %}
