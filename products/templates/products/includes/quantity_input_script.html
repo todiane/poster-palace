@@ -1,35 +1,13 @@
 <script type="text/javascript">
 
-    /* 
-    * Taken from Project_Ado - Fixed quantity input bug
-    * Disable +/- buttons outside 1-99 range.
-    */
-
-function handleEnableDisable(itemId, size) {
-    if (size) {
-        var currentValue = parseInt($(`.size_${itemId}_${size}`).val());
-    } else {
-        var currentValue = parseInt($(`.id_qty_${itemId}`).val());
+    // Disable +/- buttons outside 1-99 range
+    function handleEnableDisable(itemId) {
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
+        var minusDisabled = currentValue < 2;
+        var plusDisabled = currentValue > 98;
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
-
-    // Ensure the quantity doesn't go below 1
-    // if (currentValue < 1 || isNaN(currentValue)) {
-    //     currentValue = 1;
-    // }
-
-    var minusDisabled = currentValue < 2;
-    var plusDisabled = currentValue > 98;
-    $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
-    $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
-
-    // Update the input field with the corrected value
-    if (size) {
-        $(`.size_${itemId}_${size}`).val(currentValue);
-    } else {
-        $(`.id_qty_${itemId}`).val(currentValue);
-    }
-}
-
 
     // Ensure proper enabling/disabling of all inputs on page load
     var allQtyInputs = $('.qty_input');
