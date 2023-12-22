@@ -216,12 +216,6 @@ input[name='q']::placeholder {
 
 /* -------------------------------- Media Queries */
 
-@media (max-width: 1199px) {
-    .footer-dark {
-        position: static; /* Change to static positioning for smaller screens */
-    }
-}
-
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1000px) {

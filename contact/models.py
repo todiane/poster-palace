@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Contact(models.Model):
-    """ contact form for visitors and customers"""
+    """ Contact Us form for visitors and customers"""
 
     CONTACT_CHOICES = [
         ('', 'Reason for Contact'),
