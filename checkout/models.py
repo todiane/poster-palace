@@ -11,9 +11,8 @@ from profiles.models import BuyerProfile
 
 
 class Order(models.Model):
-    """
-    Model to create orders and profile
-    """
+    """Model to create orders and profiles"""
+
     order_number = models.CharField(
         max_length=32,
         null=False,
@@ -68,8 +67,8 @@ class Order(models.Model):
     )
     country = CountryField(
         default='GB', 
-        blank_label="Country *", 
-        null=False, 
+        blank_label="Country *",
+        null=False,
         blank=False
     )
     created = models.DateTimeField(
@@ -110,20 +109,15 @@ class Order(models.Model):
 
     class Meta:
         ordering = ['-created']
-        
         verbose_name_plural = 'orders'
 
-   
     def _generate_order_number(self):
-        """
-        Generate unique order number using UUID
-        """
+        """Generate unique order number using UUID"""
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
-        """
-        Update grand total each time an item is added
-        """
+        """Update grand total each time an item is added or removed"""
+
         self.order_total = self.lineitems.aggregate(
             Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:

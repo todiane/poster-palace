@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-
+<!--Terms and conditions of events-->
 <section class="terms">
     <div class="container-fluid col-10">
         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -93,11 +93,9 @@
                 <p>- If you have any questions please <a href="{% url 'contact' %}">Contact Us HERE.</a></p>
             </div>
         </div>
-        <!--start shopping button-->       
-        <a href="{% url 'poster_event' %}" class="btn btn-outline-black rounded-0 mt-3">
-            <span class="icon">
-                <i class="fas fa-chevron-left"></i>
-            </span>
+        <!--back to events page button-->       
+        <a href="{% url 'marketing:poster_event' %}" class="btn btn-outline-black rounded-0 mt-3">
+            <span class="icon"><i class="fas fa-chevron-left"></i></span>
             <span class="text-uppercase">Back To Events Page</span>
         </a>
     </div>

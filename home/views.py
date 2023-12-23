@@ -3,12 +3,10 @@ from django.core.exceptions import PermissionDenied
 from .models import About
 
 
-
 def index(request):
     """ View to return index page """
 
     return render(request, 'home/index.html')
-
 
 
 def about_pp(request):
@@ -23,22 +21,20 @@ def about_pp(request):
     )
 
 
-
 """ Error handling """
-
-
 def handler404(request, exception):
-    """Rendering the 404 page."""
+    """Render 404 page"""
+
     return render(request, '404.html', status=404)
 
 
 def handler500(request):
-    """Rendering the 500 page."""
+    """Render 500 page"""
     return render(request, '500.html', status=500)
 
 
 def handler403(request, exception):
-    """Rendering the 403 page."""
+    """Render 403 page"""
     if isinstance(exception, PermissionDenied):
         return render(request, '403.html', status=403)
     else:

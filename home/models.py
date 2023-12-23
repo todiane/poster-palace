@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class About(models.Model):
     title = models.CharField(max_length=200)
     subtitle = models.CharField(max_length=500, null=True, blank=True)
@@ -12,6 +13,7 @@ class About(models.Model):
         verbose_name = 'About Poster Palace'
         verbose_name_plural = 'About Poster Palace'
 
-
     def __str__(self):
         return self.title
+
+
