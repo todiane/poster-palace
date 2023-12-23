@@ -3,7 +3,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category
+from .models import Product, Category, Reviews
+from .forms import ReviewForm
 
 
 def all_products(request):
@@ -71,3 +72,32 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+
+def submit_review(request, product_id):
+    """ Logged in Users can leave a review"""
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        try:
+            reviews = Reviews.objects.get(user__id=request.user.id, product__id=product_id)
+            form = ReviewForm(request.POST, instance=reviews)
+            form.save()
+            messages.success(request, 'Your review has been updated.')
+            
+            return redirect(url)
+
+        except Reviews.DoesNotExist:
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                data = Reviews()
+                data.subject = form.cleaned_data['subject']
+                data.rating = form.cleaned_data['rating']
+                data.review = form.cleaned_data['review']
+                data.ip = request.META.get('REMOTE_ADDR')
+                data.product_id = product_id
+                data.user_id = request.user.id
+                data.save()
+                messages.success(request, 'Your review has been submitted!')
+                
+                return redirect(url)
