@@ -63,12 +63,15 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ Shows individual product details"""
+    """ Shows individual product details and any reviews"""
 
     product = get_object_or_404(Product, pk=product_id)
+    # Get any reviews that have been added
+    reviews = Reviews.objects.filter(product_id=product_id, status=True)
 
     context = {
         'product': product,
+        'reviews': reviews,
     }
 
     return render(request, 'products/product_detail.html', context)

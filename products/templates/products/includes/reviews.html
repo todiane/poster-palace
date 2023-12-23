@@ -2,10 +2,11 @@
 <div class="overlay"></div>
 <div class="container-fluid my-5 col-10">
        <h2 class="fw-bolder fs-5 mb-4">Reviews</h2>
+       
     {% if request.user.is_authenticated %}
         <form method="POST" action="{% url 'submit_review' product.id %}">
             {% csrf_token %}
-            <label>Share your thoughts. How much do you rate {{ product.name }}?</label>
+            <label>Share your thoughts. How much do you rate: {{ product.name }}?</label>
             <br>
             <!-- Star Ratings section -->
             <div class="rate">
@@ -26,11 +27,12 @@
             <br>
             Your Review:
             <textarea name="review" class="form-control" rows="5"></textarea>
-            <br>
+        <br>
             <input type="submit" value="Add Review" class="btn btn-black">
             <br>
         </form>
-    {% else %}
+            <br>
+            {% else %}
     <p>Log-in to leave your review. <span><a href="{% url 'account_login' %}">Click HERE to login </a> 
         OR register for an account <a href="{% url 'account_signup' %}">HERE</a> </span></p>
     {% endif%}
@@ -42,7 +44,7 @@
     <div class="icontext w-100">
         <div class="text">
             <span class="date text-muted float-md-right">{{review.updated_at}}</span>
-            <h6 class="mb-1">{{review.user.full_name}}</h6>
+            <h6 class="mb-1">{{review.user.username}}</h6>
             <div class="rating-star">
                 <span>
                     <i class="fa-solid fa-star{% if review.rating == 0.5 %}-half-o{% elif review.rating < 1 %}-o {% endif %}" aria-hidden="true"></i>
@@ -62,9 +64,3 @@
     </div>
 </div>
 {% endfor %}
-<!-- button arrow up -->
-<div class="btt-button shadow-sm rounded-0 border border-black">
-    <a class="btt-link d-flex h-100">
-        <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
-    </a>	
-</div>
