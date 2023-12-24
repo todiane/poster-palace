@@ -35,7 +35,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-    '8000-todiane-posterpalace-fwk6c4ttmj6.ws-eu107.gitpod.io',
+    '8000-todiane-posterpalace-tkjbeti4r4n.ws-eu107.gitpod.io',
     'posterpalace-a7414f135cf3.herokuapp.com',
     'localhost',
 
@@ -44,7 +44,7 @@ ALLOWED_HOSTS = [
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-todiane-posterpalace-fwk6c4ttmj6.ws-eu107.gitpod.io/',
+    'https://8000-todiane-posterpalace-tkjbeti4r4n.ws-eu107.gitpod.io/',
 ]
 
 
@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'profiles',
     'contact',
     'marketing',
+    'wishlist',
     'django_countries',
     'crispy_forms',
 ]
