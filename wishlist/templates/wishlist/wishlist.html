@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -11,69 +10,63 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid col-10">
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
-        </ol>
-    </nav>
-</div>
-<!--start wishlist section-->
-<div class="overlay"></div>
+    <div class="container-fluid col-10">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Start wishlist section -->
+    <div class="overlay"></div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
-                    <img src="https://t.ly/9AFwp" class="img-fluid py-3" alt="buy poster online image">
+                    <div class="col-12 col-md-6">
+                        <h2 class="logo-font mb-4"> Your Wishlist</h2>
+                    </div>
+                    <div class="product-details-container">
+                        {% if wishes %}
+                            <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, 
+                                have fun saving your favourite posters.</h5>
+                        {% else %}
+                            <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, 
+                                you haven't added anything yet.</h5>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <div class="col-12 col-md-6 mt-5">
-            
-                        <h1 class="logo-font mb-4">Wishlist</h1>
-                    </div>
-                    <div class="product-details-container mb-5 mt-md-5">
-                    {% if wishes %}
-                    <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, have fun saving your favourite posters.</h5>
-                    {% else %}
-                    <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, you haven't added anything yet.</h5>
-                    {% endif %}
-                </div>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
-                    <span class="icon"><i class="fas fa-chevron-left"></i></span>
-                    <span class="text-uppercase">Start Shopping</span>
-                </a>
-                <img class="wishlist-image" src="{{ wish.product_id.image_url }}" alt="{{ wish.product_id.name }}" class="wishlist-image">
-                <div class="wishlist-item-header flex flex-column">
-                    <h3 class="text-light">{{ wish.product_id.name }}</h3>
-                    <div class="wishlist-general-info flex flex-center-y flex-between text-light">
-                        <div class="flex">
-                            <i id="wish-product-category" data-lucide="tags"></i>
-                            <p class="m-left">{{ wish.product_id.category_id.display_name }}</p>
-                        </div>
-                        <p>ADDED ON: {{ wish.added_on|date:'d.m.Y' }}</p>
-                    </div>
-                    <div class="item-description m-top text-light">
-                        <p>{{ wish.product_id.description }}</p>
-                    </div>
-                    <div class="wishlist-product-info flex flex-between flex-center-y text-light m-top">
-                       
-                        <div><p>PRICE: {{ wish.product_id.price }} €</p></div>
-                        
-                        </div>
-                    </div>
+                    <p>Affordable wall art sets almost any room up for good vibes if you make the right selection.
+                        Popular poster styles for different spaces can vary based on the aesthetic you want to achieve.
+                    </p>
+
+                    <p>For those who are more traditional or who enjoy vintage spaces, retro posters with a classic look
+                        will help align with the overall traditional look and feel of a room.</p>
+
+                    <p>Modern and minimalist rooms benefit from posters with simple designs and little colour. Abstract
+                        art, inspirational and motivational quotes in sleek typography really complement this style.</p>
+
+                    <p>If you love bright colours or a more bohemian style, posters with bold colors, playful artistic
+                        designs, or vibrant patterns can add personality and bring a real uplifting vibe to the room.
+                    </p>
+
+                    <p>For office spaces, whether home office or office building, a poster with a quote you love can be
+                        a perfect choice. Also consider quirky, bright and artwork that reflects your interests or
+                        business brand.</p>
+
+                    <p>Have fun adding posters here to your wishlist as you decide on what suits you.</p>
+
+                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
+                        <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                        <span class="text-uppercase">Start Shopping</span>
+                    </a>
                 </div>
             </div>
-      
-
-   
-                    </div>
-                </div>
         </div>
     </div>
-</div>
-    
 {% endblock %}
-
