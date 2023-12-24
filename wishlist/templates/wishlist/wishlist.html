@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid col-10">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Wishlist</li>
+        </ol>
+    </nav>
+</div>
+<!--start wishlist section-->
+<div class="overlay"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    <img src="https://t.ly/9AFwp" class="img-fluid py-3" alt="buy poster online image">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5">
+                    <div class="col-12 col-md-6 mt-5">
+            
+                        <h1 class="logo-font mb-4">Wishlist</h1>
+                    </div>
+                    <div class="product-details-container mb-5 mt-md-5">
+                    {% if wishes %}
+                    <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, have fun saving your favourite posters.</h5>
+                    {% else %}
+                    <h5 class="pl-4">Welcome to your wishlist {{ user.username }}, you haven't added anything yet.</h5>
+                    {% endif %}
+                </div>
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
+                    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                    <span class="text-uppercase">Start Shopping</span>
+                </a>
+                <img class="wishlist-image" src="{{ wish.product_id.image_url }}" alt="{{ wish.product_id.name }}" class="wishlist-image">
+                <div class="wishlist-item-header flex flex-column">
+                    <h3 class="text-light">{{ wish.product_id.name }}</h3>
+                    <div class="wishlist-general-info flex flex-center-y flex-between text-light">
+                        <div class="flex">
+                            <i id="wish-product-category" data-lucide="tags"></i>
+                            <p class="m-left">{{ wish.product_id.category_id.display_name }}</p>
+                        </div>
+                        <p>ADDED ON: {{ wish.added_on|date:'d.m.Y' }}</p>
+                    </div>
+                    <div class="item-description m-top text-light">
+                        <p>{{ wish.product_id.description }}</p>
+                    </div>
+                    <div class="wishlist-product-info flex flex-between flex-center-y text-light m-top">
+                       
+                        <div><p>PRICE: {{ wish.product_id.price }} €</p></div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+
+   
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    
+{% endblock %}
+
