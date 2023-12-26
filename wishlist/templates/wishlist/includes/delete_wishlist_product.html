@@ -1,0 +1,43 @@
+<!-- Script to delete items from wishlist -->
+
+<script type="text/javascript">
+  // Wait for the document to be ready before running the script
+  $(document).ready(function () {
+    // Store the item ID when the delete button is clicked
+    $('#deleteModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget);
+      var itemId = button.data('item-id');
+      // Update the Delete button in the modal with the item ID
+      $('#confirmDeleteBtn').data('item-id', itemId);
+    });
+
+    // Handle deletion when the Confirm Delete button is clicked
+    $('#confirmDeleteBtn').on('click', function () {
+      var itemId = $(this).data('item-id');
+      // Send an AJAX request to the server to delete the item
+      $.ajax({
+        type: 'POST',
+        url: '{% url "delete_wish" %}',
+        data: {
+          'item-id': itemId,
+          csrfmiddlewaretoken: $('input[name=csrfmiddlewaretoken]').val(),
+        },
+        dataType: 'json',  // Specify the data type expected from the server
+        success: function (data) {
+          // Handle success 
+          alert(data.message);  
+          // Optionally, refresh the page or update the UI
+          location.reload();
+        },
+        error: function (data) {
+          // Handle errors if necessary
+          console.error('Error deleting item:', data);
+        }
+      });
+      // Hide the modal
+      $('#deleteModal').modal('hide');
+    });
+  });
+</script>
+
+  
