@@ -7,12 +7,13 @@ from .forms import ContactForm
 
 def contact_view(request):
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = ContactForm(request.POST, user=request.user)
         if form.is_valid():
             contact = form.save(commit=False)
             contact.save()
-            return render(request, 'contact/contact_success.html',
-                          {'contact': contact})  # Pass contact data to template
-    form = ContactForm()
+            return render(request, 'contact/contact_success.html', {'contact': contact})
+    else:
+        form = ContactForm(user=request.user)
+    
     context = {'form': form}
     return render(request, 'contact/contact.html', context)
