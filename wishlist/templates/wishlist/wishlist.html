@@ -34,10 +34,6 @@
                             <h4><a href="{% url 'product_detail' item.product_id.id %}">{{ item.product_id.name }}</a></h4>
                             <p>{{ item.product_id.description|slice:":100" }}{% if item.product_id.description|length > 100 %}...{% endif %}</p>
                             <!-- Delete button and data attributes for modal -->
-                            <!-- <form method="post" action="{% url 'delete_wish' %}">
-                                {% csrf_token %}
-                                <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-item-id="{{ item.id }}">Delete</button>
-                            </form> -->
                             <button class="btn btn-danger" data-toggle="modal" data-target="#deleteModal" data-item-id="{{ item.id }}">Delete</button>
 
                         </div>
