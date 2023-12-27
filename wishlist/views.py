@@ -51,7 +51,8 @@ def delete_wish(request):
     """remove poster from wishlist"""
     if request.method == 'POST':
         item_id = request.POST.get('item-id')
-        wish_item = get_object_or_404(WishList, pk=item_id, user_id=request.user)
+        print("Item id: ", item_id)
+        wish_item = get_object_or_404(WishList, pk=item_id)
         wish_item.delete()
         messages.success(request, f'{wish_item.product_id.name} has been deleted from your wishlist')
         return JsonResponse({'message': 'Item deleted successfully.'})
