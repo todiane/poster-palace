@@ -1,3 +1,4 @@
+{% load static %}
  <!-- Event Updates Page Content-->
  <div class="overlay"></div>
  <div class="container-fluid my-5 col-10">
@@ -23,7 +24,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-7 text-center">
-                        <img src="https://t.ly/oVZm3" class="img-fluid py-3 mt-5 mx-auto" alt="diverse design event winner">
+                        <img src="{% static 'images/diverse-design-winner-2024.png' %}" class="img-fluid  mx-auto" alt="diverse design event winner">
                     </div>
                     
                 </div>
@@ -52,9 +53,9 @@
         <div class="row gx-5">
             <div class="col-lg-4 mb-5">
                 <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://t.ly/Q3RVp" alt="Spring event winner" />
+                    <img class="card-img-top" src="{% static 'images/love-berry-much.png' %}" alt="Spring event winner" />
                     <div class="card-body p-4">
-                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=1 %}"><div class="h5 card-title mb-3">Love You Berry Much</div></a>
+                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=12 %}"><div class="h5 card-title mb-3">Love You Berry Much</div></a>
                         <p class="card-text mb-0">Our Valentine event for Spring 2023 saw 112 people submit designs and this was our individual winner.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -67,9 +68,9 @@
             </div>
             <div class="col-lg-4 mb-5">
                 <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://t.ly/hB30P" alt="burst of colour poster" />
+                    <img class="card-img-top" src="{% static 'images/bright-winner-poster.png' %}" alt="burst of colour poster" />
                     <div class="card-body p-4">
-                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=2 %}"><div class="h5 card-title mb-3">Burst of Colours</div></a>
+                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=10 %}"><div class="h5 card-title mb-3">Burst of Colours</div></a>
                         <p class="card-text mb-0">Winner of the Spring 2023 group submission was this amazing burst of colour.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -83,9 +84,9 @@
             </div>
             <div class="col-lg-4 mb-5">
                 <div class="card h-100 shadow border-0">
-                    <img class="card-img-top" src="https://t.ly/ecFK0" alt="daisy and Ned poster" />
+                    <img class="card-img-top" src="{% static 'images/daisy-ned-poster.png' %}" alt="daisy and Ned poster" />
                     <div class="card-body p-4">
-                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=12 %}"><div class="h5 card-title mb-3">Daisy & Ned</div></a>
+                        <a class="text-decoration-none link-dark stretched-link" href="{% url 'product_detail' product_id=14 %}"><div class="h5 card-title mb-3">Daisy & Ned</div></a>
                         <p class="card-text mb-0">Daisy and her best friend Ned the Giraffe came in close with the votes and won our hearts.</p>
                     </div>
                     <div class="card-footer p-4 pt-0 bg-transparent border-top-0">

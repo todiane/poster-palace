@@ -1,0 +1,28 @@
+{% load static %}
+
+<!--photo gallery grid idea from 
+https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/-->
+
+
+<div class='gallery mt-5'>
+    <figure class='gallery__item gallery__item--1'>
+      <a href="{% url 'product_detail' product_id=4 %}">
+        <img src="{% static 'images/two-tone-inspirational-poster.png' %}" class='gallery__img' alt="two tone poster">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <a href="{% url 'product_detail' product_id=7 %}">
+        <img src="{% static 'images/inspirational-poster-index.png' %}" class="gallery__img" alt="large inspirational poster">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <a href="{% url 'product_detail' product_id=5 %}">
+        <img src="{% static 'images/palm-poster-index.png' %}" class="gallery__img" alt="brown palm poster xl">
+      </a>
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <a href="{% url 'products' %}">
+        <img src="{% static 'images/home-page-elephant.png' %}" class="gallery__img" alt="abstract poster">
+      </a>
+    </figure>
+</div>

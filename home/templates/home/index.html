@@ -5,6 +5,7 @@
 Poster Palace
 {% endblock title%}
 
+
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -14,15 +15,14 @@ Poster Palace
 {% endblock %}
 
 {% block content %}
-
 <!-- Home Page information box start-->
 <div class="background-image-container d-flex align-items-center justify-content-center">
     <div class="container mt-3 site-content">
         <div class="d-flex align-items-center justify-content-center">
-            <div class="col-md-10 shadow-lg bg-white lead text-center px-3 pt-3 py-3">
+            <div class="col-md-12 shadow-sm bg-white lead text-center px-3 pt-3 py-3">
                 <h1 class="display-4 logo-font text-black">Poster Palace</h1>
                 <h2 class="display-6">Beautify your room. Uplift your spirit.</h2>
-                <img src="https://t.ly/oVZm3" class="img-fluid py-3" alt="buy poster online image">
+                <!-- <img src="https://t.ly/oVZm3" class="img-fluid py-3" alt="buy poster online image"> -->
                 <p>At Poster Palace you can buy beautiful posters online for all rooms in large and extra large sizes.
                     Shop our collection of stunning posters ranging from artwork for children to abstract and 
                     inspirational art.
@@ -36,58 +36,14 @@ Poster Palace
 </div>
 <!-- Home Page information box end-->
 
-  <!-- 3 box info section start -->
-<div class="services py-2" id="services">
-    <div class="container-lg py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-item shadow-sm p-3 rounded bg-white">
-            <div class="icon my-3 fs-2">
-              <i class="fa-solid fa-lock"></i>
-            </div>
-            <h6 class='fs-5 py-2'>Secure Shopping - Your information is in safe hands.</h6>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-item shadow-sm p-3 rounded bg-white">
-            <div class="icon my-3 fs-2">
-                <i class="fa-solid fa-tag"></i>
-            </div>
-            <h6 class='fs-5 py-2'>Posters available in sizes large & extra large.</h6>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-item shadow-sm p-3 rounded bg-white">
-            <div class="icon my-3  fs-2">
-                <i class="fa-solid fa-truck-fast"></i>
-            </div>
-            <h6 class='fs-5 py-2'>Expertly packed and delivered to your door in days.</h6> 
-          </div>
-        </div>            
-      </div>
-    </div>
-  </div>
-  <!-- info section end -->
 
-  {% include "home/featured.html" %}
 
- <!-- Paragraph section start -->
-<div class="row gx-5 justify-content-center">
-    <div class="col-lg-10 px-5">
-        <p class="text-black">Our wide range of quality large and extra large posters are specifically designed to meet
-            high quality standards and can be hung using a stylish frame. Here, you can buy low cost, high quality,
-            beautiful posters online for your living room, hallway, kitchen or bedrooms. Make your statement wall the talk
-            of the dinner party. Combine them with your smaller prints to create a custom gallery or photo wall. Let your
-            imagination run wild.
-        </p>
-    </div>
-</div>
-  <!-- paragraph section end -->
+{% include "home/portfolio-section.html" %}
+{% include "home/quality-section.html" %}
 
-  {% include "home/popular.html" %}
+{% include "home/order-section.html" %}
+
+
+
                         
 {% endblock %}
