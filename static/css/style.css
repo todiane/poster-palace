@@ -1,10 +1,15 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Mulish', sans-serif;
-    background-size: cover;
-    min-height: 100vh;
+html {
+    scroll-behavior: smooth;
 }
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 
 /* General Styles */
@@ -25,18 +30,26 @@ p {
 
  /* -------------------------------- Footer */
 
+ footer {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    margin-top: auto;
+}
+
 .footer-dark {
-    padding:20px 20px;
+    position: relative;
     color:#f0f9ff;
     background-color:#45526e;
+    width: 100%;
+    
   }
   
-  
   .footer-dark .copyright {
-    text-align:left;
-    padding-top:14px;
-    font-size:14px;
-    margin-bottom:0;
+    text-align: left;
+    padding-top: 14px;
+    font-size: 14px;
   }
 
 
@@ -63,10 +76,6 @@ INDEX PAGE
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 5;
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 2;  */
-  /* grid-row: 1 / span 2; */
 }
 
 .gallery__item--2 {
@@ -74,10 +83,6 @@ INDEX PAGE
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 5;
-
-  /** Alternative Syntax **/
-  /* grid-column: 3 / span 2;  */
-  /* grid-row: 1 / span 2; */
 }
 
 .gallery__item--3 {
@@ -85,10 +90,6 @@ INDEX PAGE
   grid-column-end: 9;
   grid-row-start: 1;
   grid-row-end: 9;
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
 }
 
 .gallery__item--4 {
@@ -97,32 +98,9 @@ INDEX PAGE
   grid-row-start: 5;
   grid-row-end: 9;
 
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4;  */
-  /* grid-row: 3 / span 3; */
+
 }
 
-/* .gallery__item--5 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 9; */
-
-  /** Alternative Syntax **/
-  /* grid-column: 1 / span 4; */
-  /* grid-row: 6 / span 3; */
-/* }
-
-.gallery__item--6 {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 6;
-  grid-row-end: 9; */
-
-  /** Alternative Syntax **/
-  /* grid-column: 5 / span 4; */
-  /* grid-row: 6 / span 3; */
-/* }
 
 
 /* Custom styles for button hover */
@@ -360,6 +338,7 @@ label:hover ~ input:checked ~ label {
     max-width: 80%;
   }
 }
+
 
 /* Allauth form formatting */
 

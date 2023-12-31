@@ -3,23 +3,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Poster Palace is a place to shop for quality, low-cost posters online.">
-        <meta name="keywords" content="buy posters online, quality posters, affordable wall art, best place to buy posters online">
+        <meta name="description" content="Specialising in high-quality large and xl posters online. Affordable wall art for your home or office.">
+        <meta name="keywords" content="buy posters online, quality posters, affordable wall art, office wall art, home wall art, poster palace, wall arts, wall arts online">
         <!-- Open Graph Meta Tags to ensure the site displays well on social media -->
         <meta property="og:title" content="Poster Palace">
-        <meta property="og:description" content="An online shop specializing in quality, low-cost posters.">
+        <meta property="og:description" content="Specialising in high-quality large and xl posters online. Fashionable wall art at affordable prices.">
         <meta property="og:image" content="https://posterpalace-a7414f135cf3.herokuapp.com{% static 'images/android-chrome-512x512.png' %}">
         <meta property="og:url" content="https://posterpalace-a7414f135cf3.herokuapp.com/">
-        
-        
     {% endblock %}
 
     {% block extra_meta %}
+        <!-- Pinterest verification meta tag -->
+        <meta name="p:domain_verify" content="174a4b4d602dc701ba11fd01b58815b7"/>
     {% endblock %}
 
     {% block corecss %}
@@ -28,9 +27,6 @@
         <link rel="stylesheet" href="{% static 'css/style.css' %}">    
         {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
-
     {% block corejs %}
         <script src="https://kit.fontawesome.com/cd7af72a7a.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -38,11 +34,19 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
         <!-- Stripe -->
         <script src="https://js.stripe.com/v3/"></script>
-    
         {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+    {% block extra_script %}
+     <!-- Script usually goes at the end but MailChimp instructions is to add to <head> area -->
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "https://chimpstatic.com/mcjs-connected/js/users/5f79d1cd08f0a4ccfbb4e453f/6abae516d4abfbcd8ea54c935.js");
+    </script>
+
+    {% endblock extra_script %}
 
     {% block favicon %}
 
