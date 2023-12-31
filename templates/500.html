@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+<div class="col-10 my-5">
+
+    <h1 class="logo-font mb-4 text-center">Error 500 - Something Went Wrong!</h1>
+    <p class="display-3 my-3 text-center">Our server encountered an unexpected condition that prevented it from fulfilling your request. 
+        You can: 
+    </p>
+    <p><a class="btn btn-outline-black rounded-0 my-5" href="{% url 'home' %}">Return to Home Page</a> </p>
+    
+        <p> <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                <span class="icon">
+                    <i class="fas fa-chevron-left"></i>
+                </span>
+                <span class="text-uppercase">Back To Shop</span>
+            </a>
+        </p>
+    
+</div>
+{% block content %}
+
+{% endblock %}

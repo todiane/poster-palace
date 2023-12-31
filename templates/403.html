@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+<div class="col-10 my-5">
+
+    <h1 class="logo-font mb-4 text-center">Error 403 - Forbidden</h1>
+    <p class="display-3 my-3 text-center">Looks like you've strayed into a Forbidden place!</p>
+
+        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Start Shopping Instead</span>
+        </a>
+    
+</div>
+{% block content %}
+
+{% endblock %}

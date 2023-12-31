@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:/accounts/
+Sitemap:https://posterpalace-a7414f135cf3.herokuapp.com/sitemap.xml
