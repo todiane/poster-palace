@@ -37,7 +37,6 @@ DEBUG = False
 ALLOWED_HOSTS = [
     '8000-todiane-posterpalace-tkjbeti4r4n.ws-eu107.gitpod.io',
     'posterpalace-a7414f135cf3.herokuapp.com',
-    'localhost',
 
 ]
 
@@ -78,7 +77,6 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
