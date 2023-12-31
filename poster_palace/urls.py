@@ -18,6 +18,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from contact import views as contact_views
+from .views import handler403, handler404, handler500
 
 urlpatterns = [
     path('accounts/', include('allauth.urls')),
@@ -32,3 +33,9 @@ urlpatterns = [
     path('wishlist/', include('wishlist.urls')),
     path('', include('home.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
+handler404 = handler403
+handler500 = handler404
+handler403 = handler500
