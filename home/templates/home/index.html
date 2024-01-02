@@ -23,12 +23,11 @@ Poster Palace
     <div class="container mt-3 site-content">
         <div class="d-flex align-items-center justify-content-center">
             <div class="col-md-12 shadow-sm bg-white lead text-center px-3 pt-3 py-3">
-                <h1 class="display-4 logo-font text-black">Poster Palace</h1>
+                <h1 class="display-4 logo-font">Poster Palace</h1>
                 <h2 class="display-6">Beautify your room. Uplift your spirit.</h2>
-                <!-- <img src="https://t.ly/oVZm3" class="img-fluid py-3" alt="buy poster online image"> -->
                 <p>At Poster Palace you can buy beautiful posters online for all rooms in large and extra large sizes.
-                    Shop our collection of stunning posters ranging from artwork for children to abstract and 
-                    inspirational art.
+                    Shop our collection of stunning wall art ranging from posters for children to abstract and 
+                    inspirational art. We also love to promote posters created by our customers.
                 </p>
                 <h4>
                     <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
@@ -47,6 +46,6 @@ Poster Palace
 {% include "home/order-section.html" %}
 
 
-
+{% include "home/featured.html" %}
                         
 {% endblock %}

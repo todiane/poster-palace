@@ -4,6 +4,11 @@ to be added...
 
 I started by running python -m flake 8 in the CLI to get a list of any code issues (add image flake-8 list in screenshots folder)
 
+BUGS
+
+When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku but size isn't an option for the wishlist, just the product.
+
+
 Installed Black app
 
 https://learndjango.com/tutorials/django-testing-tutorial 

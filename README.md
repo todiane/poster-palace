@@ -303,13 +303,13 @@ The sprint was divided into three sections:
 
 | First Sprint | Second Sprint | Final Sprint |
 | ------------ | ------------- | ------------ |
-| Balsamiq wireframes created | Products designed and added| Add additional pages e.g. 404, 500, sitemap, cookie banner etc |
+| Balsamiq wireframes created | Products designed and added| Add additional pages e.g. Shipping, privacy policy, Terms and other pages created, 404, 500, sitemap, cookie banner etc |
 |Project Structure considered | Views and templates working – checks and tested | Fix any bugs and further testing using Dev tools|
 | Database model ideas created and tested. | Payment system setup with emails | Creation of README |
 | Django apps created – models and views added | UX and UI design decided and implemented | Submit for Peer to Peer review |
 | Templates set up to accommodate models and views | Code refactoring takes place if needed | Final overview before submission |
 | Initial Deployment to Heroku | Users added as fake customers to test site | Ensure DEBUG set to False |
-| SEO & Marketing created | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
+| SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
 
 </details>
 

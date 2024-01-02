@@ -1,15 +1,17 @@
+{% load static %}
+
 <!-- Featured Section-->
 <section class="py-5">
     <h2 class="display-8 logo-font text-black text-center">
-        Featured Posters
+        Posters Designed by Customers
     </h2>
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
-                    <a href="{% url 'product_detail' product_id=1 %}">
-                        <img class="card-img-top" src="https://t.ly/Q3RVp" alt="love you poster" />
+                    <a href="{% url 'product_detail' product_id=12 %}">
+                        <img class="card-img-top" src="{% static 'images/love-berry-much.png' %}" alt="love you poster" />
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -17,20 +19,20 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder">Berry Love</h5>
                             <!-- Product price-->
-                            &#163;25.95
+                            &#163;19.95
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=1 %}">View Poster</a></div>
+                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=12 %}">View Poster</a></div>
                     </div>
                 </div>
             </div>
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
-                    <a href="{% url 'product_detail' product_id=2 %}">
-                        <img class="card-img-top" src="https://t.ly/hB30P" alt="bright nature poster" />
+                    <a href="{% url 'product_detail' product_id=10 %}">
+                        <img class="card-img-top" src="{% static 'images/bright-winner-poster.png' %}" alt="bright nature poster" />
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -38,7 +40,30 @@
                             <!-- Product name-->
                             <h5 class="fw-bolder">Bright Nature</h5>
                             <!-- Product price-->
-                            &#163;24.95
+                            &#163;27.95
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=10 %}">View Poster</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- badge-->
+                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">New</div>
+                    <!-- Product image-->
+                    <a href="{% url 'product_detail' product_id=2 %}">
+                        <img class="card-img-top" src="{% static 'images/purple-plant-xl-poster.png' %}" alt="purple plant poster" />
+                    </a>
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">Purple Plant</h5>
+                            <!-- Product price-->
+                            &#163;32.95
                         </div>
                     </div>
                     <!-- Product actions-->
@@ -49,32 +74,9 @@
             </div>
             <div class="col mb-5">
                 <div class="card h-100">
-                    <!-- badge-->
-                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">New</div>
                     <!-- Product image-->
-                    <a href="{% url 'product_detail' product_id=3 %}">
-                        <img class="card-img-top" src="https://t.ly/S6zTs" alt="live for adventure" />
-                    </a>
-                    <!-- Product details-->
-                    <div class="card-body p-4">
-                        <div class="text-center">
-                            <!-- Product name-->
-                            <h5 class="fw-bolder">Adventure</h5>
-                            <!-- Product price-->
-                            &#163;29.95
-                        </div>
-                    </div>
-                    <!-- Product actions-->
-                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=3 %}">View Poster</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card h-100">
-                    <!-- Product image-->
-                    <a href="{% url 'product_detail' product_id=4 %}">
-                        <img class="card-img-top" src="https://t.ly/w1HQf" alt="purple plant poster" />
+                    <a href="{% url 'product_detail' product_id=14 %}">
+                        <img class="card-img-top" src="{% static 'images/daisy-ned-poster.png' %}" alt="Daisy & Ned poster" />
                     </a>
                     <!-- Sale badge-->
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Top Seller</div>
@@ -82,14 +84,14 @@
                     <div class="card-body p-4">
                         <div class="text-center">
                             <!-- Product name-->
-                            <h5 class="fw-bolder">Purple Plant</h5>
+                            <h5 class="fw-bolder">Daisy & Ned</h5>
                             <!-- Product price-->
-                            &#163;29.95
+                            &#163;19.95
                         </div>
                     </div>
                     <!-- Product actions-->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=4 %}">View Poster</a></div>
+                        <div class="text-center"><a class="btn btn-outline-black mt-auto" href="{% url 'product_detail' product_id=14 %}">View Poster</a></div>
                     </div>
                 </div>
             </div>

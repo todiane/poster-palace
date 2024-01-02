@@ -1,28 +1,71 @@
 {% load static %}
 
-<!--photo gallery grid idea from 
-https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/-->
+ <!--Product display section starts -->
+ <div class="container">
+    <h2 class="display-8 logo-font text-black text-center mt-5">
+        Recently Added Posters
+    </h2>
+  <div class="row">
 
-
-<div class='gallery mt-5'>
-    <figure class='gallery__item gallery__item--1'>
-      <a href="{% url 'product_detail' product_id=4 %}">
-        <img src="{% static 'images/two-tone-inspirational-poster.png' %}" class='gallery__img' alt="two tone poster">
-      </a>
-    </figure>
-    <figure class="gallery__item gallery__item--2">
-      <a href="{% url 'product_detail' product_id=7 %}">
-        <img src="{% static 'images/inspirational-poster-index.png' %}" class="gallery__img" alt="large inspirational poster">
-      </a>
-    </figure>
-    <figure class="gallery__item gallery__item--3">
-      <a href="{% url 'product_detail' product_id=5 %}">
-        <img src="{% static 'images/palm-poster-index.png' %}" class="gallery__img" alt="brown palm poster xl">
-      </a>
-    </figure>
-    <figure class="gallery__item gallery__item--4">
-      <a href="{% url 'products' %}">
-        <img src="{% static 'images/home-page-elephant.png' %}" class="gallery__img" alt="abstract poster">
-      </a>
-    </figure>
+      {% for product in products %}
+      <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mt-3">
+          <div class="card h-100 border-0">
+              {% if product.image %}
+              <a href="{% url 'product_detail' product.id %}">
+                  <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+              </a>
+              {% else %}
+              <a href="{% url 'product_detail' product.id %}">
+                  <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+              </a>
+              {% endif %}
+              <div class="card-body pb-0">
+                  <p class="mb-0">{{ product.name }}</p>
+              </div>
+                  <div class="card-footer bg-white pt-0 border-0 text-left">
+                      <div class="row">
+                          <div class="col">
+                              <p class="lead mb-0 text-left font-weight-bold">&#163;{{ product.price }}</p>
+                              {% if product.category %}
+                              <p class="small mt-1 mb-0">
+                                  <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                      <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                                  </a>
+                              </p>
+                              {% endif %}
+                              {% if product.rating %}
+                              <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 7</small>
+                              {% else %}
+                              <small class="text-muted">No Rating</small>
+                              {% endif %}
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+              {% if forloop.counter|divisibleby:1 %}
+                  <div class="col-12 d-sm-none mb-5">
+                      <hr>
+                  </div>
+              {% endif %}                        
+              {% if forloop.counter|divisibleby:2 %}
+                  <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                      <hr>
+                  </div>
+              {% endif %}
+              {% if forloop.counter|divisibleby:3 %}
+                  <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                      <hr>
+                  </div>
+              {% endif %}
+              {% if forloop.counter|divisibleby:4 %}
+                  <div class="col-12 d-none d-xl-block mb-5">
+                      <hr>
+                  </div>
+              {% endif %}
+          {% endfor %}
+      </div>
+  </div>
 </div>
+
+<!-- product display section ends-->
