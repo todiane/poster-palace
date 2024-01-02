@@ -88,10 +88,9 @@ The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 
 
 # Project Rationale
 
-<details>
-
 The development of an ecommerce store specialising in large and extra-large posters has been driven by several clear rationales:
 
+<details>
 
 **Market Demand**
 While there are a number of sites offering wall art in a large range of sizes, there are very few offering larger sizes in wall art making it an underserved market. The platform also embraces a niche focus catering to customers searching for larger sized posters, providing an opportunity to differentiate from competitors and attract customers looking for a specialised product.
@@ -109,7 +108,9 @@ Potential buyers include:
 
 - Travel enthusiasts, music lovers, sports enthusiasts, art admirers, etc. who might be interested in purchasing niche poster designs.
 
-Parents looking to decorate their child’s room with a statement piece.
+- Parents looking to decorate their child’s room with a statement piece.
+
+<br>
 
 **Print Quality and Materials**
 Posters will be produced using high-quality printing techniques and materials making them durable and long-lasting. Our commitment to quality will build brand trust with customers and support with any community engagement plans.
@@ -129,13 +130,11 @@ We can not only offer the chance for customers to customise using words but also
 
 # Project Objectives
 
-<details>
-
 The objective of this project is to build a Full-Stack eCommerce site with payment system and product structure based on business logic used to control a centrally-owned dataset.
 
-As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) and social media marketing techniques have been used in the delivery of content and images to improve audience and brand reach.
+As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) and social media marketing techniques have been used in the delivery of content and images to improve audience and brand reach. Objectives include:
 
-Objectives include:
+<details>
 
 **Develop a Comprehensive Product Catalog**
 Design an appealing selection of posters in a variety of different areas, e.g. nature, zodiac, children etc.
@@ -171,6 +170,8 @@ Develop strategies to engage with customers and create a community around the br
 
 # Project Outcomes
 
+The above objectives outline what I wanted to complete when creating this project, which led to the creation of the following outcomes (achieved results):
+
 <details>
 
 **Functional eCommerce Platform**
@@ -195,8 +196,175 @@ Ability for customers to gain support with their order and/or use of the site, e
 Strong online presence via social media and SEO. A store that attracts customers via its activity and also encourages repeat business and customer loyalty.
 
 </details>
+
 <br>
 
+# Model View Template
+
+I used MVT to help define the project's requirements, features, and structure by considering the following questions:
+
+<details>
+
+## Model (Database Design)
+
+**Authentication and role-based Authorisation:** How will we include authentication and role-based authorisation in our data model? What information will we request and store?
+
+**Admin Area:** How will we ensure only authorised users have access to this information and what will be included?
+
+**Product Information:** What attributes will each product have? (e.g., name, price, description, category, delivery, quantity etc.)
+
+**Buyer Accounts:** What information will we store about our customers? (e.g., name, email, password, address, telephone number, purchase history etc)
+
+**Order Management:** How will we track orders? What information is needed for each order? (e.g., customer details, order status, payment information etc)
+
+**Inventory Management:** Will we need to manage an inventory for physical products or rely on print-on-demand?
+
+**Security Management:** How will we store and manage customer information in our database? What security measures will be in place to prevent unauthorised access or distribution?
+
+**Wish List, Reviews and Ratings:** What will we include in our system for customer feedback on products? How will authorised users be able to save products while browsing?
+
+## Views (User Interface)
+
+**Product Browsing:** How will products be displayed and organised for easy browsing? (e.g., categories, filters, search functionality)
+
+**Wish List, Reviews and Ratings:** What information will customers be able to save and review? What will they see and how will it be managed.
+
+**Product Pages:** What information will be displayed on individual product pages? (e.g., images, descriptions, price, reviews)
+
+**Shopping Cart:** How will the shopping cart function? What information will be displayed in the cart?
+
+**Checkout Process:** What steps will the user go through during checkout? (e.g., address input, payment method selection). Will anonymous checkout be included?
+
+**User Account Management:** How will registered users view and manage their accounts? (e.g., view purchase history, update personal information)
+
+**Responsive Design:** Will the design be responsive to different devices (mobile, tablet, desktop)?
+
+## Templates (Front-End Design)
+
+**Branding:** How will the store's branding be incorporated into the design?
+
+**Navigation:** How will users navigate through the site? (e.g., menu layout, footer links etc)
+
+**Consistency:** How will we ensure a consistent look and feel across different pages?
+
+**Customisation:** How easily can templates be customised for special promotions or changes in/additions to product?
+
+## Authorisation and Security
+
+**User Authentication:** How will users log in and manage their accounts? What security measures will be in place for password protection?
+
+**Payment Processing:** How will we handle payment authorisation securely? Will we use a third-party payment gateway?
+
+**Access Control:** How will we control access to different parts of the site (e.g., admin panel)?
+
+**Data Protection:** How will we protect user data, especially sensitive information like addresses and payment details?
+
+**Compliance:** How will we handle consent management?  Are there any legal compliance issues to consider, such as GDPR for European customers?
+
+## Additional Considerations
+
+**SEO Optimisation and Marketing:** How will we optimise product pages and web content for search engines?
+
+**Analytics and Reporting:** How will we track and analyse user behaviour, sales trends, etc.?
+
+**Customer Support:** How will customer inquiries and issues be handled?
+
+**Marketing and Promotions:** How will we market our products and manage promotions?
+
+</details>
+<br>
+
+# Using Agile Terminologies
+
+My aim throughout this project was to focus my working time using agile terminologies:
+
+•	Create backlog
+
+•	Divide work into sprints
+
+•	Create subset sprints
+
+•	Review work - completed yesterday, to do today, any challenges
+
+•	Testing - developer tool, (print) command, keep an eye on terminal/console area.
+
+•	Obtain feedback.
+
+•	Maintain product backlog and prioritise items/adapt to change.
+
+•	Future implementations/scalability and performance optimisation.
+
+User stories were created and the GitHub project area was used to manage this process.
+You can see the [Poster Palace Project Process here.](https://github.com/users/todiane/projects/10)
+
+The sprint was divided into three sections:
+
+<details>
+
+| First Sprint | Second Sprint | Final Sprint |
+| ------------ | ------------- | ------------ |
+| Balsamiq wireframes created | Products designed and added| Add additional pages e.g. 404, 500, sitemap, cookie banner etc |
+|Project Structure considered | Views and templates working – checks and tested | Fix any bugs and further testing using Dev tools|
+| Database model ideas created and tested. | Payment system setup with emails | Creation of README |
+| Django apps created – models and views added | UX and UI design decided and implemented | Submit for Peer to Peer review |
+| Templates set up to accommodate models and views | Code refactoring takes place if needed | Final overview before submission |
+| Initial Deployment to Heroku | Users added as fake customers to test site | Ensure DEBUG set to False |
+| SEO & Marketing created | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
+
+</details>
+
+<br>
+
+# UX AND UI Design
+
+As always with my projects, the design was developed with minimalism in mind. Colours were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
+
+The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue.
+
+Having worked in online marketing, digital marketing and search engine optimisation for several years I am familiar with the concepts needed to promote a website, however UX and UI design are still fairly new to me. Further research was undertaken on UX AND UI principles, not only what was taught on the course but also via my own reading. 
+
+<details>
+
+This led to some key considerations being considered when designing the store including:
+
+## User Experience (UX) Design:
+
+**User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
+
+**Information Architecture:** Content organised in a logical and intuitive manner with clear navigation paths for users and instant notification of changes using toast messages.
+
+**Wireframing:** Wireframes created to outline the layout and structure before building.
+
+**Usability Testing:** Store was tested by users to identify potential issues. Any feedback given was used to improve user experience. e.g. Being told the font in some areas was too small.
+
+**Accessibility:** Ensure the store is accessible to all users and follow [web content accessibility guidelines (WCAG)](https://www.w3.org/WAI/fundamentals/components/).
+
+**Consistency:** A unified experience across different pages was implemented along with maintaining consistency in design elements so all pages look and feel the same.
+
+**Feedback and Error Handling:** Clear feedback provided once a user takes action e.g. adds or deletes a review. Error messages provided that guide users to a solution, e.g. 404.html error page takes users back to products or homepage.
+
+**User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
+
+
+## User Interface (UI) Design:
+
+**Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
+
+**Typography:** A readable and accessible font has been used, consistency maintained, and attention has been paid to font size and line spacing.
+
+**Colour Scheme:** One main colour has been used throughout to align with the brand. Colour accessibility was considered when adding colour to templates.
+
+**Imagery, Icons and Whitespace:** High quality designs were used for images of posters and font awesome icons were added to break up content. Whitespace was used to enhance readability and avoid visual clutter.
+
+**Responsive Design:** The site is fully responsive and works well on different screen sizes.
+
+**Consistent Branding:** Brand identity has been maintained throughout the site and included in all information, e.g. the PDF created to highlight the [winners of a competition](https://www.canva.com/design/DAF3uqhD65Y/iSDvZb0f6r-yHmMw7Z8hBg/view) included the same colour as the website. 
+
+**Scalability:** I considered how UI will adapt to changes in content or functionality and designed with scalability in mind.
+
+</details>
+
+<br>
 
 ## Testing
 
@@ -204,11 +372,11 @@ Please see my separate [Testing MD page HERE](/TESTING.md) that includes informa
 
 ## Deployment
 
-<details>
 
-Deployment took place immediately after installing Django.
+
+Deployment took place soon after installing Django, ElephantSQL and Cloudinary.
 <br>
-
+<details>
 
 #### Installing libraries
 
@@ -392,6 +560,8 @@ This list contains resources I have used to help me start, create and manage thi
 Use Ctrl (or Cmd) + click to open in new window.
 <br>
 
+- Code Institute [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1) example and training
+
 - About Us App - Used this to help me create about us app
 
 - [Contact Us App](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) - I used this to create my contact form app 
@@ -406,5 +576,10 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 - [XML-Sitemap](https://www.xml-sitemaps.com/) - Used to create sitemap
 
+- [Cookie Banner](https://pypi.org/project/django-cookiebanner/) - used to handle consent management
+
+- [Perplexity AI](https://perplexity.ai) - To help with product descriptions, which were adapted into my own words and to fit SEO.
+
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
 
