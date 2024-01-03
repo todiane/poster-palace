@@ -7,13 +7,25 @@
         <div class="footer-dark container">
             <div class="row ">
                     <div class="col-sm-12 col-md-6 item">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
-                        <p><i class="fas fa-home mr-3"></i><a href="{% url 'home' %}" style="color: white;">Home</a> </p>
-                        <p><i class="far fa-address-card mr-3"></i><a href="{% url 'about' %}" style="color: white;">About</a> </p>
-                        <p><i class="fas fa-envelope mr-3"></i><a href="{% url 'contact' %}" style="color: white;">Contact Us HERE</a></p>
-                        <p><i class="far fa-newspaper mr-3"></i><a href="{% url 'subscription' %}" style="color: white;">Newsletter</a></p>
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Links</h5>
+                        <p><i class="fas fa-home mr-3" style="color: white;" ></i><a href="{% url 'home' %}" style="color: white;">Home</a> </p>
+                        <p><i class="far fa-address-card mr-3" style="color: white;" ></i><a href="{% url 'about' %}" style="color: white;">About</a> </p>
+                        <p><i class="fas fa-envelope mr-3" style="color: white;" ></i><a href="{% url 'contact' %}" style="color: white;">Contact Us HERE</a></p>
+                        <p><i class="far fa-newspaper mr-3" style="color: white;" ></i><a href="{% url 'subscription' %}" style="color: white;">Newsletter</a></p>
+                        <p><i class="far fa-newspaper mr-3" style="color: white;" ></i><a href="{% url 'terms' %}" style="color: white;">Shipping Policy</a></p>
                     </div>
                     <div class="col-md-6 item">
+                        <!-- Links to compliance pages -->
+                        <div class="col-sm-12 col-md-6 item">
+                            <p class="text-uppercase mb-4 font-weight-bold">Compliance</p>
+                            <p><i class="fas fa-home mr-3" style="color: white;" ></i><a href="{% url 'terms' %}" style="color: white;">Terms of Service</a> </p>
+                            <p><i class="far fa-address-card mr-3" style="color: white;" ></i><a href="{% url 'shipping' %}" style="color: white;">Shipping</a> </p>
+                            <p><i class="fas fa-envelope mr-3" style="color: white;" ></i><a href="{% url 'refund' %}" style="color: white;">Returns/Refunds</a></p>
+                            <p><i class="far fa-newspaper mr-3" style="color: white;" ></i><a href="{% url 'privacy' %}" style="color: white;">Privacy Policy</a></p>
+                        </div>
+                        <div class="col-md-6 item">
+    
+
                         <!-- Social Media Buttons -->
                     
                         <!-- Facebook -->
@@ -35,16 +47,15 @@
                         </a>
                 
                         <!-- Copyright information -->
-                    <p class="copyright"> Poster Palace is the best place to buy posters online. We provide beautiful posters for all rooms in large and
+                    <p class="copyright text-white"> Poster Palace is the best place to buy posters online. We provide beautiful posters for all rooms in large and
                         extra large sizes. Enjoy browsing our posters for adults and children covering nature, animals,
                         motivational quotes and more.
                       </p>
-                      <p class="copyright mb-3">
+                      <p class="copyright text-white mb-3">
                           This is a fictional site created as part of a project - Developer: 
                           <a href="https://todiane.dev" target="_blank" class="text-white font-weight-bold">Diane Corriette</a> © 2023
                       </p>
-
-                    </div>
+               </div>
             </div>
          </div>
 </footer>

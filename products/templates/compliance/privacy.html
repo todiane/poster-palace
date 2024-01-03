@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container" style="background-color: white;">
+  <div class="row">
+    <div class="col">
+      <h1 class="logo-font text-center my-4">Privacy Policy</h1>
+      <hr>
+      <p class="text-center text-muted">Last updated 11 December 2023</p>
+    </div>
+  </div>
+</div>
+<div class="container mb-5" style="background-color: white;">
+    <p>Privacy & Cookies: Our promises</p>
+    <p>We will always keep your data safe and secure. So you are clued up, here’s why we need it and how we use it.</p>
+    <p><strong>1. Only the good stuff</strong></p>
+    <p>We will only use your data to process your order and deliver your products to you, improve our Poster Palace
+    services, give you the most out of your Poster Palace experience, and keep you in the loop about things that might
+    interest you.</p>
+    <p><strong>2. Locked down</strong></p>
+    <p>We’ll protect and secure your data.</p>
+    <p><strong>3. Straight talking</strong></p>
+    <p>We will always talk your language and be open – no nonsense, no surprises.</p>
+    <p><strong>4. You're in control</strong></p>
+    <p>You decide if you want to hear from us and how you hear from us.</p>
+    <p><strong>5. Just the essentials</strong></p>
+    <p>No unnecessary information – if we do not need it, we won't collect it.</p>
+    <p><strong>Protecting Your Privacy</strong></p>
+    <p>At Poster Palace, we are 100% committed to protecting your privacy and security. We are customers ourselves of
+    Poster Palace, so we totally appreciate and respect how important privacy is.
+    For all Poster Palace services, the data controller — the company that is responsible for protecting your privacy— is
+    Poster Palace.</p>
+    <p>If you have any further questions or comments, you may contact us using our: Online Contact Form <a
+                    href="{% url 'contact' %}">HERE</a></p>
+            <br>
+</div>
+{% endblock %}

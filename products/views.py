@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
+from django.views.generic import TemplateView
 from .models import Product, Category, Reviews
 from .forms import ReviewForm
 
@@ -104,3 +105,17 @@ def submit_review(request, product_id):
                 messages.success(request, 'Your review has been submitted!')
                 
                 return redirect(url)
+
+"""Compliance Pages for shipping, terms, privacy"""
+
+class ShippingView(TemplateView):
+    template_name = "compliance/shipping.html"
+
+class PrivacyView(TemplateView):
+    template_name = "compliance/privacy.html"
+
+class TermsView(TemplateView):
+    template_name = "compliance/terms.html"
+
+class RefundView(TemplateView):
+    template_name = "compliance/refund.html"

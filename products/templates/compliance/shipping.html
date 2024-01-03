@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container" style="background-color: white;">
+  <div class="row">
+    <div class="col">
+      <h1 class="logo-font text-center my-4">Shipping & Delivery Policy</h1>
+      <hr>
+      <p class="text-center text-muted">Last updated 01 December 2023</p>
+    </div>
+  </div>
+</div>
+<div class="container mb-5" style="background-color: white;">
+  <p>This Shipping & Delivery Policy is part of our Terms of Service ("Terms") and should be therefore read alongside
+    our main Terms: <a href="{% url 'terms' %}">Terms Of Service</a></p>
+  <p>Please carefully review our Shipping & Delivery Policy when purchasing our products. This policy will apply to any
+    order you place with us.</p>
+  <p><strong>WHAT ARE MY SHIPPING & DELIVERY OPTIONS?</strong></p>
+  <p>We offer free and paid shipping options. In some cases, a third-party supplier may be managing our inventory and
+    will be responsible for shipping your products.</p>
+  <p>We offer Free Standard Shipping on All Orders over £40.</p>
+  <p>Otherwise, our worldwide shipping fee is 10% of your total order.</p>
+  <p>After you place an order, we will follow up with order information sent to the email address provided when you
+    ordered along with shipping information.</p>
+  <p>All times and dates given for delivery of the posters are given in good faith but are estimates only.</p>
+  <p>For EU and UK consumers: This does not affect your statutory rights. Unless specifically noted, estimated delivery
+    times reflect the earliest available delivery, and deliveries will be made within 30 days after the day we accept
+    your order. For more information, please refer to our <a href="{% url 'terms' %}">Terms Of Service</a></p>
+  <p><strong>DO YOU DELIVER INTERNATIONALLY?</strong></p>
+  <p>We offer worldwide shipping. Free Standard Shipping is valid on international orders.</p>
+  <p>Please note, we may be subject to various rules and restrictions in relation to some international deliveries and
+    you may be subject to additional taxes and duties over which we have no control. If such cases apply, you are
+    responsible for complying with the laws applicable to the country where you live and will be responsible for any
+    such additional costs or taxes.</p>
+  <p><strong>WHAT HAPPENS IF MY ORDER IS DELAYED?</strong></p>
+  <p>If delivery is delayed for any reason we will let you know as soon as possible and will advise you of a revised
+    estimated date for delivery.</p>
+  <p>For EU and UK consumers: This does not affect your statutory rights. For more information, please refer to our
+    Terms.</p>
+  <p><strong>QUESTIONS ABOUT RETURNS?</strong></p>
+  <p>If you have questions about returns, please review our <a href="{% url 'refund' %}">Returns and Refund Policy</a></p>
+  <p><strong>HOW CAN YOU CONTACT US ABOUT THIS POLICY?</strong></p>
+  <p>If you have any further questions or comments, you may contact us using our: Online Contact Form <a
+      href="{% url 'contact' %}">HERE</a></p>
+  <br>
+</div>
+{% endblock %}
