@@ -13,7 +13,7 @@ def index(request):
 
 
 def about_pp(request):
-    """View to return About poster palace (pp) page"""
+    """View to return About Us page"""
 
     about = About.objects.all().order_by('-updated_on').first()
 

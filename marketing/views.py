@@ -14,6 +14,6 @@ def poster_event(request):
 
 
 def event_terms(request):
-    """ View to return the Diverse Design events page """
+    """ View to return the terms & conditions page for event """
 
     return render(request, "marketing/event_terms.html")

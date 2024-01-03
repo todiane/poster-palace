@@ -13,7 +13,7 @@ body {
 
 
 
-/* General Styles */
+/* ------------------------- General Styles */
 
 h1,
 h2,
@@ -30,6 +30,8 @@ p {
     color:  #2c3034
     
 }
+
+
 
  /* -------------------------------- Footer */
 
@@ -347,7 +349,7 @@ label:hover ~ input:checked ~ label {
 	color: #17a2b8; /* text-info */
 }
 
-/*  ------------------------------- Product Form */
+/*  Product Form */
 
 .btn-file {
     position: relative;
