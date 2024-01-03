@@ -3,7 +3,6 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
-from django.core.validators import RegexValidator
 
 from django_countries.fields import CountryField
 
@@ -40,7 +39,6 @@ class Order(models.Model):
         max_length=20,
         null=False,
         blank=False,
-        validators=[RegexValidator(r'^[0-9]+$', 'Please enter numbers only.')]
     )
     street_address1 = models.CharField(
         max_length=80,
