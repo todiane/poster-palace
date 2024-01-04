@@ -312,6 +312,155 @@ The sprint was divided into three sections:
 | SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
 
 </details>
+<br>
+
+# Database Structure
+
+This database schema defines the structure and relationships for this store. I used business logic in the design of the database by ensuring there are clear relationships between each model - e.g. User, Products, Wishlist, Buyer Profile etc. There is a method to count reviews and ratings, to add users, to allow users to buy products and edit and update their information etc.
+
+Once users register a file is created that stores their username and password plus any additional information provided. Users are then allocated a profile and have the ability to add products to their wishlist and purchase products. 
+
+<details>
+
+I created the database structure using [dbdiagram.io](https://dbdiagram.io/d) and django-dbml. After installing django-dbml and adding it to my list of apps in the settings file, I ran the command
+
+```python manage.py dbml``
+
+And was given a list of my database schema that I could then add to dbdiagram.io
+
+```
+Table About {
+  id: big_auto [pk, unique]
+  title: char
+  subtitle: char [null]
+  image: image
+  updated_on: date_time
+  content: text
+  Note: '''About(id, title, subtitle, image, updated_on, content)'''
+}
+Table Category {
+  id: big_auto [pk, unique]
+  name: char
+  slug: slug [null, unique]
+  friendly_name: char [null]
+  Note: '''Model to create product categories'''
+}
+Table Product {
+  id big_auto [pk, unique]
+  sku char [null, default:`django.utils.crypto.get_random_string()`]
+  name char
+  slug slug [unique]
+  image image [null]
+  description text
+  sizes boolean [null, default:`False`]
+  price decimal [default:`9.95`]
+  category foreign_key [null]
+  available boolean [default:`True`]
+  created date_time
+  updated date_time
+  Note: '''Model to add products'''
+}
+ref: Product.category > Category.id
+ 
+Table Reviews {
+  id big_auto [pk, unique]
+  product foreign_key
+  user foreign_key
+  subject char
+  review text
+  rating float
+  ip char
+  status boolean [default:`True`]
+  created_at date_time
+  updated_at date_time
+  Note: '''Model for buyer reviews'''
+}
+ref: Reviews.product > Product.id
+ref: Reviews.user > User.id
+ 
+ 
+Table Order {
+  id big_auto [pk, unique]
+  order_number char
+  buyer_profile foreign_key [null]
+  full_name char
+  email email
+  phone_number char
+  street_address1 char
+  street_address2 char [null]
+  town_or_city char
+  county char [null]
+  postcode char [null]
+  country None [default:`"GB"`]
+  created date_time
+  updated date_time
+  delivery_cost decimal [default:`0`]
+  order_total decimal [default:`0`]
+  grand_total decimal [default:`0`]
+  original_bag text [default:`""`]
+  stripe_pid char [default:`""`]
+  Note: '''Model to create orders and profiles'''
+}
+ref: Order.buyer_profile > BuyerProfile.id
+ 
+Table OrderLineItem {
+  id big_auto [pk, unique]
+  order foreign_key
+  product foreign_key
+  product_size char [null]
+  quantity integer [default:`0`]
+  lineitem_total decimal
+  Note: '''OrderLineItem(id, order, product, product_size, quantity, lineitem_total)'''
+}
+ref: OrderLineItem.order > Order.id
+ref: OrderLineItem.product > Product.id
+
+Table BuyerProfile {
+  id big_auto [pk, unique]
+  user one_to_one [unique]
+  default_street_address1 char [null]
+  default_street_address2 char [null]
+  default_town_or_city char [null]
+  default_county char [null]
+  default_postcode char [null]
+  default_country None [null]
+  default_phone_number char [null]
+  Note: '''Buyer profile to maintain order/delivery history'''
+}
+ref: BuyerProfile.user - User.id
+ 
+ 
+Table Contact {
+  id big_auto [pk, unique]
+  contact_purpose char
+  email email
+  name char
+  phone char [null]
+  message text
+  date_submitted date_time
+  Note: ''' Contact Us form for visitors and customers'''
+}
+ 
+ 
+Table WishList {
+  id big_auto [pk, unique]
+  user_id foreign_key
+  product_id foreign_key
+  date_added date_time
+  Note: '''User can start a wishlist'''
+}
+ref: WishList.user_id > User.id
+ref: WishList.product_id > Product.id
+ ```
+ 
+
+The site contains a usable database that stores data in a consistent and well-organised manner. Postresql was used to create the data structure which is hosted at ElephantSQL.
+
+Below is the visual relationship diagram for Poster Palace:
+
+<img src="readme/images/rm-database.png" width="90%"><br><br>
+
+</details>
 
 <br>
 

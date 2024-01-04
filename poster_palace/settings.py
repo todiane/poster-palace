@@ -73,6 +73,7 @@ INSTALLED_APPS = [
     'wishlist',
     'django_countries',
     'crispy_forms',
+    'django_dbml',
 ]
 
 MIDDLEWARE = [
