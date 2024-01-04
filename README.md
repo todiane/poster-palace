@@ -86,6 +86,17 @@ Poster Palace - Beautify your room. Uplift your spirit.
 
 The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are statement pieces meant for display on a large statement wall. They have been designed for customers looking for unique and impactful wall art.
 
+The site is [DEPLOYED HERE](#)
+
+To "purchase" products/test checkout using fake credit card details you can use
+
+Card number : 4242 4242 4242 4242
+Expires     : 04 / 26
+CVV         : 242
+Zip         : 42424
+
+<br>
+
 # Project Rationale
 
 The development of an ecommerce store specialising in large and extra-large posters has been driven by several clear rationales:
@@ -308,7 +319,7 @@ The sprint was divided into three sections:
 | Database model ideas created and tested. | Payment system setup with emails | Creation of README |
 | Django apps created – models and views added | UX and UI design decided and implemented | Submit for Peer to Peer review |
 | Templates set up to accommodate models and views | Code refactoring takes place if needed | Final overview before submission |
-| Initial Deployment to Heroku | Users added as fake customers to test site | Ensure DEBUG set to False |
+| Initial Deployment to Heroku | Users added to test site using fake credit card details | Ensure DEBUG set to False |
 | SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
 
 </details>
@@ -478,7 +489,78 @@ When designing the structure of the store I kept my focus on the need to create 
 
 # Epics and User Stories
 
-Based on the MVT model above, the following EPICS and user stories were created to support project development.
+Based on the MVT model above, the following EPICS were created
+
+- Store Creation
+
+- User Registration
+
+- Products and Product Management
+
+- Admin/Superuser Management
+
+- SEO/Online Marketing
+
+
+
+User stories were added to these epics and you can read the acceptance criteria and tasks completed via my [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
+
+<details>
+
+**Store Creation**
+
+- As a super user I can design and update the homepage so that I can keep it updated with the latest products.
+
+- As a first-time visitor, I can understand what the site offers immediately so that I can decide if it meets my needs.
+
+- As a mobile user, I want the site to be easy to navigate on my phone so that I can shop conveniently from anywhere.
+
+**User Registration**
+
+- As a user I can register for and manage my account so that I can start a wish list, add reviews and keep a record of any purchases
+
+- As a user I can request a password reset via email so that I can reset my password if I have forgotten it.
+
+**Products and Product Management**
+
+- As a user I want to preview product details so that I can make an informed buying decision.
+
+- As a user, I can use an effective search function so that I can find specific types of product or category quickly.
+
+- As a buyer I can gain access to a secure payment process so I can confidently buy products.
+
+- As a user, I want my personal and payment information to be secure so that I can trust the site with my data.
+
+- As a buyer I receive email confirmation after purchase so I can keep track of my orders.
+
+- As a buyer, I can leave reviews for products I’ve purchased so that I can share my experience with others.
+
+
+**Admin Management**
+
+- As superuser I want the ability to upload, edit and delete products so that I can manage the stock effectively.
+
+- As Superuser I can track sales and customer feedback plus receive funds from Stripe.
+
+- As a user and superuser I can read compliance information so that I understand how the company operates.
+
+
+
+**SEO/Online Marketing**
+
+- As a user I can subscribe to the newsletter so I can receive exclusive content.
+
+- As the superuser, I can create and promote monthly events so that brand awareness is achieved.
+
+- As a superuser, I can stay connected via social media so I can build a community and brand awareness.
+
+- As a superuser, I want to add and update keywords and meta data so that I can use them on pages and in web content for SEO.
+
+<img src="readme/images/rm-user-story-example.png" width="80%"><br><br>
+
+
+
+</details>
 
 
 <br>
