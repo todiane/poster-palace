@@ -464,6 +464,25 @@ Below is the visual relationship diagram for Poster Palace:
 
 <br>
 
+# Site Structure
+
+When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side logic database (back end) stored in a central location. My focus influenced my prototypes which are shown as wireframes below:
+
+<details>
+
+
+
+</details>
+
+<br>
+
+# Epics and User Stories
+
+Based on the MVT model above, the following EPICS and user stories were created to support project development.
+
+
+<br>
+
 # UX AND UI Design
 
 As always with my projects, the design was developed with minimalism in mind. Colours were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
@@ -701,6 +720,7 @@ the primary marketing strategy behind the application
 - [Font Awesome](https://www.fontawesome.com) - for icons used
 - [Miro](https://miro.com/index/) - for database schema
 - [PNG to WEBP converter](https://www.freeconvert.com/png-to-webp) - Changing images to webp
+- [dbdiagram.io](https://dbdiagram.io/d) - to create database schema
 
 
 ## Resources Used
