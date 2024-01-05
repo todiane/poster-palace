@@ -483,7 +483,308 @@ When designing the structure of the store I kept my focus on the need to create 
 
 
 
+
 </details>
+
+# Site Navigation
+
+Poster Palace contains the follow apps:
+
+ - Home
+    - Homepage - Navigation and Footer
+    - Registration
+    - New password
+    - About Us
+
+- Contact app
+  - Contact us
+  - FAQ
+
+- Products app
+  - Products
+  - Reviews
+  - Compliance
+
+- Bag app
+  - Shopping trolley
+
+- Checkout app
+  - Stripe Checkout
+
+- Profile app
+  - User Profile
+
+- Wish List app
+  - Wish list page
+
+- Marketing app
+  - Newsletter Page
+  - Diverse Design Event
+<br>
+
+## Homepage - Navigation and Footer
+
+The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40.
+
+<img src="readme/images/rm-homepage-top.png" width="90%"><br><br>
+
+The latest products are listed next and display the last three recently added posters.
+
+ <img src="readme/images/rm-homepage-recent-products.png" width="90%"><br><br>
+
+Recent products are followed by a short paragraph containing keywords that outlines what is available on the site. The section under that explains that we ship quickly and can be trusted and the final section of the homepage displays posters designed by competition winners.
+
+  <img src="readme/images/rm-homepage-bottom.png" width="90%"><br><br>
+
+Within a few seconds of landing on the site the pop up newsletter banner appears at the right hand side of the screen inviting the visitor to sign up. 
+
+ <img src="readme/images/rm-newsletter-popout.png" width="90%"><br><br>
+
+This newsletter has been set to appear every 3 days of a person visiting. If this was a live store the paid subscription to MailChimp would be used and once a person signed up they would not see the invite to register again.
+
+
+The footer at the end of the page includes links to various parts of the website as well as to the social media pages set up for the site.
+
+<img src="readme/images/rm-footer.png" width="90%"><br><br>
+
+## Registration
+
+A link to registration is available on the checkout page but also in the menu bar
+
+<img src="readme/images/rm-register-page-mobile.png" width="90%"><br><br>
+
+A message will be displayed if an error is made during registration
+
+<img src="readme/images/rm-error-feedback.png" width="90%"><br><br>
+
+Once registered a success message is shown and the user is told to check their email for a verification link.
+
+<img src="readme/images/rm-confirm-email.png" width="90%"><br><br>
+
+A [temp email service](https://temp-mail.org/) was used for demonstration purposes:
+
+<img src="readme/images/rm-tempemail-register2.png" width="90%"><br><br>
+
+
+Once that link is clicked and the email confirmed the user can then log in.
+
+# SUCCESSFULLY CONFIRMED EMAIL PHOTO - ADD HERE
+
+<img src="readme/images/rm-signin-success-message.png" width="90%"><br><br>
+
+
+
+## Footer
+
+The footer area contains links to important pages on the website including compliance and to the main pages visitors use on a website - about us, contact us. A link to the newsletter is also included as an easy way for anyone who might have missed or ignored the pop out to consider registering.
+
+<img src="readme/images/rm-footer.png" width="90%"><br><br>
+
+## New Password
+
+Once registered, if a user clicks on the forgot password link they are taken to a page where they can enter their email address. An email is sent and a link provided to reset their password. Once complete they are then able to log in.
+
+<img src="readme/images/rm-password-reset-page.png" width="90%"><br><br>
+
+<img src="readme/images/rm-password-reset-confirm-page.png" width="90%"><br><br>
+
+<img src="readme/images/rm-tempemail-reset-password.png" width="90%"><br><br>
+
+<img src="readme/images/rm-change-password-success-page.png" width="90%"><br><br>
+
+
+## About Us
+
+The about us page has been set up using a model/view/template approach and access to update the about us page is available in the admin area. It uses the same format as the product display page and features an image on the left with optimised web content on the right.
+
+<img src="readme/images/rm-about-us-page.png" width="90%"><br><br>
+
+
+## Contact us app
+
+The contact us app includes a model with user choices. They can select why they are getting in touch and then leave a message.
+
+<img src="readme/images/rm-contact-us-reason.png" width="90%"><br><br>
+
+
+If a user is registered they do not have to include their email address as we have that information logged.
+
+<img src="readme/images/rm-contact-us-page.png" width="90%"><br><br>
+
+An unregistered user will include their email address
+
+<img src="readme/images/rm-contact-us-unregistered.png" width="90%"><br><br>
+
+After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page.
+
+<img src="readme/images/rm-contact-us-success.png" width="90%"><br><br>
+
+
+Messages are sent to the admin area where superusers can respond
+
+<img src="readme/images/rm-admin-messages-received.png" width="90%"><br><br>
+
+# PHOTO OF MESSAGES AREA
+
+
+### FAQ
+The FAQ area is also a model and has been included so that superusers can include frequently asked questions, which appear under the contact us form.
+
+# PHOTO OF FAQ AREA - ADMIN
+
+# PHOTO FO FAQ AREA - CONTACT PAGE
+
+
+## Products app
+
+The products app includes a model/view to display all products and individual products
+
+PHOTO OF ALL
+PHOTO OF INDIVIDUAL PRODUCT
+
+
+### Ratings and Reviews 
+
+The ratings and reviews section is included on each individual product. Once a review has been added a success message is shown
+
+PHOTO OF REVIEW AREA
+
+PHOTO OF SUCCESS MESSAGE
+
+In the future the reviews form will only be shown to customers who purchase a product OR a verified purchase star will appear next to the name of people who have purchased the product.
+
+
+### Compliance
+Compliance has been included as views/templates in the products app. These are pages to important information that needs to be included on an ecommerce store. The pages are
+
+Terms Of Service Policy
+
+<img src="readme/images/rm-terms-service-page.png" width="90%"><br><br>
+
+Shipping Policy
+
+<img src="readme/images/rm-shipping-policy-page.png" width="90%"><br><br>
+
+Returns and Refund Policy
+
+<img src="readme/images/rm-returns-refund-page.png" width="90%"><br><br>
+
+Privacy Policy
+
+<img src="readme/images/rm-privacy-policy.png" width="90%"><br><br>
+
+Additional pages included under compliance are for the management of errors include
+
+403 Forbidden Page
+<img src="readme/images/rm-403-page.png" width="90%"><br><br>
+
+404 Link Error Page
+
+<img src="readme/images/rm-404-page.png" width="90%"><br><br>
+
+500 Server Error Page
+
+<img src="readme/images/rm-500-page.png" width="90%"><br><br>
+
+PHOTO OF EACH PAGE
+
+## Bag App
+
+This app contains the model/view/template for the shopping trolley where products are kept until a customer is ready to checkout. Everytime a product is added a confirmation message appears
+
+PHOTO OF SHOPPING CART
+
+PHOTO OF MESSAGE
+
+## Checkout App
+
+The checkout page includes a form that outlines all the information needed for the order to be processed including asking for credit card details. A message in red indicates the total amount and on the right is a summary of the products being purchased.
+
+PHOTO OF CHECKOUT PAGE
+
+Checkout is possible without registration. A message appears inviting people to register.
+
+PHOTO OF CHECKOUT WITHOUT REGISTERING
+
+Once complete a success message appears along with a summary of the order which is also sent via email. A copy of the email with order is also sent to Poster Palace. The superuser can then log into Stripe for full details and to fulfill the order.
+
+Photo of success message
+PHOTO OF EMAIL
+
+## Profile app
+
+If a buyer has registered before placing their order a copy of the order is saved in the profile area. This is also the place where a buyer can update their personal details
+
+PHOTO OF PROFILE AREA
+
+PHOTO OF SUCCESS MESSAGE CONFIRMING profile UPDATE
+
+
+## Wish list app
+
+The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page encouraging them to click and then select their size before adding it to their cart. Users can delete any item on their wish list
+
+PHOTO OF WISH LIST PAGE
+
+PHOTO OF DELETE WISH LIST ITEM
+
+Unregistered users are encouraged to register to save an item
+
+# PHOTO OF MESSAGE TO REGISTER
+
+
+## Marketing App
+
+This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a regular event. This event encourages people to register for the newsletter to get information on the next event. 
+
+PHOTO OF NEWSLETTER PAGE
+
+The event is a poster competition held 4 times a year. Newsletter subscribers are invited to design and submit a poster. They can submit a poster as an individual or as a team. The winner posters are sold on the website. As well as a link to a pdf that shows the winning entries (the link can be shared around social media) the page also highlights previous winners and the posters that are available for sale on the website. Terms and conditions of entry are included.
+
+# PHOTO OF EVENTS PAGE
+
+
+
+
+# Online Marketing
+
+While the newsletter and events page are two ways that are used to promote the website and new products, there are also two social media pages. Pinterest is popular with people looking for design ideas so along with a Facebook page, a Pinterest page was also created.
+
+
+[Poster Palace Facebook Page](https://www.facebook.com/profile.php?id=61555270165633)
+
+<img src="readme/images/rm-pp-facebook.png" width="90%"><br><br>
+
+
+<br>
+
+[Poster Palace Pinterest Page](https://www.pinterest.co.uk/poster_palace/ )
+
+<img src="readme/images/rm-pinterest-page.png" width="90%"><br><br>
+
+Community engagement takes place using the event, not only during promotion of the competition (when competitors are encouraged to share their ideas to gain votes) but also once the competition has finished where a shareable pdf is included.
+
+## Search Engine Optimisation
+
+Web content on the site has been written to meet search engine best practices including adding keywords that reflect what potential customers are using when they search online. 
+
+Keywords have been entered into the meta area on the base.html page
+
+The main keywords for this store are:
+
+- buy posters online
+- quality wall art
+- high quality posters
+- large posters
+- extra large posters
+
+These keywords are weaved into the fabric of any web content written for the site and into naming the images. Two main types of poster that the store wants to focus on includes
+
+- inspirational art (posters with inspirational images and/or words)
+
+- abstract art (popular with interior designers and offices)
+
+
 
 <br>
 
@@ -754,19 +1055,7 @@ Your clone was created
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 
-# MARKETING
 
-Social Media Pages
-
-https://www.pinterest.co.uk/poster_palace/ 
-
-https://www.facebook.com/profile.php?id=61555270165633  
-
-brand awareness - design competition
-
-SEO - keywords - I Used descriptive metadata for SEO that accurately reflect the site’s purpose.
-
-the primary marketing strategy behind the application
 
 # Technology Used
 
