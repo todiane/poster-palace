@@ -11,6 +11,16 @@ class BuyerProfile(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
+    default_full_name = models.CharField(
+        max_length=50,
+        null=False,
+        blank=False
+    )
+    default_email = models.EmailField(
+        max_length=254,
+        null=False,
+        blank=False
+    )
     default_street_address1 = models.CharField(
         max_length=80,
         null=True,

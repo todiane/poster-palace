@@ -10,7 +10,7 @@ from checkout.models import Order
 
 @login_required
 def profile(request):
-    """ Display a users profile """
+    """ Display a user's profile """
     profile = get_object_or_404(BuyerProfile, user=request.user)
 
     if request.method == 'POST':
@@ -19,9 +19,7 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, (
-                'Failed to update profile, please check your form for errors.'
-                ))
+            messages.error(request, 'Failed to update profile, please check your form for errors.')
     else:
         form = BuyerProfileForm(instance=profile)
 
@@ -29,6 +27,7 @@ def profile(request):
     template = 'profiles/profile.html'
     context = {
         'form': form,
+        'default_full_name': profile.default_full_name,  # Adjust this line
         'orders': orders,
         'on_profile_page': True
     }

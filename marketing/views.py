@@ -17,3 +17,4 @@ def event_terms(request):
     """ View to return the terms & conditions page for event """
 
     return render(request, "marketing/event_terms.html")
+

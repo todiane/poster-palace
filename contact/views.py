@@ -10,6 +10,11 @@ def contact_view(request):
         form = ContactForm(request.POST, user=request.user)
         if form.is_valid():
             contact = form.save(commit=False)
+
+            # If the user is authenticated, set the contact's email to the user's email
+            if request.user.is_authenticated:
+                contact.email = request.user.email
+
             contact.save()
             return render(request, 'contact/contact_success.html', {'contact': contact})
     else:

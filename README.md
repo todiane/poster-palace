@@ -65,7 +65,7 @@ Newsletter
 
 Diverse Design Competition
 
-[Placeholders and future updates](#placeholders-and-future-updates)
+[Future Implementations](#future-implementations)
 
 [Testing](#testing)
 
@@ -86,14 +86,20 @@ Poster Palace - Beautify your room. Uplift your spirit.
 
 The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are statement pieces meant for display on a large statement wall. They have been designed for customers looking for unique and impactful wall art.
 
-The site is [DEPLOYED HERE](#)
+The site is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/)
 
-To "purchase" products/test checkout using fake credit card details you can use
+Admin Panel is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/admin)
+
+To "purchase" products/test checkout using fake credit card details you can use:
 
 Card number : 4242 4242 4242 4242
+
 Expires     : 04 / 26
+
 CVV         : 242
+
 Zip         : 42424
+
 
 <br>
 
@@ -143,7 +149,7 @@ We can not only offer the chance for customers to customise using words but also
 
 The objective of this project is to build a Full-Stack eCommerce site with payment system and product structure based on business logic used to control a centrally-owned dataset.
 
-As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) and social media marketing techniques have been used in the delivery of content and images to improve audience and brand reach. Objectives include:
+As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) and social media marketing techniques have been used in the delivery of content and images (e.g. the name of the image on the about page is “buy-posters-online”) to improve audience and brand reach. Objectives include:
 
 <details>
 
@@ -498,7 +504,6 @@ Poster Palace contains the follow apps:
 
 - Contact app
   - Contact us
-  - FAQ
 
 - Products app
   - Products
@@ -522,7 +527,7 @@ Poster Palace contains the follow apps:
   - Diverse Design Event
 <br>
 
-## Homepage - Navigation and Footer
+## Homepage 
 
 The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40.
 
@@ -541,6 +546,18 @@ Within a few seconds of landing on the site the pop up newsletter banner appears
  <img src="readme/images/rm-newsletter-popout.png" width="90%"><br><br>
 
 This newsletter has been set to appear every 3 days of a person visiting. If this was a live store the paid subscription to MailChimp would be used and once a person signed up they would not see the invite to register again.
+
+## Navigation and Footer
+
+The navigation bar has designed to provide a user with multi ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
+
+The second section lets users sort posters according to their category name.
+
+The third section shows special offers available on posters.
+
+The final area of the navbar provides links to pages like about us, contact us, newsletter and events page.
+
+<img src="readme/images/rm-nav-bar-all.png" width="80%"><br><br>
 
 
 The footer at the end of the page includes links to various parts of the website as well as to the social media pages set up for the site.
@@ -568,10 +585,9 @@ A [temp email service](https://temp-mail.org/) was used for demonstration purpos
 
 Once that link is clicked and the email confirmed the user can then log in.
 
-# SUCCESSFULLY CONFIRMED EMAIL PHOTO - ADD HERE
+# xxxxxxxSUCCESSFULLY CONFIRMED EMAIL PHOTO - ADD HERExxxxxxxxx
 
 <img src="readme/images/rm-signin-success-message.png" width="90%"><br><br>
-
 
 
 ## Footer
@@ -620,36 +636,33 @@ After sending the message a receipt of the message they sent appears on the scre
 <img src="readme/images/rm-contact-us-success.png" width="90%"><br><br>
 
 
-Messages are sent to the admin area where superusers can respond
+Messages are sent to the admin area. 
 
 <img src="readme/images/rm-admin-messages-received.png" width="90%"><br><br>
 
-# PHOTO OF MESSAGES AREA
+<img src="readme/images/rm-messages-received-users.png" width="90%"><br><br>
 
-
-### FAQ
-The FAQ area is also a model and has been included so that superusers can include frequently asked questions, which appear under the contact us form.
-
-# PHOTO OF FAQ AREA - ADMIN
-
-# PHOTO FO FAQ AREA - CONTACT PAGE
 
 
 ## Products app
 
-The products app includes a model/view to display all products and individual products
+The products app includes a model/view to display all products on the page. Users can use the search bar to sort products into different categories.
 
-PHOTO OF ALL
-PHOTO OF INDIVIDUAL PRODUCT
+<img src="readme/images/rm-products-list.png" width="90%"><br><br>
 
+Once a product has been selected users are provided with details including an image, description, price, options to select sizes, the category it belongs to and a review rating.
+
+<img src="readme/images/rm-product-display.png" width="90%"><br><br>
+
+Attempts were made to change the price according to size using ProductVariation in Django but this was unsuccessful at the first attempt. I have added this to the future implementations section as something to attempt again as I learn more.
 
 ### Ratings and Reviews 
 
 The ratings and reviews section is included on each individual product. Once a review has been added a success message is shown
 
-PHOTO OF REVIEW AREA
+<img src="readme/images/rm-reviews.png" width="90%"><br><br>
 
-PHOTO OF SUCCESS MESSAGE
+<img src="readme/images/rm-review-from-buyer.png" width="90%"><br><br>
 
 In the future the reviews form will only be shown to customers who purchase a product OR a verified purchase star will appear next to the name of people who have purchased the product.
 
@@ -676,6 +689,7 @@ Privacy Policy
 Additional pages included under compliance are for the management of errors include
 
 403 Forbidden Page
+
 <img src="readme/images/rm-403-page.png" width="90%"><br><br>
 
 404 Link Error Page
@@ -715,34 +729,31 @@ PHOTO OF EMAIL
 
 If a buyer has registered before placing their order a copy of the order is saved in the profile area. This is also the place where a buyer can update their personal details
 
-PHOTO OF PROFILE AREA
+<img src="readme/images/rm-profile-page.png" width="90%"><br><br>
 
-PHOTO OF SUCCESS MESSAGE CONFIRMING profile UPDATE
+<img src="readme/images/rm-profile-success.png" width="90%"><br><br>
 
 
-## Wish list app
+## Wish List app
 
 The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page encouraging them to click and then select their size before adding it to their cart. Users can delete any item on their wish list
 
-PHOTO OF WISH LIST PAGE
+<img src="readme/images/rm-wishlist-page.png" width="90%"><br><br>
 
-PHOTO OF DELETE WISH LIST ITEM
+<img src="readme/images/rm-delete-wishlist-item.png" width="90%"><br><br>
 
-Unregistered users are encouraged to register to save an item
-
-# PHOTO OF MESSAGE TO REGISTER
+If an unregistered user clicks on the "Add to wish list" button they are automatically re-directed to the sign in page and asked to sign in before they can save a poster to the wish list.
 
 
 ## Marketing App
 
 This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a regular event. This event encourages people to register for the newsletter to get information on the next event. 
 
-PHOTO OF NEWSLETTER PAGE
+<img src="readme/images/rm-newsletter-page.png" width="90%"><br><br>
 
 The event is a poster competition held 4 times a year. Newsletter subscribers are invited to design and submit a poster. They can submit a poster as an individual or as a team. The winner posters are sold on the website. As well as a link to a pdf that shows the winning entries (the link can be shared around social media) the page also highlights previous winners and the posters that are available for sale on the website. Terms and conditions of entry are included.
 
-# PHOTO OF EVENTS PAGE
-
+<img src="readme/images/rm-events-page.png" width="90%"><br><br>
 
 
 
@@ -774,16 +785,19 @@ The main keywords for this store are:
 
 - buy posters online
 - quality wall art
+- affordable wall art
+- affordable posters
 - high quality posters
 - large posters
 - extra large posters
 
-These keywords are weaved into the fabric of any web content written for the site and into naming the images. Two main types of poster that the store wants to focus on includes
+Open Graph meta tags were also used so the title and description of the site appears on social media if the link is shared.
 
-- inspirational art (posters with inspirational images and/or words)
+These keywords are weaved into the fabric of any web content written for the site and into naming the images. Two types of poster that the store wants to focus on promoting heavily includes
+
+- inspirational posters (posters with inspirational images and/or words)
 
 - abstract art (popular with interior designers and offices)
-
 
 
 <br>
@@ -914,6 +928,38 @@ This led to some key considerations being considered when designing the store in
 **Scalability:** I considered how UI will adapt to changes in content or functionality and designed with scalability in mind.
 
 </details>
+
+<br>
+
+## Future Implementations
+
+With scalability in mind, I have considered some elements that will be introduced in the future including:
+
+<details>
+
+- Only verified purchases can leave a review. At the moment the review section is available for all registered users. 
+Only unauthorised users can not leave a review. However, to further enhance the review process an update is needed so 
+only customers who have purchased a product and are verified buyers can leave a review.
+
+- Price variations will be added so large and extra large sizes are given their own price per product.
+
+- When saving to the wish list an option will be included so that users are able to select the size they want as well 
+as the product and an add to cart button will be included.
+
+- Analytical data will be collected. The ability to follow a user’s journey on the site and have data for where they 
+visit the most, whether shopping carts have been abandoned, what keywords led a customer to the site, page 
+optimisation and load times plus a host of other data is needed for the success of any website or store.
+
+- Monitor and Analyze Performance. Analytics tools will be used to track website traffic, sales data, 
+customer behavior, and other key performance indicators (KPIs).
+
+- A blog app will be added to help with the community engagement plan and for search engine optimisation purposes.
+
+- Customisation will be provided. The ability to let customers add words to posters or use their own images.
+
+
+</details>
+
 
 <br>
 
