@@ -492,6 +492,8 @@ When designing the structure of the store I kept my focus on the need to create 
 
 </details>
 
+<br>
+
 # Site Navigation
 
 Poster Palace contains the follow apps:
@@ -525,7 +527,10 @@ Poster Palace contains the follow apps:
 - Marketing app
   - Newsletter Page
   - Diverse Design Event
+
 <br>
+
+<details>
 
 ## Homepage 
 
@@ -553,7 +558,11 @@ The navigation bar has designed to provide a user with multi ways to search for 
 
 The second section lets users sort posters according to their category name.
 
+ <img src="readme/images/rm-products-zodiac-category.png" width="90%"><br><br>
+
 The third section shows special offers available on posters.
+
+<img src="readme/images/rm-products-clearance.png" width="80%"><br><br>
 
 The final area of the navbar provides links to pages like about us, contact us, newsletter and events page.
 
@@ -583,9 +592,11 @@ A [temp email service](https://temp-mail.org/) was used for demonstration purpos
 <img src="readme/images/rm-tempemail-register2.png" width="90%"><br><br>
 
 
-Once that link is clicked and the email confirmed the user can then log in.
+Once that link is clicked and the email confirmed the user is redirected to the sign in form and can then log in.
 
-# xxxxxxxSUCCESSFULLY CONFIRMED EMAIL PHOTO - ADD HERExxxxxxxxx
+<img src="readme/images/rm-register-confirmed-email.png" width="90%"><br><br>
+
+After logging in users are shown a success message.
 
 <img src="readme/images/rm-signin-success-message.png" width="90%"><br><br>
 
@@ -706,24 +717,29 @@ PHOTO OF EACH PAGE
 
 This app contains the model/view/template for the shopping trolley where products are kept until a customer is ready to checkout. Everytime a product is added a confirmation message appears
 
+<img src="readme/images/rm-bag-message.png" width="90%"><br><br>
+
 PHOTO OF SHOPPING CART
 
-PHOTO OF MESSAGE
 
 ## Checkout App
 
 The checkout page includes a form that outlines all the information needed for the order to be processed including asking for credit card details. A message in red indicates the total amount and on the right is a summary of the products being purchased.
 
-PHOTO OF CHECKOUT PAGE
+<img src="readme/images/rm-checkout-registered-user.png" width="90%"><br><br>
 
-Checkout is possible without registration. A message appears inviting people to register.
+The user has an option to save their details to their profile.
 
-PHOTO OF CHECKOUT WITHOUT REGISTERING
+Checkout is possible without registration. A message has been added before the payment area inviting people to register.
+
+<img src="readme/images/rm-checkout-guest-page.png" width="90%"><br><br>
 
 Once complete a success message appears along with a summary of the order which is also sent via email. A copy of the email with order is also sent to Poster Palace. The superuser can then log into Stripe for full details and to fulfill the order.
 
-Photo of success message
-PHOTO OF EMAIL
+<img src="readme/images/rm-checkout-success.png" width="90%"><br><br>
+
+<img src="readme/images/rm-order-success-email.png" width="90%"><br><br>
+
 
 ## Profile app
 
@@ -755,9 +771,9 @@ The event is a poster competition held 4 times a year. Newsletter subscribers ar
 
 <img src="readme/images/rm-events-page.png" width="90%"><br><br>
 
+</details>
 
-
-# Online Marketing
+## Online Marketing
 
 While the newsletter and events page are two ways that are used to promote the website and new products, there are also two social media pages. Pinterest is popular with people looking for design ideas so along with a Facebook page, a Pinterest page was also created.
 
