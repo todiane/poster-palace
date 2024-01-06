@@ -1,4 +1,4 @@
-![logo](static/images/posterpalace-logo.png)
+<img src="readme/images/rm-poster-palace-header.png" width="100%"><br><br>
 
 ## Table of Content
 
