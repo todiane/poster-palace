@@ -687,9 +687,39 @@ Below is the visual relationship diagram for Poster Palace:
 
 # Site Structure
 
-When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side logic database (back end) stored in a central location. My focus influenced my prototypes which are shown as wireframes below:
+When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side database (back end) stored in a central location.
 
-# WIREFRAMES TO ADD
+Using the Boutique Ado template meant that I stuck with the structure of the template for the most part, only making the homepage very different.
+<details>
+
+My focus influenced my prototypes which are shown as handdrawn wireframes below:
+
+Home page with mobile home page
+
+<img src="readme/images/rm-wireframe-homepage.jpg" width="50%"><br><br>
+
+<img src="readme/images/rm-wireframe-homepage-mobile.jpg" width="50%"><br><br>
+
+About and Newsletter  - used product display structure. Events page created using three sections to highlight the event, current winners and the products of past winners.
+
+<img src="readme/images/rm-wireframe-aboutus.jpg" width="50%"><br><br>
+
+Contact Us - Idea for FAQ section not included
+
+<img src="readme/images/rm-wireframe-contact-us.jpg" width="50%"><br><br>
+
+Products Page and display products as per Boutique Ado templates
+
+<img src="readme/images/rm-wireframe-products-page.jpg" width="50%"><br><br>
+
+<img src="readme/images/rm-wireframe-display-product.jpg" width="50%"><br><br>
+
+Shopping bag and checkout also as per Boutique Ado templates
+
+<img src="readme/images/rm-wireframe-shopping.jpg" width="50%"><br><br>
+
+
+</details>
 
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
@@ -991,10 +1021,13 @@ image source : [from Stripe](https://stripe.com/blog/payment-api-design)
 
 <img src="readme/images/rm-stripe-payment.png" width="90%"><br><br>
 
+</details>
 
 ## Profile app
 
 A buyer can choose to save their details and those details appear in their profile. This is also the place where a buyer can update their personal details and look at the orders they have placed.
+
+<details>
 
 <img src="readme/images/rm-profile-page.png" width="90%"><br><br>
 
@@ -1007,10 +1040,13 @@ When they updated their profile a success messages is triggered
 
 <img src="readme/images/rm-profile-success.png" width="90%"><br><br>
 
+</details>
 
 ## Wish List app
 
-The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page encouraging them to click and then select their size before adding it to their cart. Users can delete any item on their wish list
+The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page encouraging them to click and then select their size before adding it to their cart. Users can delete any item on their wish list.
+
+<details>
 
 <img src="readme/images/rm-wishlist-page.png" width="90%"><br><br>
 
@@ -1343,6 +1379,31 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 # Acknowledements
 
-# Retrospective
+- Testers who registered and provided feedback including my three grown-ups.
 
+- Code Institute Slack community and Tutor support for helping me find answers.
 
+- Me. For getting to this point and being willing to go further.
+
+# Retrospective 
+
+<details>
+
+I thought I would take a break after completing Project Four but instead I went straight into developing this project. It really helped me feel as if I knew Django well and I was able to put a lot of pieces together quickly. Having access to the Boutique Ado walkthrough was a massive help as I have never had to deal with things like adding payment processes or creating checkout systems. 
+
+<br>
+
+I am still not a fan of developing a plan and sticking to it lol
+My brain wants me to create something and then decide what stays, what goes and what needs to be added. This is one of the reasons I ask myself all those questions I added. It keeps me focus on setting a plan and following it.
+
+<br>
+
+There was nothing overwhelmingly difficult about this project but it was still challenging and not without its frustrations. I am still trying to understand how you can replicate code in exactly the same way and the first one works as it does and yet the one you copied doesn't - even though they are the same. Understanding that it's not you (code) its me goes a long way to helping me through these frustrations. I have now come to accept that the life of a developer is filled with things that may never make sense - they just need to be solved and debugged. 
+
+<br>Talking about debugging - this really is an area I need to improve on because at least 80% of what I couldn't work out in this project could have been (and was) solved with a simple print statement used correctly.
+
+</details>
+
+Developer: [Diane Corriette](https://todiane.dev) - [LinkedIn](https://linkedin.com/in/todianedev)
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
