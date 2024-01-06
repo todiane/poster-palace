@@ -1,5 +1,9 @@
 <img src="readme/images/rm-poster-palace-header.png" width="100%"><br><br>
 
+<br>
+
+# Poster Palace
+
 ## Table of Content
 
 [Project Overview](#project-overview)
@@ -25,6 +29,9 @@
 [Store Structure](#ecommerce-store-stucture)
   - [Admin](#admin)
   - [Home app](#homepage)
+      - [Navigation](#navigation)
+      - [Footer](#footer)
+      - [Registration](#registration)
   - [About app](#about-us)
   - [Bag app](#bag-app)
   - [Checkout app](#checkout-app)
@@ -66,7 +73,7 @@
 
 
 
-# Project Overview
+## Project Overview
 
 Poster Palace - Beautify your room. Uplift your spirit.
 
@@ -92,7 +99,7 @@ Zip         : 42424
 
 <br>
 
-# Project Rationale
+## Project Rationale
 
 Poster is a business to consumer, print-on-demand online ecomerce store.
 The development of this store specialising in large and extra-large posters has been driven by the following business model/rationales:
@@ -157,7 +164,7 @@ Funds for advertising and influencer marketing.
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Project Objectives
+## Project Objectives
 
 The objective of this project is to build a Full-Stack eCommerce site with payment system and product structure based on business logic used to control a centrally-owned dataset.
 
@@ -198,7 +205,7 @@ Develop strategies to engage with customers and create a community around the br
 </details>
 <br>
 
-# Project Outcomes
+## Project Outcomes
 
 The above objectives outline what I wanted to complete when creating this project, which led to the creation of the following outcomes (achieved results):
 
@@ -229,7 +236,7 @@ Strong online presence via social media and SEO. A store that attracts customers
 
 <br>
 
-# Model View Template
+## Model View Template
 
 I used MVT to help define the project's requirements, features, and structure by considering the following questions:
 
@@ -253,7 +260,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 **Wish List, Reviews and Ratings:** What will we include in our system for customer feedback on products? How will authorised users be able to save products while browsing?
 
-## Views (User Interface)
+### Views (User Interface)
 
 **Product Browsing:** How will products be displayed and organised for easy browsing? (e.g., categories, filters, search functionality)
 
@@ -269,7 +276,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 **Responsive Design:** Will the design be responsive to different devices (mobile, tablet, desktop)?
 
-## Templates (Front-End Design)
+### Templates (Front-End Design)
 
 **Branding:** How will the store's branding be incorporated into the design?
 
@@ -291,7 +298,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 **Compliance:** How will we handle consent management?  Are there any legal compliance issues to consider, such as GDPR for European customers?
 
-## Additional Considerations
+### Additional Considerations
 
 **SEO Optimisation and Marketing:** How will we optimise product pages and web content for search engines?
 
@@ -305,7 +312,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 <br>
 
-# Using Agile Terminologies
+## Using Agile Terminologies
 
 My aim throughout this project was to focus my working time using agile terminologies:
 
@@ -348,7 +355,7 @@ The sprint was divided into three sections:
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Epics and User Stories
+## Epics and User Stories
 
 Before creating user stories I looked into the minimum viable product questions I needed to ask myself to ensure I covered what was needed within the Project 5 scope. As I was using the Code Institute Boutique Ado training as my structure, some of these questions had already been answered but I included them here. Questions included:
 
@@ -476,7 +483,7 @@ User stories were added to these epics and you can read the acceptance criteria 
 
 <br>
 
-# UX AND UI Design
+## UX AND UI Design
 
 The design of this store was developed with minimalism in mind. Colours and fonts were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
 
@@ -494,7 +501,7 @@ Having worked in online marketing, digital marketing and search engine optimisat
 
 This led to some key considerations when designing the store including:
 
-## User Experience (UX) Design:
+### User Experience (UX) Design:
 
 **User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
 
@@ -513,7 +520,7 @@ This led to some key considerations when designing the store including:
 **User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
 
 
-## User Interface (UI) Design:
+### User Interface (UI) Design:
 
 **Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
 
@@ -535,7 +542,7 @@ This led to some key considerations when designing the store including:
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Database Structure
+## Database Structure
 
 This database schema defines the structure and relationships for this store. I used business logic in the design of the database by ensuring there are clear relationships between each model - e.g. User, Products, Wishlist, Buyer Profile etc. There is a method to count reviews and ratings, to add users, to allow users to buy products and edit and update their information etc.
 
@@ -685,11 +692,12 @@ Below is the visual relationship diagram for Poster Palace:
 
 <br>
 
-# Site Structure
+## Site Structure
 
 When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side database (back end) stored in a central location.
 
 Using the Boutique Ado template meant that I stuck with the structure of the template for the most part, only making the homepage very different.
+
 <details>
 
 My focus influenced my prototypes which are shown as handdrawn wireframes below:
@@ -716,7 +724,7 @@ Products Page and display products as per Boutique Ado templates
 
 Shopping bag and checkout also as per Boutique Ado templates
 
-<img src="readme/images/rm-wireframe-shopping.jpg" width="50%"><br><br>
+<img src="readme/images/rm-wireframe-shopping-bag.jpg" width="50%"><br><br>
 
 
 </details>
@@ -725,7 +733,7 @@ Shopping bag and checkout also as per Boutique Ado templates
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 <br>
 
-# eCommerce Store Stucture
+## eCommerce Store Stucture
 
 Poster Palace contains the follow:
 
@@ -767,7 +775,7 @@ Poster Palace contains the follow:
 
 <br>
 
-## Admin
+### Admin
 
 The admin area is kept secure thanks to the allocation of roles. By default all users are treated as customers and have access to the main store only. Superusers are given roles which allow them to create, read, edit and delete information.
 
@@ -786,7 +794,7 @@ Below are images that show how the products and orders are managed. Products can
 
 </details>
 
-## Homepage 
+### Homepage 
 
 The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40.
 
@@ -808,11 +816,15 @@ Within a few seconds of landing on the site the pop up newsletter banner appears
 
 This newsletter has been set to appear every 3 days of a person visiting. If this was a live store the paid subscription to MailChimp would be used and once a person signed up they would not see the invite to register again.
 
-## Navigation and Footer
+</details>
+
+## Navigation
 
 The navigation bar has designed to provide a user with multi ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
 
 The second section lets users sort posters according to their category name.
+
+<details>
 
  <img src="readme/images/rm-products-zodiac-category.png" width="90%"><br><br>
 
@@ -824,6 +836,7 @@ The final area of the navbar provides links to pages like about us, contact us, 
 
 <img src="readme/images/rm-nav-bar-all.png" width="80%"><br><br>
 
+</details>
 
 ## Footer
 
@@ -834,6 +847,8 @@ The footer area contains links to important pages on the website including compl
 ## Registration
 
 A link to registration is available on the checkout page but also in the menu bar
+
+<details>
 
 <img src="readme/images/rm-register-page-mobile.png" width="90%"><br><br>
 
@@ -859,7 +874,7 @@ After logging in users are shown a success message.
 <img src="readme/images/rm-signin-success-message.png" width="90%"><br><br>
 
 
-## New Password
+### New Password
 
 Once registered, if a user clicks on the forgot password link they are taken to a page where they can enter their email address. An email is sent and a link provided to reset their password. Once complete they are then able to log in.
 
@@ -943,9 +958,13 @@ The ratings and reviews section is included on each individual product. Once a r
 
 In the future the reviews form will only be shown to customers who purchase a product OR a verified purchase star will appear next to the name of people who have purchased the product.
 
+</details>
 
-### Compliance
+## Compliance
+
 Compliance has been included as views/templates in the products app, although in terms of managing compliance it falls under online marketing. These pages provide important information that needs to be included on an ecommerce store. This includes:
+
+</details>
 
 Terms Of Service Policy
 
@@ -991,11 +1010,13 @@ This app contains the model/view/template for the shopping trolley where product
 
 jQuery was used to provide an opportunity for users to increase and decrease a product in the bag and items can also be removed if needed. Every action is met by a reponse message for the user to confirm their action.
 
-
+</details>
 
 ## Checkout App
 
 The checkout page includes a form that outlines all the information needed for the order to be processed including asking for credit card details. A message in red indicates the total amount and on the right is a summary of the products being purchased.
+
+<details>
 
 
 <img src="readme/images/rm-checkout-registered-user.png" width="90%"><br><br>
@@ -1128,7 +1149,7 @@ A sitemap was created for the site using [xml sitemaps](https://www.xml-sitemaps
 <br>
 
 
-# Future Implementations
+## Future Implementations
 
 With scalability in mind, I have considered some elements that will be introduced in the future including:
 
@@ -1171,17 +1192,15 @@ customer behavior, and other key performance indicators (KPIs).
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Testing
+## Testing
 
 Please see my separate [Testing MD page HERE](/TESTING.md) that includes information on testing, viability and bugs.
 
-# Deployment
+## Deployment
 
 Deployment took place soon after installing Django, ElephantSQL and Cloudinary.
 
 <br>
-
-<details>
 
 #### Installing libraries
 
@@ -1304,14 +1323,13 @@ In your IDE open Git Bash
 Enter the command git clone followed by the copied URL
 Your clone was created
 
-</details>
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 
 
 
-# Technology Used
+## Technology Used
 
 
 - [GitHub](https://github.com/) - remote code storage
@@ -1319,7 +1337,7 @@ Your clone was created
 - [GitPod](https://gitpod.com) - Main IDE provider
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
 
-## Front-End
+### Front-End
 - Bootstrap4 - frontend framework for styling
 - CSS - language used to style webpage
 - Google Fonts - project fonts
@@ -1327,7 +1345,7 @@ Your clone was created
 - jQuery - for JavaScript functionality
 
 
-## Back-End
+### Back-End
 - [Black](https://github.com/psf/black)
 - [Cloudinary](https://cloudinary.com) - remote image hosting
 - [Django](https://www.djangoproject.com/) - main framework
@@ -1336,7 +1354,7 @@ Your clone was created
 - [Python](https://python.org) - backend programming language
 - [Stripe](www.stripe.com) - payment processess for secured payments
 
-## Additional Technology Resources
+### Additional Technology Resources
 
 - [Balsamiq](https://balsamiq.com/) for wireframes
 - [Canva](https://www.canva.com/en_gb/) - used to design posters, make product mockups and deliver PDF
@@ -1349,10 +1367,11 @@ Your clone was created
 - [temp mail](https://temp-mail.org/en/view/6585f978a31e9e00ee8c2619) - temporary email used to test the registration, password reset and checkout processs.
 
 
-## Resources 
+### Resources 
 
 This list contains resources I have used to help me start, create and manage this project.
 Use Ctrl (or Cmd) + click to open in new window.
+
 <br>
 
 - Code Institute [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1) example and training
@@ -1377,7 +1396,7 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Acknowledements
+## Acknowledements
 
 - Testers who registered and provided feedback including my three grown-ups.
 
@@ -1385,7 +1404,7 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 - Me. For getting to this point and being willing to go further.
 
-# Retrospective 
+## Retrospective 
 
 <details>
 
