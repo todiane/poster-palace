@@ -1,6 +1,4 @@
-<img src="readme/images/rm-poster-palace-header.png" width="100%"><br><br>
-
-<br>
+<img src="readme/images/rm-poster-palace-header.png" width="100%"><br>
 
 # Poster Palace
 
@@ -235,6 +233,8 @@ Strong online presence via social media and SEO. A store that attracts customers
 </details>
 
 <br>
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 ## Model View Template
 
@@ -489,19 +489,24 @@ The design of this store was developed with minimalism in mind. Colours and font
 
 The store was developed using a mobile-first approach with strong emphasis on accessibility for all including strong readable font, spaced out display and minimal use of dark fonts on dark colours etc.
 
+<br>
+<details>
+
 The typical list > detail view pattern is used so that users can find a product and easily add it to their basket.
 
 The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue. The background colour is a very light grey to allow for the card information to be more prominent #fcfcfc
 
 <img src="readme/images/rm-pp-colour-fonts.png" width="80%"><br><br>
 
-<details>
-
 Having worked in online marketing, digital marketing and search engine optimisation for several years I am familiar with the concepts needed to promote a website, however UX and UI design are still fairly new to me. Further research was undertaken on UX AND UI principles, not only what was taught on the course but also via my own reading. 
+
+</details>
 
 This led to some key considerations when designing the store including:
 
 ### User Experience (UX) Design:
+
+<details>
 
 **User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
 
@@ -519,8 +524,13 @@ This led to some key considerations when designing the store including:
 
 **User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
 
+<details>
+
+<br>
 
 ### User Interface (UI) Design:
+
+<details>
 
 **Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
 
@@ -731,6 +741,7 @@ Shopping bag and checkout also as per Boutique Ado templates
 
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
 <br>
 
 ## eCommerce Store Stucture
@@ -774,6 +785,8 @@ Poster Palace contains the follow:
   - Diverse Design Event
 
 <br>
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 ### Admin
 
