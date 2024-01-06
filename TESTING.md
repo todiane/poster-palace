@@ -9,6 +9,9 @@ BUGS
 When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku but size isn't an option for the wishlist, just the product.
 
 
+Phone number area on checkout form let me put in letters. It should be numbers only and an attempt was made to change that but this broke the checkout process. Further investigation into making it work is needed.
+
+
 Installed Black app
 
 https://learndjango.com/tutorials/django-testing-tutorial 

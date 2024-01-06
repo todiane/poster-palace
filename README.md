@@ -105,7 +105,8 @@ Zip         : 42424
 
 # Project Rationale
 
-The development of an ecommerce store specialising in large and extra-large posters has been driven by several clear rationales:
+Poster is a business to consumer, print-on-demand online ecomerce store.
+The development of this store specialising in large and extra-large posters has been driven by the following business model/rationales:
 
 <details>
 
@@ -115,7 +116,7 @@ While there are a number of sites offering wall art in a large range of sizes, t
 **Target Audience:**
 Niche products attract a niche target audience. High quality attracts people willing to pay for luxury products. The large and extra-large sizes of these posters along with the printing quality means our product will attract a specific demographic including interior designers, business owners looking for wall art for their office or individuals with large homes looking for statement pieces to enhance their living space and aesthetics and of any room. 
 
-Potential buyers include:
+The key characteristic of potential buyers is their appreciation for visually impactful posters. This includes:
 
 - Interior designers, landlords or homeowners who want posters to decorate their property.
 
@@ -123,26 +124,46 @@ Potential buyers include:
 
 - Retail business owners looking for large pieces of wall art to display in their shop or cafe.
 
-- Travel enthusiasts, music lovers, sports enthusiasts, art admirers, etc. who might be interested in purchasing niche poster designs.
+- Travel enthusiasts, music lovers, sports enthusiasts, art admirers, etc. who might be interested in purchasing niche poster designs for home decor.
 
-- Parents looking to decorate their child’s room with a statement piece.
+- Parents looking to decorate their child’s room with large bright, fun posters.
 
 <br>
 
 **Print Quality and Materials**
-Posters will be produced using high-quality printing techniques and materials making them durable and long-lasting. Our commitment to quality will build brand trust with customers and support with any community engagement plans.
+The value proposition is to offer a unique product with bold visual impact. To achieve this posters will be produced using high-quality printing techniques and materials making them durable and long-lasting. Our commitment to quality will build brand trust with customers and support with any community engagement plans.
+
 
  **Online Shopping Trends:**
 With the convenience of e-commerce we are leveraging the growing trend of online shopping. Customers can easily browse and purchase posters from the comfort of their homes, making it important that the website  is user-friendly and optimised for online transactions and engagement.
 
-**Global Reach:**
-The posters can be shipped internationally, providing an opportunity for the business to reach a broader audience and tap into markets beyond our immediate location.
+**Customer Relationships:**
+Prompt and accurate customer service will be important, espeically handling refunds, returns and complaints, as will the opportunity for our visitors and buyers to contact and provide feedback.
+The posters can be shipped internationally, providing an opportunity for the business to reach a broader audience and tap into markets beyond our immediate location. Promotion via social media like Facebook (Instagram) and Pinterest will support our global reach. Partnerships and collaborations with influencers in the interior design and art space will also help to boost the brand.
+
 
 **Customisation Options**
-Customisation is an extremely popular and growing trend in online shopping. While customisation isn’t currently available on the platform there is the potential to offer this option, providing a more personalised touch and a unique selling point.
-We can not only offer the chance for customers to customise using words but also using their own images.
+Customisation is an extremely popular and growing trend in online shopping. While customisation isn’t currently available on the platform there is the potential to offer this option, providing a more personalised touch and a unique selling point. We can not only offer the chance for customers to customise using words but also using their own images and/or colours.
+
+**Revenue Streams**
+As well as the posters and the potential for customisation, there is also an opportunity to offer accessories (e.g. frames, poster glue, hanging accessories etc) and digital prints/smaller sizes that customers print off themselves.
+
+**Key Partnerships**
+The business will develop relationships with reliable printing suppliers who produce high-quality prints. As this is a print-on-demand business the order to delivery timescale must be as short as possible. A shipping and logistics company/partners who will provide an efficient and timely delivery schedule.
+
+**Key Activities**
+
+As well as planning and executing regular marketing campaigns around individual posters (e.g. promoting the Love category during valentines) the quarterly competition will also be a key activity to promote the brand. The need to continuously design, update and add posters to the store is essential.
+
+**Cost Structure**
+
+Website maintenance and costs associated with maintaining the e-commerce platform. 
+Expenses related to producing posters which may be slightly higher due to the print-on-demand nature rather than bulk printing. 
+Funds for advertising and influencer marketing.
+
 
 </details>
+
 <br>
 
 # Project Objectives
@@ -181,7 +202,8 @@ Ensure the website, images and product pages are optimised for search engines to
 Digital marketing techniques such as social media marketing, email campaigns, and content marketing will be implemented to attract and retain customers. Ensuring above the fold content management.
 
 **Create a Community Engagement Plan**
-Develop strategies to engage with customers and create a community around the brand, such as through social media, competitions, and newsletters.
+Develop strategies to engage with customers and create a community around the brand, such as through social media, competitions, and newsletters. Use influencer marketing to help establish the quality of the final product.
+
 </details>
 <br>
 
@@ -210,7 +232,7 @@ Efficient delivery of products to customers within the stated delivery times.
 Ability for customers to gain support with their order and/or use of the site, e.g. registration and logging in. Support is also available for non-registered users to get in touch.
 
 **Customer Engagement and Retention**: 
-Strong online presence via social media and SEO. A store that attracts customers via its activity and also encourages repeat business and customer loyalty.
+Strong online presence via social media and SEO. A store that attracts customers via its activity (e.g. events and influencer marketing) and also encourages repeat business and customer loyalty.
 
 </details>
 
@@ -289,6 +311,7 @@ I used MVT to help define the project's requirements, features, and structure by
 **Marketing and Promotions:** How will we market our products and manage promotions?
 
 </details>
+
 <br>
 
 # Using Agile Terminologies
@@ -329,6 +352,188 @@ The sprint was divided into three sections:
 | SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
 
 </details>
+<br>
+
+
+# Epics and User Stories
+
+Before creating user stories I looked into the minimum viable product questions I needed to ask myself to ensure I covered what was needed within the Project 5 scope. As I was using the Code Institute Boutique Ado training as my structure, some of these questions had already been answered but I included them here. Questions included:
+
+<details>
+
+<br>
+
+**User Experience:**  
+How will visitors, users and buyers navigate the site? 
+What will the process of browsing and searching for products look like? 
+How will product details be displayed to the user? 
+What kind of user interface will be most appealing to potential buyers?
+
+**Product Management:**
+Will there be inventory or will the focus be print-on-demand? 
+Will digital inventory be included?
+How will you manage any inventory?
+What formats will the digital art and posters be available in?
+How will you handle product variations (e.g., different sizes or formats)?
+
+**Payment Processing:**
+What payment methods will you accept?
+How will you securely process payments?
+Will you need to handle different currencies?
+
+**Delivery:**
+How will the products be delivered to the customer?
+What charges will you make for postage based on country or weight?
+Will there be instant downloads for digital products, or will links be emailed?
+How will you ensure the security of the download links?
+
+**Customer Accounts:**
+Will users need to create an account to make a purchase?
+What will the authentication process look like?
+What benefits will an account offer (e.g., order history, saved items)?
+How will you protect user data and privacy?
+
+**Marketing and SEO:**
+How will you optimize the site for search engines?
+What marketing strategies will you use to attract customers?
+How will you integrate social media?
+   
+**Legal and Compliance:**
+How will you handle copyright and intellectual property rights if customisation is offered?
+What terms of service and privacy policy will you need?
+What other policies will you need?
+Are there any specific legal considerations for selling digital products?
+
+**Feedback and Support:**
+What kind of customer support will you offer?
+How will you gather feedback from users?
+How will you handle refunds or customer complaints?
+
+
+Based on the MVT model and above questions, the following EPICS were created
+
+- Store Creation
+
+- User Registration
+
+- Products and Product Management
+
+- Admin/Superuser Management
+
+- SEO/Online Marketing
+
+</details>
+
+User stories were added to these epics and you can read the acceptance criteria and tasks completed via my [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
+
+<details>
+
+**Store Creation**
+
+- As a super user I can design and update the homepage so that I can keep it updated with the latest products.
+
+- As a first-time visitor, I can understand what the site offers immediately so that I can decide if it meets my needs.
+
+- As a mobile user, I want the site to be easy to navigate on my phone so that I can shop conveniently from anywhere.
+
+**User Registration**
+
+- As a user I can register for and manage my account so that I can start a wish list, add reviews and keep a record of any purchases
+
+- As a user I can request a password reset via email so that I can reset my password if I have forgotten it.
+
+**Products and Product Management**
+
+- As a user I want to preview product details so that I can make an informed buying decision.
+
+- As a user, I can use an effective search function so that I can find specific types of product or category quickly.
+
+- As a buyer I can gain access to a secure payment process so I can confidently buy products.
+
+- As a user, I want my personal and payment information to be secure so that I can trust the site with my data.
+
+- As a buyer I receive email confirmation after purchase so I can keep track of my orders.
+
+- As a buyer, I can leave reviews for products I’ve purchased so that I can share my experience with others.
+
+
+**Admin Management**
+
+- As superuser I want the ability to upload, edit and delete products so that I can manage the stock effectively.
+
+- As Superuser I can track sales and customer feedback plus receive funds from Stripe.
+
+- As a user and superuser I can read compliance information so that I understand how the company operates.
+
+**SEO/Online Marketing**
+
+- As a user I can subscribe to the newsletter so I can receive exclusive content.
+
+- As the superuser, I can create and promote monthly events so that brand awareness is achieved.
+
+- As a superuser, I can stay connected via social media so I can build a community and brand awareness.
+
+- As a superuser, I want to add and update keywords and meta data so that I can use them on pages and in web content for SEO.
+
+<img src="readme/images/rm-user-story-example.png" width="80%"><br><br>
+
+
+</details>
+
+
+<br>
+
+# UX AND UI Design
+
+The design of this store was developed with minimalism in mind. Colours and fonts were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
+
+The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue. The background colour is a very light grey to allow for the card information to be more prominent #fcfcfc
+
+<img src="readme/images/rm-pp-colour-fonts.png" width="80%"><br><br>
+
+<details>
+
+Having worked in online marketing, digital marketing and search engine optimisation for several years I am familiar with the concepts needed to promote a website, however UX and UI design are still fairly new to me. Further research was undertaken on UX AND UI principles, not only what was taught on the course but also via my own reading. 
+
+This led to some key considerations when designing the store including:
+
+## User Experience (UX) Design:
+
+**User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
+
+**Information Architecture:** Content organised in a logical and intuitive manner with clear navigation paths for users and instant notification of changes using toast messages.
+
+**Wireframing:** Wireframes created to outline the layout and structure before building.
+
+**Usability Testing:** Store was tested by users to identify potential issues. Any feedback given was used to improve user experience. e.g. Being told the font in some areas was too small.
+
+**Accessibility:** Ensure the store is accessible to all users and follow [web content accessibility guidelines (WCAG)](https://www.w3.org/WAI/fundamentals/components/).
+
+**Consistency:** A unified experience across different pages was implemented along with maintaining consistency in design elements so all pages look and feel the same.
+
+**Feedback and Error Handling:** Clear feedback provided once a user takes action e.g. adds or deletes a review. Error messages provided that guide users to a solution, e.g. 404.html error page takes users back to products or homepage.
+
+**User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
+
+
+## User Interface (UI) Design:
+
+**Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
+
+**Typography:** A readable and accessible font has been used, consistency maintained, and attention has been paid to font size and line spacing.
+
+**Colour Scheme:** One main colour has been used throughout to align with the brand. Colour accessibility was considered when adding colour to templates.
+
+**Imagery, Icons and Whitespace:** High quality designs were used for images of posters and font awesome icons were added to break up content. Whitespace was used to enhance readability and avoid visual clutter.
+
+**Responsive Design:** The site is fully responsive and works well on different screen sizes.
+
+**Consistent Branding:** Brand identity has been maintained throughout the site and included in all information, e.g. the PDF created to highlight the [winners of a competition](https://www.canva.com/design/DAF3uqhD65Y/iSDvZb0f6r-yHmMw7Z8hBg/view) included the same colour as the website. 
+
+**Scalability:** I considered how UI will adapt to changes in content or functionality and designed with scalability in mind.
+
+</details>
+
 <br>
 
 # Database Structure
@@ -499,7 +704,8 @@ When designing the structure of the store I kept my focus on the need to create 
 Poster Palace contains the follow apps:
 
  - Home
-    - Homepage - Navigation and Footer
+    - Homepage 
+    - Navigation and Footer
     - Registration
     - New password
     - About Us
@@ -530,11 +736,13 @@ Poster Palace contains the follow apps:
 
 <br>
 
-<details>
+
 
 ## Homepage 
 
 The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40.
+
+<details>
 
 <img src="readme/images/rm-homepage-top.png" width="90%"><br><br>
 
@@ -569,7 +777,9 @@ The final area of the navbar provides links to pages like about us, contact us, 
 <img src="readme/images/rm-nav-bar-all.png" width="80%"><br><br>
 
 
-The footer at the end of the page includes links to various parts of the website as well as to the social media pages set up for the site.
+## Footer
+
+The footer area contains links to important pages on the website including compliance and to the main pages visitors use on a website - about us, contact us. A link to the newsletter is also included as an easy way for anyone who might have missed or ignored the pop out to consider registering.
 
 <img src="readme/images/rm-footer.png" width="90%"><br><br>
 
@@ -601,12 +811,6 @@ After logging in users are shown a success message.
 <img src="readme/images/rm-signin-success-message.png" width="90%"><br><br>
 
 
-## Footer
-
-The footer area contains links to important pages on the website including compliance and to the main pages visitors use on a website - about us, contact us. A link to the newsletter is also included as an easy way for anyone who might have missed or ignored the pop out to consider registering.
-
-<img src="readme/images/rm-footer.png" width="90%"><br><br>
-
 ## New Password
 
 Once registered, if a user clicks on the forgot password link they are taken to a page where they can enter their email address. An email is sent and a link provided to reset their password. Once complete they are then able to log in.
@@ -620,16 +824,30 @@ Once registered, if a user clicks on the forgot password link they are taken to 
 <img src="readme/images/rm-change-password-success-page.png" width="90%"><br><br>
 
 
+</details>
+
+
+
 ## About Us
 
-The about us page has been set up using a model/view/template approach and access to update the about us page is available in the admin area. It uses the same format as the product display page and features an image on the left with optimised web content on the right.
+
+
+The about us page has been set up using a model/view/template approach and access to update the about us page is available in the admin area. 
+
+<details>
+
+It uses the same format as the product display page and features an image on the left with optimised web content on the right.
 
 <img src="readme/images/rm-about-us-page.png" width="90%"><br><br>
+
+</details>
 
 
 ## Contact us app
 
 The contact us app includes a model with user choices. They can select why they are getting in touch and then leave a message.
+
+<details>
 
 <img src="readme/images/rm-contact-us-reason.png" width="90%"><br><br>
 
@@ -653,11 +871,13 @@ Messages are sent to the admin area.
 
 <img src="readme/images/rm-messages-received-users.png" width="90%"><br><br>
 
-
+</details>
 
 ## Products app
 
 The products app includes a model/view to display all products on the page. Users can use the search bar to sort products into different categories.
+
+<details>
 
 <img src="readme/images/rm-products-list.png" width="90%"><br><br>
 
@@ -711,20 +931,22 @@ Additional pages included under compliance are for the management of errors incl
 
 <img src="readme/images/rm-500-page.png" width="90%"><br><br>
 
-PHOTO OF EACH PAGE
+</details>
 
 ## Bag App
 
 This app contains the model/view/template for the shopping trolley where products are kept until a customer is ready to checkout. Everytime a product is added a confirmation message appears
 
+<details>
+
 <img src="readme/images/rm-bag-message.png" width="90%"><br><br>
 
-PHOTO OF SHOPPING CART
 
 
 ## Checkout App
 
 The checkout page includes a form that outlines all the information needed for the order to be processed including asking for credit card details. A message in red indicates the total amount and on the right is a summary of the products being purchased.
+
 
 <img src="readme/images/rm-checkout-registered-user.png" width="90%"><br><br>
 
@@ -761,9 +983,13 @@ The wish list app includes a model/view/template only available to registered us
 If an unregistered user clicks on the "Add to wish list" button they are automatically re-directed to the sign in page and asked to sign in before they can save a poster to the wish list.
 
 
+</details>
+
 ## Marketing App
 
 This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a regular event. This event encourages people to register for the newsletter to get information on the next event. 
+
+<details>
 
 <img src="readme/images/rm-newsletter-page.png" width="90%"><br><br>
 
@@ -774,6 +1000,8 @@ The event is a poster competition held 4 times a year. Newsletter subscribers ar
 </details>
 
 ## Online Marketing
+
+<details>
 
 While the newsletter and events page are two ways that are used to promote the website and new products, there are also two social media pages. Pinterest is popular with people looking for design ideas so along with a Facebook page, a Pinterest page was also created.
 
@@ -815,137 +1043,10 @@ These keywords are weaved into the fabric of any web content written for the sit
 
 - abstract art (popular with interior designers and offices)
 
-
-<br>
-
-# Epics and User Stories
-
-Based on the MVT model above, the following EPICS were created
-
-- Store Creation
-
-- User Registration
-
-- Products and Product Management
-
-- Admin/Superuser Management
-
-- SEO/Online Marketing
-
-
-
-User stories were added to these epics and you can read the acceptance criteria and tasks completed via my [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
-
-<details>
-
-**Store Creation**
-
-- As a super user I can design and update the homepage so that I can keep it updated with the latest products.
-
-- As a first-time visitor, I can understand what the site offers immediately so that I can decide if it meets my needs.
-
-- As a mobile user, I want the site to be easy to navigate on my phone so that I can shop conveniently from anywhere.
-
-**User Registration**
-
-- As a user I can register for and manage my account so that I can start a wish list, add reviews and keep a record of any purchases
-
-- As a user I can request a password reset via email so that I can reset my password if I have forgotten it.
-
-**Products and Product Management**
-
-- As a user I want to preview product details so that I can make an informed buying decision.
-
-- As a user, I can use an effective search function so that I can find specific types of product or category quickly.
-
-- As a buyer I can gain access to a secure payment process so I can confidently buy products.
-
-- As a user, I want my personal and payment information to be secure so that I can trust the site with my data.
-
-- As a buyer I receive email confirmation after purchase so I can keep track of my orders.
-
-- As a buyer, I can leave reviews for products I’ve purchased so that I can share my experience with others.
-
-
-**Admin Management**
-
-- As superuser I want the ability to upload, edit and delete products so that I can manage the stock effectively.
-
-- As Superuser I can track sales and customer feedback plus receive funds from Stripe.
-
-- As a user and superuser I can read compliance information so that I understand how the company operates.
-
-
-
-**SEO/Online Marketing**
-
-- As a user I can subscribe to the newsletter so I can receive exclusive content.
-
-- As the superuser, I can create and promote monthly events so that brand awareness is achieved.
-
-- As a superuser, I can stay connected via social media so I can build a community and brand awareness.
-
-- As a superuser, I want to add and update keywords and meta data so that I can use them on pages and in web content for SEO.
-
-<img src="readme/images/rm-user-story-example.png" width="80%"><br><br>
-
-
-
-</details>
-
-
-<br>
-
-# UX AND UI Design
-
-As always with my projects, the design was developed with minimalism in mind. Colours were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
-
-The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue. The background colour is a very light grey to allow for the card information to be more prominent #fcfcfc
-
-Having worked in online marketing, digital marketing and search engine optimisation for several years I am familiar with the concepts needed to promote a website, however UX and UI design are still fairly new to me. Further research was undertaken on UX AND UI principles, not only what was taught on the course but also via my own reading. 
-
-<details>
-
-This led to some key considerations being considered when designing the store including:
-
-## User Experience (UX) Design:
-
-**User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
-
-**Information Architecture:** Content organised in a logical and intuitive manner with clear navigation paths for users and instant notification of changes using toast messages.
-
-**Wireframing:** Wireframes created to outline the layout and structure before building.
-
-**Usability Testing:** Store was tested by users to identify potential issues. Any feedback given was used to improve user experience. e.g. Being told the font in some areas was too small.
-
-**Accessibility:** Ensure the store is accessible to all users and follow [web content accessibility guidelines (WCAG)](https://www.w3.org/WAI/fundamentals/components/).
-
-**Consistency:** A unified experience across different pages was implemented along with maintaining consistency in design elements so all pages look and feel the same.
-
-**Feedback and Error Handling:** Clear feedback provided once a user takes action e.g. adds or deletes a review. Error messages provided that guide users to a solution, e.g. 404.html error page takes users back to products or homepage.
-
-**User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
-
-
-## User Interface (UI) Design:
-
-**Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
-
-**Typography:** A readable and accessible font has been used, consistency maintained, and attention has been paid to font size and line spacing.
-
-**Colour Scheme:** One main colour has been used throughout to align with the brand. Colour accessibility was considered when adding colour to templates.
-
-**Imagery, Icons and Whitespace:** High quality designs were used for images of posters and font awesome icons were added to break up content. Whitespace was used to enhance readability and avoid visual clutter.
-
-**Responsive Design:** The site is fully responsive and works well on different screen sizes.
-
-**Consistent Branding:** Brand identity has been maintained throughout the site and included in all information, e.g. the PDF created to highlight the [winners of a competition](https://www.canva.com/design/DAF3uqhD65Y/iSDvZb0f6r-yHmMw7Z8hBg/view) included the same colour as the website. 
-
-**Scalability:** I considered how UI will adapt to changes in content or functionality and designed with scalability in mind.
-
 </details>
 
 <br>
+
 
 ## Future Implementations
 
@@ -969,9 +1070,11 @@ optimisation and load times plus a host of other data is needed for the success 
 - Monitor and Analyze Performance. Analytics tools will be used to track website traffic, sales data, 
 customer behavior, and other key performance indicators (KPIs).
 
-- A blog app will be added to help with the community engagement plan and for search engine optimisation purposes.
+- A blog app will be added to help with the community engagement plan, influencer marketing and for search engine optimisation purposes.
 
 - Customisation will be provided. The ability to let customers add words to posters or use their own images.
+
+- Add Social Authentication Using Django-Allauth 
 
 
 </details>
@@ -1144,7 +1247,7 @@ Your clone was created
 - [Python](https://python.org) - backend programming language
 - [Stripe](www.stripe.com) - payment processess for secured payments
 
-## Additional Resources
+## Additional Technology Resources
 
 - [Balsamiq](https://balsamiq.com/) for wireframes
 - [Canva](https://www.canva.com/en_gb/) = used to make product images and delivery PDF
@@ -1154,6 +1257,12 @@ Your clone was created
 - [Miro](https://miro.com/index/) - for database schema
 - [PNG to WEBP converter](https://www.freeconvert.com/png-to-webp) - Changing images to webp
 - [dbdiagram.io](https://dbdiagram.io/d) - to create database schema
+- [temp mail](https://temp-mail.org/en/view/6585f978a31e9e00ee8c2619) - temporary email used to test the registration, password reset and checkout processs.
+
+
+
+
+
 
 
 ## Resources Used

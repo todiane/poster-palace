@@ -35,6 +35,6 @@ urlpatterns = [
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
-handler403 = handler403
-handler404 = handler404
-handler500 = handler500
+handler403 = 'poster_palace.views.handler403'
+handler404 = 'poster_palace.views.handler404'
+handler500 = 'poster_palace.views.handler500'
