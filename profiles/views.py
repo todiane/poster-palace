@@ -22,12 +22,12 @@ def profile(request):
             messages.error(request, 'Failed to update profile, please check your form for errors.')
     else:
         form = BuyerProfileForm(instance=profile)
-
+    
     orders = profile.orders.all()
     template = 'profiles/profile.html'
     context = {
         'form': form,
-        'default_full_name': profile.default_full_name,  # Adjust this line
+        'default_full_name': profile.default_full_name,
         'orders': orders,
         'on_profile_page': True
     }

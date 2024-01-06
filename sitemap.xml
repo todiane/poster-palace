@@ -9,207 +9,277 @@
 
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/contact/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/accounts/login/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/bag/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/about/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?sort=price&amp;direction=desc</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?sort=category&amp;direction=desc</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=abstract</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=bright</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=children</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=love</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=inspirational</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=nature</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=zodiac</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=abstract,children,inspirational,love,bright,zodiac,nature</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=new</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=deals</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=clearance</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/?category=new,deals,clearance</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/about/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/marketing/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/marketing/poster_event/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/4/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/7/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/6/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/5/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/9/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/12/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/10/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/2/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/14/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/terms/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/shipping/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/refund/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/privacy/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/22/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/7/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/19/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/21/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/8/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/13/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/18/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/6/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/3/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/14/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/12/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/16/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/15/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/11/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/10/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/5/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/1/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/2/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/24/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/9/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/16/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/17/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/3/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/20/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/11/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/15/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/23/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://posterpalace-a7414f135cf3.herokuapp.com/products/13/</loc>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://posterpalace-a7414f135cf3.herokuapp.com/marketing/event_terms/</loc>
-  <lastmod>2023-12-31T14:06:53+00:00</lastmod>
+  <lastmod>2024-01-06T18:19:26+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

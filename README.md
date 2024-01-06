@@ -2,93 +2,81 @@
 
 ## Table of Content
 
-[Overview](#overview)
+[Project Overview](#project-overview)
 
-+ [Project Rationale](#project-Rationale)
+  - [Project Rationale](#project-rationale)
 
-+ [Project Objectives and Outcomes](#project-objectives-and-outcomes)
+  - [Project Objectives](#project-objectives)
 
-+ [Target Audience](#target-audience)
+[Model View Template](#model-view-template)
 
-[Model Views Template (mvt)](#model-views-template-mvt)
+[Agile Terminologies](#using-agile-terminologies)
 
-+ [Agile Terminologies](#agile-terminologies)
+[Epics and User Stories](#epics-and-user-stories)
+
+[UX and UI design](#ux-and-ui-design)
+  - [User Experience Design](#user-experience-ux-design)
+  - [User Interface Design](#user-interface-ui-design)
 
 [Database Structure](#database-structure)
 
 [Site Structure](#site-structure)
 
-Home App
+[Store Structure](#ecommerce-store-stucture)
+  - [Admin](#admin)
+  - [Home app](#homepage)
+  - [About app](#about-us)
+  - [Bag app](#bag-app)
+  - [Checkout app](#checkout-app)
+  - [Contact app](#contact-us-app)
+  - [Marketing app](#marketing-app)
+  - [Products app](#products-app)
+  - [Profiles app](#profile-app)
+  - [Wish List app](#wish-list-app)
 
-+ [User features and design](#user-features-and-design)
-
-+ [Epics and user stories](#epics-and-user-stories)
-    + [Epics](#epics)
-    + [Admin](#admin)
-    + [User](#user)
-
-+ [Authentication and Authorisation](#authentication-and-authorisation)
-
-    +[Emails](#emails)
-
-+ [Navigation](#navigation)
-
-+ [Products](#Products)
-
-+ [Product Menu](#Product Menu)
-
-+ Shopping Cart / Bag App
-
-+ [Checkout App](#Checkout App)
-
-
-
-+ [Reviews](#reviews)
-
-
-
-+ [User Profiles](#user-profile)
-
-+ [Site Colours and Font](#site-colours-and-font)
-
-[CRUD Functionality](#crud-functionality)
-
-ONLINE MARKETING - marketing app
-
-Keywords and Meta
-
-Social Media
-
-Web content
-
-Newsletter
-
-Diverse Design Competition
+[Online Marketing](#online-marketing)
+  - [Search Engine Optimisation](#search-engine-optimisation)
+  - [Compliance](#compliance)
 
 [Future Implementations](#future-implementations)
 
 [Testing](#testing)
 
 [Deployment](#deployment)
+  - [Installing Libraries](#installing-libraries)
+  - [PostgreSQL database](#create-a-postgresql-database-using-elephantsql)
+  - [Hiding Sensitive Information](#hiding-sensitive-information)
+  - [Update Settings](#update-settings)
+  - [Connecting Cloudinary](#connect-to-cloudinary)
+  - [Deploy to Heroku](#allow-heroku-as-host)
+  - [Debug Status](#debug-status)
+  - [Fork Repository](#fork-the-repository)
+  - [Clone Repository](#clone-the-repository)
 
-[Technologies Used](#technologies-used)
 
-[Resources Used](#resources-used)
+[Technologies Used](#technology-used)
+  - [Front End Tech](#front-end)
+  - [Back End Tech](#back-end)
+  - [Additional resources](#additional-technology-resources)
 
-[Acknowledgements](#acknowledgements)
+[Acknowledgements](#acknowledements)
 
 [Retrospective](#retrospective)
+
+
 
 
 # Project Overview
 
 Poster Palace - Beautify your room. Uplift your spirit.
 
-The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are statement pieces meant for display on a large statement wall. They have been designed for customers looking for unique and impactful wall art.
+The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are made with eco-friendly sustainable materials and are statement pieces meant for display at home or in the office. They have been designed for customers looking for unique and impactful wall art.
 
 The site is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/)
 
 Admin Panel is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/admin)
+
+<details>
 
 To "purchase" products/test checkout using fake credit card details you can use:
 
@@ -100,6 +88,7 @@ CVV         : 242
 
 Zip         : 42424
 
+</details>
 
 <br>
 
@@ -165,6 +154,8 @@ Funds for advertising and influencer marketing.
 </details>
 
 <br>
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 # Project Objectives
 
@@ -352,8 +343,10 @@ The sprint was divided into three sections:
 | SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
 
 </details>
+
 <br>
 
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 # Epics and User Stories
 
@@ -487,6 +480,10 @@ User stories were added to these epics and you can read the acceptance criteria 
 
 The design of this store was developed with minimalism in mind. Colours and fonts were kept to a minimum. The main structure/look of the store was taken from the Code Institute Boutique Ado project.
 
+The store was developed using a mobile-first approach with strong emphasis on accessibility for all including strong readable font, spaced out display and minimal use of dark fonts on dark colours etc.
+
+The typical list > detail view pattern is used so that users can find a product and easily add it to their basket.
+
 The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue. The background colour is a very light grey to allow for the card information to be more prominent #fcfcfc
 
 <img src="readme/images/rm-pp-colour-fonts.png" width="80%"><br><br>
@@ -535,6 +532,8 @@ This led to some key considerations when designing the store including:
 </details>
 
 <br>
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 # Database Structure
 
@@ -690,18 +689,20 @@ Below is the visual relationship diagram for Poster Palace:
 
 When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side logic database (back end) stored in a central location. My focus influenced my prototypes which are shown as wireframes below:
 
-<details>
+# WIREFRAMES TO ADD
 
 
-
-
-</details>
-
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 <br>
 
-# Site Navigation
+# eCommerce Store Stucture
 
-Poster Palace contains the follow apps:
+Poster Palace contains the follow:
+
+- Admin area
+  - Only superuser role gains access
+  - Add products
+  - Manage About page and messages from customers
 
  - Home
     - Homepage 
@@ -736,7 +737,24 @@ Poster Palace contains the follow apps:
 
 <br>
 
+## Admin
 
+The admin area is kept secure thanks to the allocation of roles. By default all users are treated as customers and have access to the main store only. Superusers are given roles which allow them to create, read, edit and delete information.
+
+<details>
+
+The admin area contains sections made up of the various models created for the store.
+
+<img src="readme/images/rm-admin-area.png" width="90%"><br><br>
+
+Superusers can use the top menu to view the store, change their password or log out.
+Below are images that show how the products and orders are managed. Products can be filtered so that searching for them according to category and the date they were created makes it easier to find specific products as the catalog grows.
+
+<img src="readme/images/rm-admin-area-products.png" width="90%"><br><br>
+
+<img src="readme/images/rm-admin-area-orders.png" width="90%"><br><br>
+
+</details>
 
 ## Homepage 
 
@@ -826,11 +844,7 @@ Once registered, if a user clicks on the forgot password link they are taken to 
 
 </details>
 
-
-
 ## About Us
-
-
 
 The about us page has been set up using a model/view/template approach and access to update the about us page is available in the admin area. 
 
@@ -873,9 +887,11 @@ Messages are sent to the admin area.
 
 </details>
 
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
 ## Products app
 
-The products app includes a model/view to display all products on the page. Users can use the search bar to sort products into different categories.
+The products app includes a model/view to display all products on the page. Users can use the search bar to sort products into different categories. 
 
 <details>
 
@@ -899,7 +915,7 @@ In the future the reviews form will only be shown to customers who purchase a pr
 
 
 ### Compliance
-Compliance has been included as views/templates in the products app. These are pages to important information that needs to be included on an ecommerce store. The pages are
+Compliance has been included as views/templates in the products app, although in terms of managing compliance it falls under online marketing. These pages provide important information that needs to be included on an ecommerce store. This includes:
 
 Terms Of Service Policy
 
@@ -941,6 +957,10 @@ This app contains the model/view/template for the shopping trolley where product
 
 <img src="readme/images/rm-bag-message.png" width="90%"><br><br>
 
+<img src="readme/images/rm-shopping-bag.png" width="90%"><br><br>
+
+jQuery was used to provide an opportunity for users to increase and decrease a product in the bag and items can also be removed if needed. Every action is met by a reponse message for the user to confirm their action.
+
 
 
 ## Checkout App
@@ -963,11 +983,27 @@ Once complete a success message appears along with a summary of the order which 
 <img src="readme/images/rm-order-success-email.png" width="90%"><br><br>
 
 
+## Stripe
+
+Payments are taken using the Stripe payment integration. It is safe, secure and uses webhooks to trigger actions from Stripe. The payment processing flow relies on asynchronous events from the store to Stripe and back again.
+
+image source : [from Stripe](https://stripe.com/blog/payment-api-design)
+
+<img src="readme/images/rm-stripe-payment.png" width="90%"><br><br>
+
+
 ## Profile app
 
-If a buyer has registered before placing their order a copy of the order is saved in the profile area. This is also the place where a buyer can update their personal details
+A buyer can choose to save their details and those details appear in their profile. This is also the place where a buyer can update their personal details and look at the orders they have placed.
 
 <img src="readme/images/rm-profile-page.png" width="90%"><br><br>
+
+When they click to view an order they are reminded that they are viewing a past confirmation order.
+
+<img src="readme/images/rm-profile-existing-orders.png" width="90%"><br><br>
+
+
+When they updated their profile a success messages is triggered
 
 <img src="readme/images/rm-profile-success.png" width="90%"><br><br>
 
@@ -999,7 +1035,9 @@ The event is a poster competition held 4 times a year. Newsletter subscribers ar
 
 </details>
 
-## Online Marketing
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
+# Online Marketing
 
 <details>
 
@@ -1043,12 +1081,18 @@ These keywords are weaved into the fabric of any web content written for the sit
 
 - abstract art (popular with interior designers and offices)
 
+## Sitemap
+
+A sitemap was created for the site using [xml sitemaps](https://www.xml-sitemaps.com/)
+
+<img src="readme/images/rm-sitemap.png" width="90%"><br><br>
+
 </details>
 
 <br>
 
 
-## Future Implementations
+# Future Implementations
 
 With scalability in mind, I have considered some elements that will be introduced in the future including:
 
@@ -1057,6 +1101,12 @@ With scalability in mind, I have considered some elements that will be introduce
 - Only verified purchases can leave a review. At the moment the review section is available for all registered users. 
 Only unauthorised users can not leave a review. However, to further enhance the review process an update is needed so 
 only customers who have purchased a product and are verified buyers can leave a review.
+
+- Ability to include a photo with reviews.
+
+- Provide different colours of the same poster.
+
+- Users to receive recommendations based on their browsing and purchase history.
 
 - Price variations will be added so large and extra large sizes are given their own price per product.
 
@@ -1074,24 +1124,27 @@ customer behavior, and other key performance indicators (KPIs).
 
 - Customisation will be provided. The ability to let customers add words to posters or use their own images.
 
-- Add Social Authentication Using Django-Allauth 
+- Add Social Authentication Using Django-Allauth.
+
+- Open the store up to become a market place so other designers can include their work and sell posters.
 
 
 </details>
 
-
 <br>
 
-## Testing
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
+# Testing
 
 Please see my separate [Testing MD page HERE](/TESTING.md) that includes information on testing, viability and bugs.
 
-## Deployment
-
-
+# Deployment
 
 Deployment took place soon after installing Django, ElephantSQL and Cloudinary.
+
 <br>
+
 <details>
 
 #### Installing libraries
@@ -1163,7 +1216,7 @@ This is necessary to create a database that can be accessed by Heroku. The datab
     ````
 
 
-***Deploy To Heroku***
+#### Deploy To Heroku
 
 First create A Pipfile in your project terminal.
 
@@ -1193,19 +1246,19 @@ In the terminal enter the command  pip3 freeze > requirements.txt, and a file wi
 - After the initial deployment you can then enable automatic deployment.
 
 
-***DEBUG Status***
+### DEBUG Status
 
 - For the final deployment to Heroku once the project is complete and ***before*** submission of the project to Code Institute, ensure DEBUG is changed from True to ***False***.
 
 
-***Fork the repository***
+### Fork the repository
 
 For creating a copy of the repository on your account and change it without affecting the original project, useFork directly from GitHub:
 
 On [My Repository Page](https://github.com/todiane/poster-palace), press Fork in the top right of the page.
 A forked version of my project will appear in your repository.
 
-***Clone the repository***
+### Clone the repository
 
 For creating a clone of the repository on your local machine, useClone:
 
@@ -1250,7 +1303,7 @@ Your clone was created
 ## Additional Technology Resources
 
 - [Balsamiq](https://balsamiq.com/) for wireframes
-- [Canva](https://www.canva.com/en_gb/) = used to make product images and delivery PDF
+- [Canva](https://www.canva.com/en_gb/) - used to design posters, make product mockups and deliver PDF
 - [Diffchecker to check code](https://www.diffchecker.com/text-compare/ ) - to check for differences in code
 - [Favicon Generator](https://realfavicongenerator.net/)
 - [Font Awesome](https://www.fontawesome.com) - for icons used
@@ -1260,12 +1313,7 @@ Your clone was created
 - [temp mail](https://temp-mail.org/en/view/6585f978a31e9e00ee8c2619) - temporary email used to test the registration, password reset and checkout processs.
 
 
-
-
-
-
-
-## Resources Used
+## Resources 
 
 This list contains resources I have used to help me start, create and manage this project.
 Use Ctrl (or Cmd) + click to open in new window.
@@ -1277,7 +1325,7 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 - [Contact Us App](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) - I used this to create my contact form app 
 
-[Add Reviews](https://www.youtube.com/watch?v=3KCBN7WJXMY&list=PLFNQLcwO1GaY3dy2i6F5vQ60YGDRUD-bX&index=2) - video used to help add reviews
+- [Add Reviews](https://www.youtube.com/watch?v=3KCBN7WJXMY&list=PLFNQLcwO1GaY3dy2i6F5vQ60YGDRUD-bX&index=2) - video used to help add reviews
 
 
 - [Collapse faq on contact page](https://bootsnipp.com/snippets/Elqk5)
@@ -1292,5 +1340,9 @@ Use Ctrl (or Cmd) + click to open in new window.
 - [Perplexity AI](https://perplexity.ai) - To help with product descriptions, which were adapted into my own words and to fit SEO.
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
+# Acknowledements
+
+# Retrospective
 
 

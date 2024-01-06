@@ -11,6 +11,8 @@ When saving a product to the wishlist you can not select a size. If you select X
 
 Phone number area on checkout form let me put in letters. It should be numbers only and an attempt was made to change that but this broke the checkout process. Further investigation into making it work is needed.
 
+name and email didnt appear on the profile after an order was placed - detail how you sorted that one out
+
 
 Installed Black app
 
