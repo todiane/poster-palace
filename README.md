@@ -27,9 +27,9 @@
 [Store Structure](#ecommerce-store-stucture)
   - [Admin](#admin)
   - [Home app](#homepage)
-      - [Navigation](#navigation)
-      - [Footer](#footer)
-      - [Registration](#registration)
+  - [Navigation](#navigation)
+  - [Footer](#footer)
+  - [Registration](#registration)
   - [About app](#about-us)
   - [Bag app](#bag-app)
   - [Checkout app](#checkout-app)
@@ -69,8 +69,6 @@
 [Retrospective](#retrospective)
 
 
-
-
 ## Project Overview
 
 Poster Palace - Beautify your room. Uplift your spirit.
@@ -99,16 +97,16 @@ Zip         : 42424
 
 ## Project Rationale
 
-Poster is a business to consumer, print-on-demand online ecomerce store.
-The development of this store specialising in large and extra-large posters has been driven by the following business model/rationales:
+Poster Palace is a business to consumer, print-on-demand online ecommerce store.
+The development of this store specialising in large and extra-large posters and has been driven by the following business model/rationales:
 
 <details>
 
-**Market Demand**
-While there are a number of sites offering wall art in a large range of sizes, there are very few offering larger sizes in wall art making it an underserved market. The platform also embraces a niche focus catering to customers searching for larger sized posters, providing an opportunity to differentiate from competitors and attract customers looking for a specialised product.
+**Market Demand:** 
+While there are a number of sites offering posters in a large range of sizes, there are very few offering larger sizes in posters making it an underserved market. The business embraces a niche focus catering to customers searching for larger sized posters, providing an opportunity to differentiate from competitors and attract customers looking for a specialised product.
 
 **Target Audience:**
-Niche products attract a niche target audience. High quality attracts people willing to pay for luxury products. The large and extra-large sizes of these posters along with the printing quality means our product will attract a specific demographic including interior designers, business owners looking for wall art for their office or individuals with large homes looking for statement pieces to enhance their living space and aesthetics and of any room. 
+Niche products attract a niche target audience. High quality attracts people willing to pay for luxury products. The larger sizes of these posters along with the printing quality and eco-friendly materials used means our product will attract a specific demographic. This demographic includes interior designers, business owners looking for wall art for their office or individuals with large homes looking for statement pieces to enhance their living space and aesthetics of a room. 
 
 The key characteristic of potential buyers is their appreciation for visually impactful posters. This includes:
 
@@ -125,29 +123,29 @@ The key characteristic of potential buyers is their appreciation for visually im
 <br>
 
 **Print Quality and Materials**
-The value proposition is to offer a unique product with bold visual impact. To achieve this posters will be produced using high-quality printing techniques and materials making them durable and long-lasting. Our commitment to quality will build brand trust with customers and support with any community engagement plans.
+The value proposition is to offer a unique product with bold visual impact. To achieve this posters will be produced using high-quality printing techniques and materials making them durable and long-lasting. Our commitment to quality and sustainable material will build brand trust with customers and support with any community engagement plans.
 
 
  **Online Shopping Trends:**
 With the convenience of e-commerce we are leveraging the growing trend of online shopping. Customers can easily browse and purchase posters from the comfort of their homes, making it important that the website  is user-friendly and optimised for online transactions and engagement.
 
 **Customer Relationships:**
-Prompt and accurate customer service will be important, espeically handling refunds, returns and complaints, as will the opportunity for our visitors and buyers to contact and provide feedback.
+Prompt and accurate customer service will be important, especially handling refunds, returns and complaints, as will the opportunity for our visitors and buyers to contact and provide feedback.
 The posters can be shipped internationally, providing an opportunity for the business to reach a broader audience and tap into markets beyond our immediate location. Promotion via social media like Facebook (Instagram) and Pinterest will support our global reach. Partnerships and collaborations with influencers in the interior design and art space will also help to boost the brand.
 
 
-**Customisation Options**
+**Customisation Options:**
 Customisation is an extremely popular and growing trend in online shopping. While customisation isn’t currently available on the platform there is the potential to offer this option, providing a more personalised touch and a unique selling point. We can not only offer the chance for customers to customise using words but also using their own images and/or colours.
 
-**Revenue Streams**
-As well as the posters and the potential for customisation, there is also an opportunity to offer accessories (e.g. frames, poster glue, hanging accessories etc) and digital prints/smaller sizes that customers print off themselves.
+**Revenue Streams:**
+As well as the posters and the potential for customisation, there is also an opportunity to offer accessories (e.g. frames, poster glue, hanging accessories etc) and digital prints in smaller sizes that customers print off themselves.
 
 **Key Partnerships**
-The business will develop relationships with reliable printing suppliers who produce high-quality prints. As this is a print-on-demand business the order to delivery timescale must be as short as possible. A shipping and logistics company/partners who will provide an efficient and timely delivery schedule.
+The business will develop relationships with reliable printing suppliers who produce high-quality prints. As this is a print-on-demand business the order to delivery timescale must be as short as possible. We have an established relationship with a shipping and logistics company/partner who will provide an efficient and timely delivery schedule.
 
 **Key Activities**
 
-As well as planning and executing regular marketing campaigns around individual posters (e.g. promoting the Love category during valentines) the quarterly competition will also be a key activity to promote the brand. The need to continuously design, update and add posters to the store is essential.
+As well as planning and executing regular marketing campaigns around individual posters (e.g. promoting the Love category during valentines) the quarterly poster deesign competition will also be a key activity to promote the brand. The need to continuously design, update and add posters to the store is essential.
 
 **Cost Structure**
 
@@ -166,38 +164,38 @@ Funds for advertising and influencer marketing.
 
 The objective of this project is to build a Full-Stack eCommerce site with payment system and product structure based on business logic used to control a centrally-owned dataset.
 
-As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) and social media marketing techniques have been used in the delivery of content and images (e.g. the name of the image on the about page is “buy-posters-online”) to improve audience and brand reach. Objectives include:
+As well as employing advanced User Experience Design to build this Full-Stack web application, search engine optimisation (SEO) techniques have been used in the delivery of content and images (e.g. the name of the image on the about page is “buy-posters-online”) to improve audience and brand reach. Objectives include:
 
 <details>
 
-**Develop a Comprehensive Product Catalog**
+**Develop a Comprehensive Product Catalog:** 
 Design an appealing selection of posters in a variety of different areas, e.g. nature, zodiac, children etc.
 
-**Implement Robust eCommerce Technology** 
+**Implement Robust eCommerce Technology:**  
 Use Django as a reliable eCommerce platform that supports product listing and apps that support shopping cart management, checkout processes, and customer account management.
 
-**Role-Based Access Control (RBAC)**
+**Role-Based Access Control (RBAC):** 
 Implement RBAC to define and manage the roles of users. Superusers will have elevated privileges, including direct access to the admin area and data store. Non-admin users e.g. buyers will have the ability to use the site, update their profile and leave reviews but will not have direct access to the admin area.
 
-**Ensure Mobile Responsiveness and Accessibility**
+**Ensure Mobile Responsiveness and Accessibility:** 
 A mobile-first approach is taken to ensure the store is accessible and user-friendly on various devices, including smartphones and tablets.
 
-**Integrate Stripe Secure Payment Gateway**: 
+**Integrate Stripe Secure Payment Gateway:** 
 Incorporate Stripe as a trusted payment solution to facilitate secure and convenient transactions for buyers and prompt payment of funds to the owner.
 
-**Set Up Customer Support System** 
-Implement customer service solutions, including FAQs and email support, to assist customers effectively.
+**Set Up Customer Support System:**  
+Implement customer service solutions, including FAQs, compliance documentation and email support, to assist customers effectively.
 
-**Compliance and Legal Considerations**
-Ensure the store complies with relevant laws and regulations, including data protection, terms and conditions, privacy policy and intellectual property rights.
+**Compliance and Legal Considerations:** 
+Ensure the store complies with relevant laws and regulations, including data protection, terms and conditions, privacy policy.
 
-**Optimize for Search Engines (SEO)**
+**Optimize for Search Engines (SEO):** 
 Ensure the website, images and product pages are optimised for search engines to increase visibility and attract organic traffic. Writing optimised web content is important.
 
-**Establish Effective Digital Marketing Strategies**
-Digital marketing techniques such as social media marketing, email campaigns, and content marketing will be implemented to attract and retain customers. Ensuring above the fold content management.
+**Establish Effective Digital Marketing Strategies:** 
+Digital marketing techniques such as social media marketing, email campaigns and content marketing will be implemented to attract and retain customers. 
 
-**Create a Community Engagement Plan**
+**Create a Community Engagement Plan:** 
 Develop strategies to engage with customers and create a community around the brand, such as through social media, competitions, and newsletters. Use influencer marketing to help establish the quality of the final product.
 
 </details>
@@ -205,29 +203,29 @@ Develop strategies to engage with customers and create a community around the br
 
 ## Project Outcomes
 
-The above objectives outline what I wanted to complete when creating this project, which led to the creation of the following outcomes (achieved results):
+The above objectives outline the business logic needed to create this project, which led to the development of the following outcomes (achieved results):
 
 <details>
 
-**Functional eCommerce Platform**
-A fully operational online store with a relational database that allows users to browse, select, and purchase posters to be delivered to their homes. The fully responsive platform will provide a wide range of products for sale and will be managed using role-based access to control the flow of information and ensure data is secure.
+**Functional eCommerce Platform:** 
+A fully operational online store with a relational database that allows users to browse, select, and purchase posters to be delivered to their homes. The fully responsive platform provides a wide range of products for sale and is managed using role-based access to control the flow of information and ensure data is secure.
 
-**Secure Site Registration**
+**Secure Site Registration:** 
 Authentication mechanism deployed that lets users register and login so that their order details and address can be saved for future reference. All users must go through the confirmation of their email address before being allowed to log-in. The ability for users to buy products anonymously is also available if they prefer to do so.
 
-**User-Friendly Interface**
+**User-Friendly Interface:** 
 An intuitive and easy-to-navigate website that provides a seamless shopping experience for customers. Includes the ability to search for products and to add potential products to a wishlist.
 
-**Secure Payment Processing**
+**Secure Payment Processing:** 
 Using Stripe payment as a reliable and secure system for handling transactions, protecting customer data, and ensuring privacy.
 
-**Effective Delivery Management**
+**Effective Delivery Management:** 
 Efficient delivery of products to customers within the stated delivery times.
 
-**Customer Support Management**
-Ability for customers to gain support with their order and/or use of the site, e.g. registration and logging in. Support is also available for non-registered users to get in touch.
+**Customer Support Management:** 
+Ability for customers to gain support with their order and/or use of the site, e.g. registration and logging in. Support is also available for non-registered users to get in touch via our contact form.
 
-**Customer Engagement and Retention**: 
+**Customer Engagement and Retention:**
 Strong online presence via social media and SEO. A store that attracts customers via its activity (e.g. events and influencer marketing) and also encourages repeat business and customer loyalty.
 
 </details>
@@ -238,7 +236,7 @@ Strong online presence via social media and SEO. A store that attracts customers
 
 ## Model View Template
 
-I used MVT to help define the project's requirements, features, and structure by considering the following questions:
+I used model view template (MVT) to help define the project's requirements, features, and structure by considering the following questions:
 
 <details>
 
@@ -284,7 +282,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 **Consistency:** How will we ensure a consistent look and feel across different pages?
 
-**Customisation:** How easily can templates be customised for special promotions or changes in/additions to product?
+**Customisation:** How easily can templates be customised for special promotions or changes in/additions to the product range?
 
 ## Authorisation and Security
 
@@ -296,7 +294,7 @@ I used MVT to help define the project's requirements, features, and structure by
 
 **Data Protection:** How will we protect user data, especially sensitive information like addresses and payment details?
 
-**Compliance:** How will we handle consent management?  Are there any legal compliance issues to consider, such as GDPR for European customers?
+**Compliance:** How will we handle consent management?  Are there any legal compliance issues to consider, such as GDPR for European customers? What documents will be made available to browsers?
 
 ### Additional Considerations
 
@@ -341,13 +339,13 @@ The sprint was divided into three sections:
 
 | First Sprint | Second Sprint | Final Sprint |
 | ------------ | ------------- | ------------ |
-| Balsamiq wireframes created | Products designed and added| Add additional pages e.g. Shipping, privacy policy, Terms and other pages created, 404, 500, sitemap, cookie banner etc |
+| Objectives/Outcomes and Wireframes created | Products designed and added| Add additional pages e.g. Shipping, privacy policy, Terms and other pages created, 404, 500, sitemap etc |
 |Project Structure considered | Views and templates working – checks and tested | Fix any bugs and further testing using Dev tools|
 | Database model ideas created and tested. | Payment system setup with emails | Creation of README |
 | Django apps created – models and views added | UX and UI design decided and implemented | Submit for Peer to Peer review |
 | Templates set up to accommodate models and views | Code refactoring takes place if needed | Final overview before submission |
 | Initial Deployment to Heroku | Users added to test site using fake credit card details | Ensure DEBUG set to False |
-| SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. Drink wine! |
+| SEO & Marketing created.  | Full site is manually tested. Email set up tested. | Project Submission. |
 
 </details>
 
@@ -394,7 +392,7 @@ What benefits will an account offer (e.g., order history, saved items)?
 How will you protect user data and privacy?
 
 **Marketing and SEO:**
-How will you optimize the site for search engines?
+How will you optimise the site for search engines?
 What marketing strategies will you use to attract customers?
 How will you integrate social media?
    
@@ -402,7 +400,7 @@ How will you integrate social media?
 How will you handle copyright and intellectual property rights if customisation is offered?
 What terms of service and privacy policy will you need?
 What other policies will you need?
-Are there any specific legal considerations for selling digital products?
+Are there any specific legal considerations for selling digital products and/or the products designed by competition winners?
 
 **Feedback and Support:**
 What kind of customer support will you offer?
@@ -430,7 +428,7 @@ User stories were added to these epics and you can read the acceptance criteria 
 
 **Store Creation**
 
-- As a super user I can design and update the homepage so that I can keep it updated with the latest products.
+- As a super user I can design and update the site so that I can keep it updated with the latest products.
 
 - As a first-time visitor, I can understand what the site offers immediately so that I can decide if it meets my needs.
 
@@ -469,7 +467,7 @@ User stories were added to these epics and you can read the acceptance criteria 
 
 - As a user I can subscribe to the newsletter so I can receive exclusive content.
 
-- As the superuser, I can create and promote monthly events so that brand awareness is achieved.
+- As the superuser, I can create and promote regular events so that brand awareness is achieved.
 
 - As a superuser, I can stay connected via social media so I can build a community and brand awareness.
 
@@ -496,7 +494,7 @@ The typical list > detail view pattern is used so that users can find a product 
 
 The font used is a Google Font called Mulish and the main colour of the store is #45526e which is a very dark desaturated blue. The background colour is a very light grey to allow for the card information to be more prominent #fcfcfc
 
-<img src="readme/images/rm-pp-colour-fonts.png" width="80%"><br><br>
+<img src="readme/images/pp-colour-fonts.png" width="80%"><br><br>
 
 Having worked in online marketing, digital marketing and search engine optimisation for several years I am familiar with the concepts needed to promote a website, however UX and UI design are still fairly new to me. Further research was undertaken on UX AND UI principles, not only what was taught on the course but also via my own reading. 
 
@@ -524,7 +522,7 @@ This led to some key considerations when designing the store including:
 
 **User Journey Mapping:** A clear pathway was created from the moment a user lands on the homepage until they checkout. That includes email messages sent for authorisation and any sent once products have been purchased or if a user requests a password change.
 
-<details>
+</details>
 
 <br>
 
@@ -815,7 +813,7 @@ The name of the site with a short introduction and an action button to visit our
 
 <img src="readme/images/rm-homepage-top.png" width="90%"><br><br>
 
-The latest products are listed next and display the last three recently added posters.
+The latest products are listed next and display three recently added posters.
 
  <img src="readme/images/rm-homepage-recent-products.png" width="90%"><br><br>
 
@@ -833,7 +831,7 @@ This newsletter has been set to appear every 3 days of a person visiting. If thi
 
 ## Navigation
 
-The navigation bar has designed to provide a user with multi ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
+The navigation bar has designed to provide visitors with multiple ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
 
 The second section lets users sort posters according to their category name.
 
@@ -853,7 +851,7 @@ The final area of the navbar provides links to pages like about us, contact us, 
 
 ## Footer
 
-The footer area contains links to important pages on the website including compliance and to the main pages visitors use on a website - about us, contact us. A link to the newsletter is also included as an easy way for anyone who might have missed or ignored the pop out to consider registering.
+The footer area contains links to important pages on the website including compliance and to the main pages visitors use on a website - about us, contact us etc. A link to the newsletter is also included as an easy way for anyone who might have missed or ignored the pop up to consider registering.
 
 <img src="readme/images/rm-footer.png" width="90%"><br><br>
 
@@ -935,6 +933,10 @@ An unregistered user will include their email address
 After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page.
 
 <img src="readme/images/rm-contact-us-success.png" width="90%"><br><br>
+
+Below the contact form are a few frequently asked questions
+
+<img src="readme/images/rm-faq-section.png" width="90%"><br><br>
 
 
 Messages are sent to the admin area. 
@@ -1021,7 +1023,7 @@ This app contains the model/view/template for the shopping trolley where product
 
 <img src="readme/images/rm-shopping-bag.png" width="90%"><br><br>
 
-jQuery was used to provide an opportunity for users to increase and decrease a product in the bag and items can also be removed if needed. Every action is met by a reponse message for the user to confirm their action.
+jQuery was used to provide an opportunity for users to increase and decrease a product in the bag and items can also be removed if needed. Every action is met by a reponse message for the user to confirm their action has taken place.
 
 </details>
 
@@ -1036,15 +1038,22 @@ The checkout page includes a form that outlines all the information needed for t
 
 The user has an option to save their details to their profile.
 
-Checkout is possible without registration. A message has been added before the payment area inviting people to register.
+Checkout is possible without registration. A message has been added inviting guests to register.
 
 <img src="readme/images/rm-checkout-guest-page.png" width="90%"><br><br>
 
-Once complete a success message appears along with a summary of the order which is also sent via email. A copy of the email with order is also sent to Poster Palace. The superuser can then log into Stripe for full details and to fulfill the order.
+Once complete a success message appears along with a summary of the order which is also sent via email. 
 
 <img src="readme/images/rm-checkout-success.png" width="90%"><br><br>
 
 <img src="readme/images/rm-order-success-email.png" width="90%"><br><br>
+
+
+The superuser has confirmation of the order in the admin area.
+
+<img src="readme/images/rm-order-confirmation.png" width="90%"><br><br>
+
+<img src="readme/images/rm-order-confirmation2.png" width="90%"><br><br>
 
 
 ## Stripe
@@ -1078,7 +1087,7 @@ When they updated their profile a success messages is triggered
 
 ## Wish List app
 
-The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page encouraging them to click and then select their size before adding it to their cart. Users can delete any item on their wish list.
+The wish list app includes a model/view/template only available to registered users. Users can save their favourite products to this area. The image and a brief description appears on the page . Users can delete any item on their wish list.
 
 <details>
 
@@ -1093,13 +1102,13 @@ If an unregistered user clicks on the "Add to wish list" button they are automat
 
 ## Marketing App
 
-This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a regular event. This event encourages people to register for the newsletter to get information on the next event. 
+This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a quarterly design competition. This competition encourages people to register for the newsletter to get information on the next event. 
 
 <details>
 
 <img src="readme/images/rm-newsletter-page.png" width="90%"><br><br>
 
-The event is a poster competition held 4 times a year. Newsletter subscribers are invited to design and submit a poster. They can submit a poster as an individual or as a team. The winner posters are sold on the website. As well as a link to a pdf that shows the winning entries (the link can be shared around social media) the page also highlights previous winners and the posters that are available for sale on the website. Terms and conditions of entry are included.
+The poster competition is held 4 times a year. Newsletter subscribers are invited to design and submit a poster. They can submit a poster as an individual or as a team. The winning posters are sold on the website and the winners receive a cash prize. As well as a link to a pdf that shows the winning entries (the link can be shared around social media) the page also highlights previous winners and the posters that are available for sale on the website. Terms and conditions of entry are included.
 
 <img src="readme/images/rm-events-page.png" width="90%"><br><br>
 
@@ -1107,7 +1116,7 @@ The event is a poster competition held 4 times a year. Newsletter subscribers ar
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
-# Online Marketing
+## Online Marketing
 
 <details>
 
@@ -1126,6 +1135,8 @@ While the newsletter and events page are two ways that are used to promote the w
 <img src="readme/images/rm-pinterest-page.png" width="90%"><br><br>
 
 Community engagement takes place using the event, not only during promotion of the competition (when competitors are encouraged to share their ideas to gain votes) but also once the competition has finished where a shareable pdf is included.
+
+Influencer marketing via social media will provide an opportunity for respected and well-known professionals to recommend our posters.
 
 ## Search Engine Optimisation
 
@@ -1168,31 +1179,27 @@ With scalability in mind, I have considered some elements that will be introduce
 
 <details>
 
-- Only verified purchases can leave a review. At the moment the review section is available for all registered users. 
-Only unauthorised users can not leave a review. However, to further enhance the review process an update is needed so 
-only customers who have purchased a product and are verified buyers can leave a review.
+- Only verified purchases can leave a review. At the moment the review section is available for all registered users.  However, to further enhance the review process an update is needed so only customers who have purchased a product and are verified buyers can leave a review.
 
-- Ability to include a photo with reviews.
+- Ability to include a photo with reviews of the poster hanging in the reviewers home/office.
 
 - Provide different colours of the same poster.
 
-- Users to receive recommendations based on their browsing and purchase history.
+- Registered users to receive recommendations based on their browsing and purchase history.
 
 - Price variations will be added so large and extra large sizes are given their own price per product.
 
 - When saving to the wish list an option will be included so that users are able to select the size they want as well 
 as the product and an add to cart button will be included.
 
-- Analytical data will be collected. The ability to follow a user’s journey on the site and have data for where they 
-visit the most, whether shopping carts have been abandoned, what keywords led a customer to the site, page 
-optimisation and load times plus a host of other data is needed for the success of any website or store.
-
-- Monitor and Analyze Performance. Analytics tools will be used to track website traffic, sales data, 
-customer behavior, and other key performance indicators (KPIs).
-
 - A blog app will be added to help with the community engagement plan, influencer marketing and for search engine optimisation purposes.
 
 - Customisation will be provided. The ability to let customers add words to posters or use their own images.
+
+- Analytical data will be collected. The ability to follow a user’s journey on the site and have data for where they visit the most, whether shopping carts have been abandoned, what keywords led a customer to the site, page optimisation and load times plus a host of other data is needed for the success of any website or store.
+
+- Monitor and Analyse Performance. Analytics tools will be used to track website traffic, sales data, 
+customer behaviour, and other key performance indicators (KPIs).
 
 - Add Social Authentication Using Django-Allauth.
 
@@ -1213,11 +1220,9 @@ Please see my separate [Testing MD page HERE](/TESTING.md) that includes informa
 
 Deployment took place soon after installing Django, ElephantSQL and Cloudinary.
 
-<br>
-
 #### Installing libraries
 
-The following steps outline all libraries needed for successful deployment on Heroku. All neccessary-requirements and settings updates will not be discussed in this section as they are assumed as logical follow-up steps to installments. For a full explanation of how to install these libraries, refer to the links provided in [Technologies Used](#technologies-used).
+The following steps outline all libraries needed for successful deployment on Heroku. All neccessary-requirements and settings updates will not be discussed in this section as they are assumed as logical follow-up steps to installments. For a full explanation of how to install these libraries, refer to the links provided in [Technology Used](#technology-used).
 
 - Install **Gunicorn** (server used to run Django on Heroku): ``pip3 install django gunicorn``
 - Install **pyscopg2** (connects to PostgreSQL): ``pip 3 install dj_database_url pyscopg2``
@@ -1286,9 +1291,9 @@ This is necessary to create a database that can be accessed by Heroku. The datab
 
 #### Deploy To Heroku
 
-First create A Pipfile in your project terminal.
+First create A Pip file in your project terminal.
 
-In the terminal enter the command  pip3 freeze > requirements.txt, and a file with all requirements will be created.
+In the terminal enter the command  pip freeze > requirements.txt, and a file with all requirements will be created.
 
 
 ***Setting up Heroku***
@@ -1297,10 +1302,9 @@ In the terminal enter the command  pip3 freeze > requirements.txt, and a file wi
 - Login to Heroku and choose Create App.
 - Click New and Create a new app.
 - Choose a name and select your location.
-- Navigate to the Deploy tab.
-- Click on Connect to Github and search for your repository.
 - Navigate to the Settings tab.
 - Reveal Config Vars and add your Cloudinary, Database URL (from ElephantSQL) Email details, Stripe details and Secret key.
+- Navigate to the Deploy tab.
 
 <img src="readme/images/rm-deployment-heroku.png" width="80%"><br><br>
 
@@ -1309,7 +1313,7 @@ In the terminal enter the command  pip3 freeze > requirements.txt, and a file wi
 
 - Go to the Deploy tab.
 
-- For the very first deployment select manual deploy and wait as Heroku builds the logs. Once complete click on the button to view the app.
+- For the very first deployment select DEPLOY BRANCH and wait as Heroku builds the logs. Once complete click on the button to view the app.
 
 - After the initial deployment you can then enable automatic deployment.
 
@@ -1351,11 +1355,11 @@ Your clone was created
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
 
 ### Front-End
-- Bootstrap4 - frontend framework for styling
+- [Bootstrap](https://bootstrap.com) - frontend framework for styling
 - CSS - language used to style webpage
-- Google Fonts - project fonts
+- [Google Fonts](https://fonts.google.com/) - project fonts
 - HTML - base markup language
-- jQuery - for JavaScript functionality
+- [jQuery](https://jquery.com/) - for JavaScript functionality
 
 
 ### Back-End
@@ -1369,34 +1373,28 @@ Your clone was created
 
 ### Additional Technology Resources
 
-- [Balsamiq](https://balsamiq.com/) for wireframes
 - [Canva](https://www.canva.com/en_gb/) - used to design posters, make product mockups and deliver PDF
 - [Diffchecker to check code](https://www.diffchecker.com/text-compare/ ) - to check for differences in code
 - [Favicon Generator](https://realfavicongenerator.net/)
 - [Font Awesome](https://www.fontawesome.com) - for icons used
-- [Miro](https://miro.com/index/) - for database schema
 - [PNG to WEBP converter](https://www.freeconvert.com/png-to-webp) - Changing images to webp
 - [dbdiagram.io](https://dbdiagram.io/d) - to create database schema
 - [temp mail](https://temp-mail.org/en/view/6585f978a31e9e00ee8c2619) - temporary email used to test the registration, password reset and checkout processs.
-
 
 ### Resources 
 
 This list contains resources I have used to help me start, create and manage this project.
 Use Ctrl (or Cmd) + click to open in new window.
-
 <br>
 
 - Code Institute [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1) example and training
-
-- About Us App - Used this to help me create about us app
 
 - [Contact Us App](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) - I used this to create my contact form app 
 
 - [Add Reviews](https://www.youtube.com/watch?v=3KCBN7WJXMY&list=PLFNQLcwO1GaY3dy2i6F5vQ60YGDRUD-bX&index=2) - video used to help add reviews
 
 
-- [Collapse faq on contact page](https://bootsnipp.com/snippets/Elqk5)
+- [Collapse faq on contact page](https://getbootstrap.com/docs/4.1/components/collapse/)
 
 - [Photo gallery on homepage](https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/)
 
@@ -1415,24 +1413,21 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 - Code Institute Slack community and Tutor support for helping me find answers.
 
-- Me. For getting to this point and being willing to go further.
+- The [Code Institute training](https://codeinstitute.net/) that kept me focused on completion.
 
 ## Retrospective 
 
 <details>
 
-I thought I would take a break after completing Project Four but instead I went straight into developing this project. It really helped me feel as if I knew Django well and I was able to put a lot of pieces together quickly. Having access to the Boutique Ado walkthrough was a massive help as I have never had to deal with things like adding payment processes or creating checkout systems. 
-
-<br>
+I thought I would take a break after completing Project Four but instead I went straight into developing this project. It really helped me feel as if I knew Django well and I was able to put a lot of pieces together quickly. Having access to the [Boutique Ado walkthrough](https://github.com/Code-Institute-Solutions/Boutique-Ado) was a massive help as I have never had to deal with things like adding payment processes or creating checkout systems. 
 
 I am still not a fan of developing a plan and sticking to it lol
 My brain wants me to create something and then decide what stays, what goes and what needs to be added. This is one of the reasons I ask myself all those questions I added. It keeps me focus on setting a plan and following it.
 
-<br>
 
 There was nothing overwhelmingly difficult about this project but it was still challenging and not without its frustrations. I am still trying to understand how you can replicate code in exactly the same way and the first one works as it does and yet the one you copied doesn't - even though they are the same. Understanding that it's not you (code) its me goes a long way to helping me through these frustrations. I have now come to accept that the life of a developer is filled with things that may never make sense - they just need to be solved and debugged. 
 
-<br>Talking about debugging - this really is an area I need to improve on because at least 80% of what I couldn't work out in this project could have been (and was) solved with a simple print statement used correctly.
+Talking about debugging - this really is an area I need to improve on because at least 80% of what I couldn't work out in this project could have been (and was) solved with a simple print statement used correctly.
 
 </details>
 

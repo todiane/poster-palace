@@ -9,11 +9,8 @@ class About(models.Model):
     content = models.TextField()
 
     class Meta:
-
-        verbose_name = 'About Poster Palace'
-        verbose_name_plural = 'About Poster Palace'
+        verbose_name = "About Poster Palace"
+        verbose_name_plural = "About Poster Palace"
 
     def __str__(self):
         return self.title
-
-

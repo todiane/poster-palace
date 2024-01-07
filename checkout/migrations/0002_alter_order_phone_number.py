@@ -5,15 +5,21 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('checkout', '0001_initial'),
+        ("checkout", "0001_initial"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='order',
-            name='phone_number',
-            field=models.CharField(max_length=20, validators=[django.core.validators.RegexValidator('^[0-9]+$', 'Please enter numbers only.')]),
+            model_name="order",
+            name="phone_number",
+            field=models.CharField(
+                max_length=20,
+                validators=[
+                    django.core.validators.RegexValidator(
+                        "^[0-9]+$", "Please enter numbers only."
+                    )
+                ],
+            ),
         ),
     ]

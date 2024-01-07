@@ -5,17 +5,17 @@ from products.models import Product
 
 
 def index(request):
-    """ View to return index page """
+    """View to return index page"""
 
-    recent_products = Product.objects.all()[:3]  # Fetchs recent products for homepage
-    
-    return render(request, 'home/index.html', {'products': recent_products})
+    recent_products = Product.objects.all()[:3]
+
+    return render(request, "home/index.html", {"products": recent_products})
 
 
 def about_pp(request):
     """View to return About Us page"""
 
-    about = About.objects.all().order_by('-updated_on').first()
+    about = About.objects.all().order_by("-updated_on").first()
 
     return render(
         request,

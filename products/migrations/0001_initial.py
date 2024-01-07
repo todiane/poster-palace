@@ -7,7 +7,6 @@ import django.utils.crypto
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -16,54 +15,117 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Category',
+            name="Category",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('slug', models.SlugField(blank=True, max_length=200, null=True, unique=True)),
-                ('friendly_name', models.CharField(blank=True, max_length=200, null=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                (
+                    "slug",
+                    models.SlugField(
+                        blank=True, max_length=200, null=True, unique=True
+                    ),
+                ),
+                (
+                    "friendly_name",
+                    models.CharField(blank=True, max_length=200, null=True),
+                ),
             ],
             options={
-                'verbose_name': 'category',
-                'verbose_name_plural': 'categories',
-                'ordering': ['name'],
+                "verbose_name": "category",
+                "verbose_name_plural": "categories",
+                "ordering": ["name"],
             },
         ),
         migrations.CreateModel(
-            name='Product',
+            name="Product",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('sku', models.CharField(blank=True, default=django.utils.crypto.get_random_string, max_length=15, null=True)),
-                ('name', models.CharField(max_length=200)),
-                ('slug', models.SlugField(max_length=200, unique=True)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='')),
-                ('description', models.TextField(blank=True)),
-                ('sizes', models.BooleanField(blank=True, default=False, null=True)),
-                ('price', models.DecimalField(decimal_places=2, default=9.95, max_digits=8)),
-                ('available', models.BooleanField(default=True)),
-                ('created', models.DateTimeField(auto_now_add=True)),
-                ('updated', models.DateTimeField(auto_now=True)),
-                ('category', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='products.category')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "sku",
+                    models.CharField(
+                        blank=True,
+                        default=django.utils.crypto.get_random_string,
+                        max_length=15,
+                        null=True,
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                ("slug", models.SlugField(max_length=200, unique=True)),
+                ("image", models.ImageField(blank=True, null=True, upload_to="")),
+                ("description", models.TextField(blank=True)),
+                ("sizes", models.BooleanField(blank=True, default=False, null=True)),
+                (
+                    "price",
+                    models.DecimalField(decimal_places=2, default=9.95, max_digits=8),
+                ),
+                ("available", models.BooleanField(default=True)),
+                ("created", models.DateTimeField(auto_now_add=True)),
+                ("updated", models.DateTimeField(auto_now=True)),
+                (
+                    "category",
+                    models.ForeignKey(
+                        blank=True,
+                        null=True,
+                        on_delete=django.db.models.deletion.SET_NULL,
+                        to="products.category",
+                    ),
+                ),
             ],
         ),
         migrations.CreateModel(
-            name='Reviews',
+            name="Reviews",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('subject', models.CharField(blank=True, max_length=100)),
-                ('review', models.TextField(blank=True, max_length=500)),
-                ('rating', models.FloatField()),
-                ('ip', models.CharField(blank=True, max_length=20)),
-                ('status', models.BooleanField(default=True)),
-                ('created_at', models.DateTimeField(auto_now_add=True)),
-                ('updated_at', models.DateTimeField(auto_now=True)),
-                ('product', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='products.product')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("subject", models.CharField(blank=True, max_length=100)),
+                ("review", models.TextField(blank=True, max_length=500)),
+                ("rating", models.FloatField()),
+                ("ip", models.CharField(blank=True, max_length=20)),
+                ("status", models.BooleanField(default=True)),
+                ("created_at", models.DateTimeField(auto_now_add=True)),
+                ("updated_at", models.DateTimeField(auto_now=True)),
+                (
+                    "product",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="products.product",
+                    ),
+                ),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
             options={
-                'verbose_name': 'review',
-                'verbose_name_plural': 'reviews',
-                'ordering': ['-created_at'],
+                "verbose_name": "review",
+                "verbose_name_plural": "reviews",
+                "ordering": ["-created_at"],
             },
         ),
     ]

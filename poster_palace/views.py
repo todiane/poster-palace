@@ -1,11 +1,9 @@
 from django.shortcuts import render
 
 
-
 """ Error handling """
 def handler403(request, exception):
     """Render 403 page - Permission denied"""
-
     return render(request, 'errors/403.html', status=403)
 
 

@@ -4,26 +4,32 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='About',
+            name="About",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=200)),
-                ('subtitle', models.CharField(blank=True, max_length=500, null=True)),
-                ('image', models.ImageField(upload_to='')),
-                ('updated_on', models.DateTimeField(auto_now=True)),
-                ('content', models.TextField()),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=200)),
+                ("subtitle", models.CharField(blank=True, max_length=500, null=True)),
+                ("image", models.ImageField(upload_to="")),
+                ("updated_on", models.DateTimeField(auto_now=True)),
+                ("content", models.TextField()),
             ],
             options={
-                'verbose_name': 'About Poster Palace',
-                'verbose_name_plural': 'About Poster Palace',
+                "verbose_name": "About Poster Palace",
+                "verbose_name_plural": "About Poster Palace",
             },
         ),
     ]
