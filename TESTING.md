@@ -69,29 +69,23 @@ Once I had completed the store I used the [Black code formatter](https://pypi.or
 
 
 
+Automated Testing
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+However, you can also separate your database for testing and production benefits and update the settings.py file depending on whether you are testing or the project is complete and deployed so should be in production.
+
+````
+DEVELOPMENT_DB = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+
+PRODUCTION_DB = {"default": dj_database_url.parse(os.getenv("DATABASE_URL"))}
+
+DATABASES = PRODUCTION_DB
+``````
 
 
-
-
-
-# ENV.PY SETUP
-
-Create env.py setup process
-
-using django to create secret key
-
-You can use django to generate a secret key
-
-python manage.py shell
-
-from django.core.management.utils import get_random_secret_key
-
-print(get_random_secret_key())
-
-and that generates a key for you
-
-09qa!+09qa*95355w*64mi-fr534td-402xlemskq
 
 

@@ -1245,10 +1245,22 @@ This is necessary to create a database that can be accessed by Heroku. The datab
 
 - Create ``env.py`` file and ensure it is included in the ``.gitignore`` file
 - Add ``import os`` to env.py file and set environment variable **DATABASE_URL** to the URL copied from ElephantSQL (``os.environ["DATABASE_URL"]="<copiedURL>"``)
-- Below, set **SECRET_KEY** variable (``os.environ["SECRET_KEY"]="mysecretkey"``, but create a more secure password.)
+- Below, set **SECRET_KEY** variable (``os.environ["SECRET_KEY"]="mysecretkey"``, but create a more secure password.) 
+
+  You can use django to generate a secret key
+
+  ``python manage.py shell``
+
+  ``from django.core.management.utils import get_random_secret_key``
+
+  ``print(get_random_secret_key())``
+
+  and that generates a key for you - e.g. 09qa!+09qa*95355w*64mi-fr534td-402xlemskq
 
 
 #### Update Settings
+
+The standard way is to....
 
 - Add the following code at the top of ``settings.py`` to connect the Django project to env.py:
     ````
@@ -1266,6 +1278,23 @@ This is necessary to create a database that can be accessed by Heroku. The datab
     }
     ````
 - Save and migrate all changes made
+
+However, you can also separate your database for testing and production benefits and update the settings.py file depending on whether you are testing or the project is complete and deployed so should be in production.
+
+````
+DEVELOPMENT_DB = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+
+PRODUCTION_DB = {"default": dj_database_url.parse(os.getenv("DATABASE_URL"))}
+
+DATABASES = PRODUCTION_DB
+``````
+
+
 
 
 #### Connect to Cloudinary
