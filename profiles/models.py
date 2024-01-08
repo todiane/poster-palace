@@ -11,8 +11,8 @@ class BuyerProfile(models.Model):
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
-    default_full_name = models.CharField(max_length=50, null=False, blank=False)
-    default_email = models.EmailField(max_length=254, null=False, blank=False)
+    default_full_name = models.CharField(max_length=50, null=True, blank=True)
+    default_email = models.EmailField(max_length=254, null=True, blank=True)
     default_street_address1 = models.CharField(max_length=80, null=True, blank=True)
     default_street_address2 = models.CharField(max_length=80, null=True, blank=True)
     default_town_or_city = models.CharField(max_length=40, null=True, blank=True)
@@ -30,7 +30,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
     """
     Create or update buyer profile
     """
-    # Create new profile for new buyer
+    # Create profile for new buyer
     if created:
         BuyerProfile.objects.create(user=instance)
     # Save profile for existing users

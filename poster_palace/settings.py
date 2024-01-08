@@ -144,14 +144,16 @@ WSGI_APPLICATION = 'poster_palace.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.sqlite3',
-#             'NAME': BASE_DIR / 'db.sqlite3',
-#         }
-#     }
+DEVELOPMENT_DB = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
 
-DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+PRODUCTION_DB = {"default": dj_database_url.parse(os.getenv("DATABASE_URL"))}
+
+DATABASES = PRODUCTION_DB
 
 
 # Password validation
