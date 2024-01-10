@@ -75,9 +75,7 @@ Poster Palace - Beautify your room. Uplift your spirit.
 
 The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are made with eco-friendly sustainable materials and are statement pieces meant for display at home or in the office. They have been designed for customers looking for unique and impactful wall art.
 
-The site is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/)
-
-Admin Panel is [DEPLOYED HERE](https://posterpalace-a7414f135cf3.herokuapp.com/admin)
+[DEPLOYED SITE IS HERE](https://posterpalace-a7414f135cf3.herokuapp.com/)  |  [ADMIN PANEL IS HERE](https://posterpalace-a7414f135cf3.herokuapp.com/admin)
 
 <details>
 

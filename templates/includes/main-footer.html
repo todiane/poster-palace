@@ -1,50 +1,45 @@
-<!-- Adapted code for footer taken from MD Bootstrap. -->
-<!-- https://mdbootstrap.com/docs/standard/navigation/footer/examples-and-customization/ -->
-
 <!-- Footer -->
-
 <footer class="py-sm-5" style="background-color: #45526e">
-        <div class="footer-dark container">
-            <div class="row ">
-                    <div class="col-sm-12 col-md-6 item">
-                        <p class="text-uppercase mb-4 text-white font-weight-bold">Links</p>
-                        <p><a href="{% url 'home' %}" style="color: white;">Home</a> </p>
-                        <p><a href="{% url 'about' %}" style="color: white;">About</a> </p>
-                        <p><a href="{% url 'contact' %}" style="color: white;">Contact Us HERE</a></p>
-                        <p></i><a href="{% url 'subscription' %}" style="color: white;">Newsletter</a></p>
-                    </div>
-                    <!-- Links to compliance pages -->
-                    <div class="col-sm-12 col-md-6 item">
-                        <p class="text-uppercase mb-4 text-white font-weight-bold">Important</p>
-                        <p><a href="{% url 'terms' %}" style="color: white;">Terms of Service</a> </p>
-                        <p><a href="{% url 'shipping' %}" style="color: white;">Shipping</a> </p>
-                        <p><a href="{% url 'refund' %}" style="color: white;">Returns/Refunds</a></p>
-                        <p><a href="{% url 'privacy' %}" style="color: white;">Privacy Policy</a></p>               
-                        <!-- Social Media Buttons -->
-                        <!-- Facebook -->
-                        <a href="https://www.facebook.com/profile.php?id=61555270165633" target="_blank" rel="nofollow" 
-                            class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        
-                        <!-- Pinterest -->
-                        <a href="https://www.pinterest.co.uk/poster_palace/" target="_blank" rel="nofollow"
-                            class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                            <i class="fab fa-pinterest"></i>
-                        </a>
-                        
-                        <!-- Instagram -->
-                        <a href="https://www.github.com/todiane" target="_blank" rel="nofollow" 
-                            class="btn btn-outline-light btn-floating m-1 text-white" role="button">
-                            <i class="fab fa-github"></i>
-                        </a>   
-                        
-                    </div>
-                        <!-- Copyright information -->
-                    <p class="copyright text-white mt-5"> This is a fictional site created as part of a project - Developer: 
-                          <a href="https://todiane.dev" target="_blank" class="text-white font-weight-bold">Diane Corriette</a> © 2023
-                      </p>
-               </div>
+    <div class="footer-dark container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 item">
+                <p class="text-uppercase mb-4 text-white font-weight-bold">Links</p>
+                <p><a href="{% url 'home' %}" style="color: white;" aria-label="Home link">Home</a> </p>
+                <p><a href="{% url 'about' %}" style="color: white;" aria-label="About link">About</a> </p>
+                <p><a href="{% url 'contact' %}" style="color: white;" aria-label="Contact Us Here link">Contact Us HERE</a></p>
+                <p><a href="{% url 'subscription' %}" style="color: white;" aria-label="Newsletter link">Newsletter</a></p>
             </div>
-         </div>
+            <!-- Links to compliance pages -->
+            <div class="col-sm-12 col-md-6 item">
+                <p class="text-uppercase mb-4 text-white font-weight-bold">Important</p>
+                <p><a href="{% url 'terms' %}" style="color: white;" aria-label="Terms of Service link">Terms of Service</a> </p>
+                <p><a href="{% url 'shipping' %}" style="color: white;" aria-label="Shipping link">Shipping</a> </p>
+                <p><a href="{% url 'refund' %}" style="color: white;" aria-label="Returns/Refunds link">Returns/Refunds</a></p>
+                <p><a href="{% url 'privacy' %}" style="color: white;" aria-label="Privacy Policy link">Privacy Policy</a></p>
+
+                <!-- Social Media Buttons -->
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/profile.php?id=61555270165633" target="_blank" rel="nofollow"
+                    class="btn btn-outline-light btn-floating m-1 text-white" role="button" aria-label="Facebook link">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Pinterest -->
+                <a href="https://www.pinterest.co.uk/poster_palace/" target="_blank" rel="nofollow"
+                    class="btn btn-outline-light btn-floating m-1 text-white" role="button" aria-label="Pinterest link">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.github.com/todiane" target="_blank" rel="nofollow"
+                    class="btn btn-outline-light btn-floating m-1 text-white" role="button" aria-label="Instagram link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Copyright information -->
+            <p class="copyright text-white text-center mt-5"> This is a fictional site created as part of a project - Developer:
+                <a href="https://todiane.dev" target="_blank" class="text-white text-small font-weight-bold" aria-labelledby="Developer link">Diane Corriette</a> © 2023
+            </p>
+        </div>
+    </div>
 </footer>

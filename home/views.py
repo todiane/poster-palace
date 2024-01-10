@@ -7,7 +7,7 @@ from products.models import Product
 def index(request):
     """View to return index page"""
 
-    recent_products = Product.objects.all()[:3]
+    recent_products = Product.objects.all()[:4]
 
     return render(request, "home/index.html", {"products": recent_products})
 

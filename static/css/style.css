@@ -47,7 +47,6 @@ p {
   }
   
   .footer-dark .copyright {
-    text-align: left;
     padding-top: 14px;
     font-size: 18px;
   }
@@ -81,7 +80,7 @@ p {
 .shop-now-button {
     background: #45526e;
     color: white;
-    min-width: 260px;
+    min-width: 2o0px;
 }
 
 .btn-black {
@@ -92,7 +91,7 @@ p {
 .btn-outline-black {
     background: white;
     color: #45526e !important; 
-    border: 1px solid #45526e;
+    /* border: 1px solid #45526e; */
 }
 
 .btn-outline-black:hover,

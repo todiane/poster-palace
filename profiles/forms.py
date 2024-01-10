@@ -8,8 +8,6 @@ class BuyerProfileForm(forms.ModelForm):
     class Meta:
         model = BuyerProfile
         fields = [
-            "default_full_name",
-            "default_email",
             "default_street_address1",
             "default_street_address2",
             "default_town_or_city",
@@ -22,8 +20,6 @@ class BuyerProfileForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         placeholders = {
-            "default_full_name": "Name",
-            "default_email": "Email",
             "default_street_address1": "Street Address 1",
             "default_street_address2": "Street Address 2",
             "default_town_or_city": "Town or City",
