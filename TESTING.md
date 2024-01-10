@@ -132,9 +132,24 @@ SEO was given a 100% score
 
 ## Accessibility
 
-Accessibility was given a score of 90% first time around because of a missing <ul></ul> element in the mobile header. Once that was added the score increased to 100%.
+All pages scored above 95% for accessibility - here are a few examples
+
+**Index Page:** Accessibility was given a score of 90% first time around because of a missing <ul></ul> element in the mobile header. Once that was added the score increased to 100%.
 
 <img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br><br>
+
+**About Page:**
+
+<img src="readme/testing/rm-lighthouse-about.png" width="90%"><br><br>
+
+**Newsletter Page:**
+
+<img src="readme/testing/rm-lighthouse-newsletter.png" width="90%"><br><br>
+
+**Event Page:**
+
+<img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
+
 
 
 ## Resources
