@@ -16,4 +16,4 @@ def update_on_delete(sender, instance, **kwargs):
     """Update order total on lineitem delete"""
 
     # Change the first argument to post_delete
-    instance.order.update_total(post_delete=True)
+    instance.order.update_total()

@@ -801,6 +801,13 @@ Below are images that show how the products and orders are managed. Products can
 
 <img src="readme/images/rm-admin-area-orders.png" width="90%"><br><br>
 
+User messages and details e.g. email are also available to superusers only.
+
+<img src="readme/images/rm-admin-users.png" width="90%"><br><br>
+
+<img src="readme/images/rm-admin-user-messages.png" width="90%"><br><br>
+
+
 </details>
 
 ### Homepage 

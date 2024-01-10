@@ -27,32 +27,66 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 [Resources](#resources)
 
-## Features Testing
+## Admin Features Testing
 
-The following manual tests have taken place. I went through the procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
+Manual tests were conducted in the admin area to ensure everything is working. There was an error when deleting orders and the necessary refactoring of code took place to remove that error. 
 
 Admin Area - Role based access control successful - users are unable to log into the admin area
 
 <img src="readme/testing/rm-testing-admin.png" width="90%"><br><br>
 
 
+**Admin Features Testing:**
 
-Registration
-Email received
-Confirmation of email
-Add product to cart
-increase and decrease product amounts
-delete product
-checkout process
-Log in
-Log out
-wishlist
-review
+In the admin area products/categories/reviews can be added, edited and deleted. The following manual tests took place to ensure they all worked.
 
-Admin area
-Adding products
-viewing messages
-viewing orders
+Reviews area:
+<img src="readme/testing/rm-admin-reviews.png" width="90%"><br><br>
+
+Review selected and ready to delete - PASSED
+<img src="readme/testing/rm-admin-reviews-delete.png" width="90%"><br><br>
+
+Confirm deletion of review - PASSED
+<img src="readme/testing/rm-admin-reviews-delete-confirm.png" width="90%"><br><br>
+
+Success message to show review has been deleted - PASSED
+<img src="readme/testing/rm-admin-reviews-delete-success.png" width="90%"><br><br>
+
+Highlight orders to be deleted - PASSED
+<img src="readme/testing/rm-admin-delete-orders.png" width="90%"><br><br>
+
+Confirmation of order deletion - PASSED
+<img src="readme/testing/rm-admin-delete-orders-confirm.png" width="90%"><br><br>
+
+Adding new categories - PASSED
+<img src="readme/testing/rm-admin-category.png" width="90%"><br><br>
+
+Adding new products - PASSED
+<img src="readme/testing/rm-admin-add-product.png" width="90%"><br><br>
+
+## On Site Features
+
+Tests have been undertaken to ensure the registration, email confirmation, confirming email, log-in, log out and password request all work.
+Also tested has been the shopping journey from adding to wishlist, adding and removing products to shopping cart and checking out as an anonymous buyer as well as a registered buyer.
+The process of adding a review has been tested for buyers and also for unregistered users.
+This has all been documented on the [READ ME IS HERE](https://github.com/todiane/poster-palace)
+
+Other manual tests have taken place. 
+
+I went through the customer journey procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
+
+**Adding products:**
+
+**Editing Products:**
+
+**Viewing Messages:**
+
+**Viewing Orders:**
+
+
+
+
+
 
 
 ## UI testing
