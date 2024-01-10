@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #fcfcfc;
+    background-color: #f6f6f6;
 }
 
 /* ------------------------- General Styles */
@@ -23,15 +23,11 @@ h6 {
 
 p {
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 16px;
     color:  #2c3034
     
 }
 
-.card-img-top {
-    max-width: 100%;
-    height: auto;
-}
 
  /* -------------------------------- Footer */
 
@@ -134,7 +130,7 @@ p {
 	top: 0;
 	left: 0;
 	position: fixed;
-    background-color: #fcfcfc;
+    background-color: #f6f6f6;
 	z-index: -1;
 }
 

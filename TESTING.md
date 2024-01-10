@@ -31,6 +31,11 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 The following manual tests have taken place. I went through the procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
 
+Admin Area - Role based access control successful - users are unable to log into the admin area
+
+<img src="readme/testing/rm-testing-admin.png" width="90%"><br><br>
+
+
 
 Registration
 Email received
@@ -48,6 +53,20 @@ Admin area
 Adding products
 viewing messages
 viewing orders
+
+
+## UI testing
+
+Bootstrap is a responsive language so the mobile-first design approach has been taken care of for the most part, however, tests were performed to ensure the following:
+
+| Test | Result | 
+|:---|:---: |
+| Toggle navbar doesn’t convert to navbar until over 990px |  PASS  |
+| Search bar placeholder is always fully visible  |  PASS  |
+| Size of social button icons respond as space increases |  PASS  |
+| Product list scales from two columns to four at medium breakpoint  |  PASS  |
+| Footer scales according to screen size |  PASS  |
+| Search features remain visible on all screen sizes  |  PASS  |
 
 
 
@@ -82,8 +101,6 @@ Using the command python -m flake8 I was given a list of changes that needed to 
 <img src="readme/testing/rm-flake8-messages.png" width="90%"><br><br>
 
 Once I had completed the store I used the [Black code formatter](https://pypi.org/project/black/) to ensure the code is formatted correctly.
-
-
 
 
 ## Bugs
@@ -122,7 +139,7 @@ class ReviewForm(forms.ModelForm):
 
 ## Lighthouse
 
-The original lighthouse score was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, change the images on the homepage and resize them plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
+The original lighthouse score was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
 
 <img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
 
@@ -132,11 +149,15 @@ SEO was given a 100% score
 
 ## Accessibility
 
-All pages scored above 95% for accessibility - here are a few examples
+All pages scored 90% or above for accessibility:
 
 **Index Page:** Accessibility was given a score of 90% first time around because of a missing <ul></ul> element in the mobile header. Once that was added the score increased to 100%.
 
 <img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br><br>
+
+**Product:**
+
+<img src="readme/testing/rm-lighthouse-products.png" width="90%"><br><br>
 
 **About Page:**
 
@@ -154,8 +175,8 @@ All pages scored above 95% for accessibility - here are a few examples
 
 ## Resources
 
-[Pep 8 for code standards](https://peps.python.org/pep-0008/)
-[Google Lighthouse]
+- [Pep 8 for code standards](https://peps.python.org/pep-0008/)
+- Web Development Tool - Google Lighthouse
 
 
 
@@ -164,9 +185,13 @@ All pages scored above 95% for accessibility - here are a few examples
 
 
 
-Automated Testing
+## Automated Testing
 
-However, you can also separate your database for testing and production benefits and update the settings.py file depending on whether you are testing or the project is complete and deployed so should be in production.
+I watched a video on submitting project five where the assessor spoke about automated testing and only including information on it if it went very well. Mine did not and as this is a learning process for me I decided to include it.
+
+Hopefully, years from now I can look back and realise why it didn't work and reflect upon how much I have improved since creating this project 🤞🏿
+
+One aspect of automated testing I do understand is the need to include two databases. The local one for testing and the production database for deployment. Information from [Very Academy](https://www.youtube.com/c/veryacademy)
 
 ````
 DEVELOPMENT_DB = {
@@ -181,6 +206,6 @@ PRODUCTION_DB = {"default": dj_database_url.parse(os.getenv("DATABASE_URL"))}
 DATABASES = PRODUCTION_DB
 ``````
 
-
+I added a few basic tests to the project at the beginning that I
 
 
