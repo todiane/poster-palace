@@ -29,18 +29,27 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 ## Features Testing
 
-I have
+The following manual tests have taken place. I went through the procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
 
-**Registration**
 
-**Log in and log out**
+Registration
+Email received
+Confirmation of email
+Add product to cart
+increase and decrease product amounts
+delete product
+checkout process
+Log in
+Log out
+wishlist
+review
 
-#1. **Product Listing**: Test if products are listed correctly.
-#2. **Product Detail**: Test if individual product details are correct when selected.
-#3. **Add to Cart**: Test if items can be added to the shopping cart.
-#4. **Cart Operations**: Test operations like updating quantity, removing items, etc.
-#5. **Checkout Process**: Test the checkout process including customer information collection, payment processing, and order confirmation.
-#6. **Order Posting**: Test if the order details are correctly posted to the database and if the order processing (e.g., preparing for delivery) starts as expected.
+Admin area
+Adding products
+viewing messages
+viewing orders
+
+
 
 ## Browser Compatibility
 
@@ -113,12 +122,26 @@ class ReviewForm(forms.ModelForm):
 
 ## Lighthouse
 
+The original lighthouse score was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, change the images on the homepage and resize them plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
+
+<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
+
+SEO was given a 100% score
+
+<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
+
 ## Accessibility
+
+Accessibility was given a score of 90% first time around because of a missing <ul></ul> element in the mobile header. Once that was added the score increased to 100%.
+
+<img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br><br>
 
 
 ## Resources
 
 [Pep 8 for code standards](https://peps.python.org/pep-0008/)
+[Google Lighthouse]
+
 
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>

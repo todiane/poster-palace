@@ -805,20 +805,23 @@ Below are images that show how the products and orders are managed. Products can
 
 ### Homepage 
 
-The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40.
+The name of the site with a short introduction and an action button to visit our products is the first thing new and returning visitors see when they land on the homepage. The navbar highlights the search opportunities and a message bar promotes free shipping with orders over £40. The mobile version contains a toggle bar
 
 <details>
 
+<img src="readme/images/rm-homepage-mobile.png" width="90%"><br><br>
+
+On medium and larger menus the full navigation bar is shown
+
 <img src="readme/images/rm-homepage-top.png" width="90%"><br><br>
 
-The latest products are listed next and display three recently added posters.
+Featured products are listed next followed by a short paragraph containing keywords that outlines what is available on the site.
 
- <img src="readme/images/rm-homepage-recent-products.png" width="90%"><br><br>
+ <img src="readme/images/rm-homepage-featured-products.png" width="90%"><br><br>
 
-Recent products are followed by a short paragraph containing keywords that outlines what is available on the site. The section under that explains that we ship quickly and can be trusted and the final section of the homepage displays posters designed by competition winners.
+ <img src="readme/images/rm-homepage-content.png" width="90%"><br><br>
 
-  <img src="readme/images/rm-homepage-bottom.png" width="90%"><br><br>
-
+ 
 Within a few seconds of landing on the site the pop up newsletter banner appears at the right hand side of the screen inviting the visitor to sign up. 
 
  <img src="readme/images/rm-newsletter-popout.png" width="90%"><br><br>
@@ -957,7 +960,7 @@ The products app includes a model/view to display all products on the page. User
 
 Once a product has been selected users are provided with details including an image, description, price, options to select sizes, the category it belongs to and a review rating.
 
-<img src="readme/images/rm-product-display.png" width="90%"><br><br>
+<img src="readme/images/rm-display-page.png" width="90%"><br><br>
 
 Attempts were made to change the price according to size using ProductVariation in Django but this was unsuccessful at the first attempt. I have added this to the future implementations section as something to attempt again as I learn more.
 
