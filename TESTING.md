@@ -96,13 +96,6 @@ I went through the customer journey procedure myself and three other people test
 | 04  |   test column 1 line 4               |                        Full Stack Toolkit                            Using Django, buo share their favourite spot. [README](https://github.com/todia                    | Passed    |
 | 05  |   test column 1 line 5               |                        Specialisation project                         Learn about functions and methods to manage an application's logic flow                           | Passed    |
 
-
-
-
-
-
-
-
 ## UI testing
 
 Bootstrap is a responsive language so the mobile-first design approach has been taken care of for the most part, however, tests were performed to ensure the following:
@@ -144,21 +137,55 @@ The eCommerce store looks and functions as intended on different browsers.
 
 I have been using linter and flake8 to test for code errors. Flake8 is installed and being used to ensure PEP8 python standard
 
-Using the command python -m flake8 I was given a list of changes that needed to be made. I changed most of what was suggested however there are a new lines that remain over 79 characters because it broke the code when I added it to another line. I will continue working on removing as many of them as I can but a few may remain after project submission.
+Using the command python -m flake8 I was given a list of changes that needed to be made. I changed most of what was suggested however there are a few lines that remain over 79 characters because it broke the code when I added it to another line. I will continue working on removing as many of them as I can but a few may remain after project submission.
 
 <img src="readme/testing/rm-flake8-messages.png" width="90%"><br><br>
 
-Once I had completed the store I used the [Black code formatter](https://pypi.org/project/black/) to ensure the code is formatted correctly.
+I also used the Code Instiute [Python Linter](https://pep8ci.herokuapp.com/) to test the py files. Again, where lines of code were long and I didn't want to risk breaking the site by changing them e.g. see settings image below, I left the code intact.
 
+Settings.py
+
+<img src="readme/testing/rm-python-settings.png" width="90%"><br><br>
+
+Views.py - in main project
+<img src="readme/testing/rm-python-project-views.png" width="90%"><br><br>
+
+Url pages - all url pages were tested within ALL APPS and are without errors 
+<img src="readme/testing/rm-python-url.png" width="90%"><br><br>
+
+The following were tested within each app 
+
+- Admin
+- Forms
+- Models
+- Views - and all were without error. Code lines over the 79 characters were adjusted were possible and left if it caused additional errors to arise.
+
+Also tested were any 
+
+- context.py
+- signal.py 
+
+Even though using PEP8 and the CI Linter may seem like doubling up on work the linter did catch a few additional issues that using -m flak8 didn't, plus the CI linter is easier to work with rather than a long list of issues that need to be looked through.
+
+<img src="readme/testing/rm-python-apps.png" width="90%"><br><br>
+
+
+Once I had completed the store I used the [Black code formatter](https://pypi.org/project/black/) to ensure the code is formatted correctly.
 
 ## CSS Validation
 
 I used the CSS Validation service to test the site. I have been testing using the Heroku site and one error was found (added 2o0px instead of 200px) in the file and I corrected this and tested again in local.
 
-
 <img src="readme/testing/rm-css-validation.png" width="90%"><br><br>
 
+
 ## HTML Validation
+
+
+
+
+
+
 
 
 ## Bugs
@@ -265,6 +292,8 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 ## Resources
 
 - [Pep 8 for code standards](https://peps.python.org/pep-0008/)
+- [Black code formatter](https://pypi.org/project/black/)
+- [Code Institute Python Tool](https://pep8ci.herokuapp.com/)
 - Web Development Tool - Google Lighthouse
 
 

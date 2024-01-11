@@ -38,3 +38,4 @@ urlpatterns = [
 handler403 = 'poster_palace.views.handler403'
 handler404 = 'poster_palace.views.handler404'
 handler500 = 'poster_palace.views.handler500'
+
