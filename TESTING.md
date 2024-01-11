@@ -75,13 +75,16 @@ Other manual tests have taken place.
 
 I went through the customer journey procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
 
-**Adding products:**
 
-**Editing Products:**
 
-**Viewing Messages:**
+|     |                 TEST                 |                            INSIGHTS                                                                                                                                     |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   test column 1 line 1               |                             HTML5 and CSS3                            Learn the basic underpinnings behind HTML 5 awith new CSS training [README](https://gi            | Passed    |
+| 02  |   test column 1 line 2               |                               JavaScript                             Using JavaScript to create a game. For loops, functions, methods, cond                             | Passed    |
+| 03  |   test column 1 line 3               |                                Python                              Use Python to create a project. Created a portal for contractors with Google API.                    | Passed    |
+| 04  |   test column 1 line 4               |                        Full Stack Toolkit                            Using Django, buo share their favourite spot. [README](https://github.com/todia                    | Passed    |
+| 05  |   test column 1 line 5               |                        Specialisation project                         Learn about functions and methods to manage an application's logic flow                           | Passed    |
 
-**Viewing Orders:**
 
 
 
@@ -171,38 +174,51 @@ class ReviewForm(forms.ModelForm):
 ```
 
 
-## Lighthouse
+## Lighthouse Validation
 
-The original lighthouse score was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
+The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
 
-<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
+***All pages scored 90% or above for accessibility.***
 
-SEO was given a 100% score
-
-<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
-
-## Accessibility
-
-All pages scored 90% or above for accessibility:
-
-**Index Page:** Accessibility was given a score of 90% first time around because of a missing <ul></ul> element in the mobile header. Once that was added the score increased to 100%.
+**Index Page:** Accessibility was given a score of 90% first time around because of a missing ```<ul>``` element in the mobile header. Once that was added the score increased to 100% but the navbar stopped working on larger screens so I removed it.
 
 <img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br><br>
 
-**Product:**
+<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
 
+SEO was given a 100% score overall
+
+<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
+
+**Registration Page**
+<img src="readme/testing/rm-lighthouse-signup.png" width="90%"><br><br>
+
+**Login Page:**
+<img src="readme/testing/rm-lighthouse-login.png" width="90%"><br><br>
+
+**Forgotten Password Page:**
+<img src="readme/testing/rm-lighthouse-password-forgot.png" width="90%"><br><br>
+
+**Products Page:** PNG images reduced score and can be changed to webp
+Test results the same across all pages e.g. sort category price high to low, a-z, z-a, low to high price.
 <img src="readme/testing/rm-lighthouse-products.png" width="90%"><br><br>
 
-**About Page:**
+**Checkout Page:**
+<img src="readme/testing/rm-lighthouse-checkout.png" width="90%"><br><br>
 
+**Profile Page:**
+<img src="readme/testing/rm-lighthouse-profile.png" width="90%"><br><br>
+
+**About Page:**
 <img src="readme/testing/rm-lighthouse-about.png" width="90%"><br><br>
 
-**Newsletter Page:**
+**Contact Us Page:**
+<img src="readme/testing/rm-lighthouse-contact-us.png" width="90%"><br><br>
 
+**Newsletter Page:**
 <img src="readme/testing/rm-lighthouse-newsletter.png" width="90%"><br><br>
 
 **Event Page:**
-
 <img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
 
 
@@ -215,31 +231,3 @@ All pages scored 90% or above for accessibility:
 
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
-
-
-
-
-## Automated Testing
-
-I watched a video on submitting project five where the assessor spoke about automated testing and only including information on it if it went very well. Mine did not and as this is a learning process for me I decided to include it.
-
-Hopefully, years from now I can look back and realise why it didn't work and reflect upon how much I have improved since creating this project 🤞🏿
-
-One aspect of automated testing I do understand is the need to include two databases. The local one for testing and the production database for deployment. Information from [Very Academy](https://www.youtube.com/c/veryacademy)
-
-````
-DEVELOPMENT_DB = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-
-PRODUCTION_DB = {"default": dj_database_url.parse(os.getenv("DATABASE_URL"))}
-
-DATABASES = PRODUCTION_DB
-``````
-
-I added a few basic tests to the project at the beginning that I
-
-
