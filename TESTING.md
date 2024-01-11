@@ -12,6 +12,8 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 ## CONTENTS
 
 [Features Testing](#features-testing)
+    - [Admin Features](#admin-features)
+    - [Store Features](#store-features)
 
 [Browser Compatibility](#browser-compatibility)
 
@@ -19,24 +21,28 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 [Code Validation](#code-validation)
 
+    - [CSS Validation](#css-validation)
+    - [HTML Validation](#html-validation)
+
 [Bugs](#bugs)
 
 [Lighthouse](#lighthouse)
 
-[Accessibility](#accessibility)
-
 [Resources](#resources)
 
-## Admin Features Testing
+<br>
+
+## Features Testing
+
+A thorough manual testing process was undertaken to ensure all parts of the store worked as it should. Both the admin area and the main store were tested.
+
+### Admin Features:
 
 Manual tests were conducted in the admin area to ensure everything is working. There was an error when deleting orders and the necessary refactoring of code took place to remove that error. 
 
 Admin Area - Role based access control successful - users are unable to log into the admin area
 
 <img src="readme/testing/rm-testing-admin.png" width="90%"><br><br>
-
-
-**Admin Features Testing:**
 
 In the admin area products/categories/reviews can be added, edited and deleted. The following manual tests took place to ensure they all worked.
 
@@ -64,7 +70,12 @@ Adding new categories - PASSED
 Adding new products - PASSED
 <img src="readme/testing/rm-admin-add-product.png" width="90%"><br><br>
 
-## On Site Features
+**Emails via gmail:**
+Emails are received (to the gmail account being used to send emails to customers) when a new order is placed. If an email is incorrect admin is also told about that too. These emails are just test@test.com emails used when testing checkout.
+
+<img src="readme/testing/rm-testing-email.png" width="90%"><br><br>
+
+### Store Features
 
 Tests have been undertaken to ensure the registration, email confirmation, confirming email, log-in, log out and password request all work.
 Also tested has been the shopping journey from adding to wishlist, adding and removing products to shopping cart and checking out as an anonymous buyer as well as a registered buyer.
@@ -140,11 +151,32 @@ Using the command python -m flake8 I was given a list of changes that needed to 
 Once I had completed the store I used the [Black code formatter](https://pypi.org/project/black/) to ensure the code is formatted correctly.
 
 
+## CSS Validation
+
+I used the CSS Validation service to test the site. I have been testing using the Heroku site and one error was found (added 2o0px instead of 200px) in the file and I corrected this and tested again in local.
+
+
+<img src="readme/testing/rm-css-validation.png" width="90%"><br><br>
+
+## HTML Validation
+
+
 ## Bugs
 
 - When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. The ability to add size and an add to cart button have been included in future implementation.
 
 - Phone number area on checkout form let me put in letters. It should be numbers only and an attempt was made to change that but this broke the checkout process. Further investigation into making it work is needed.
+
+- There is an error message in the browser after checkout
+
+```Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.```
+
+However, I placed an order and it went through to Stripe
+
+<img src="readme/testing/rm-stripe-payment.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-stripe-payment1.png" width="90%"><br><br>
+
 
 - when you write a review selecting a star rating is required however no error message appears if you do not select stars. I have attempted to add it using the following as shown at [Geeksforgeeks](https://www.geeksforgeeks.org/error_messages-django-form-field-validation/)
 
@@ -176,7 +208,9 @@ class ReviewForm(forms.ModelForm):
 
 ## Lighthouse Validation
 
-The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint".
+The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint". 
+
+The scripts being in the header also caused lower scores and I added defer in some, defer in the Stripes linked caused it to stop working so I removed it.
 
 ***All pages scored 90% or above for accessibility.***
 
@@ -206,6 +240,9 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 **Checkout Page:**
 <img src="readme/testing/rm-lighthouse-checkout.png" width="90%"><br><br>
 
+**Checkout Success Page:**
+<img src="readme/testing/rm-lighthouse-checkout-success.png" width="90%"><br><br>
+
 **Profile Page:**
 <img src="readme/testing/rm-lighthouse-profile.png" width="90%"><br><br>
 
@@ -220,6 +257,8 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 
 **Event Page:**
 <img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
+
+
 
 
 

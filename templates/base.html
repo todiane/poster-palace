@@ -18,12 +18,12 @@
 
     {% block extra_meta %}
         <!-- Pinterest verification meta tag -->
-        <meta name="p:domain_verify" content="174a4b4d602dc701ba11fd01b58815b7"/>
+        <meta name="p:domain_verify" content="174a4b4d602dc701ba11fd01b58815b7">
     {% endblock %}
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link defer rel="stylesheet" href="{% static 'css/style.css' %}">    
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" defer>    
         {% endblock %}
 
     {% block extra_css %}

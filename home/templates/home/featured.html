@@ -1,17 +1,16 @@
 {% load static %}
-
 <!-- Featured Section-->
 <section class="pb-2">
-    <h2 class="display-8 logo-font text-black text-center mt-3">
-        Featured Products
-    </h2>
+        <h2 class="display-8 logo-font text-black text-center mt-3">
+            Featured Products
+        </h2>
     <div class="container px-4 px-lg-5 mt-3">
         <div class="row gx-4 gx-lg-3 row-cols-1 row-cols-md-2 row-cols-xl-4 justify-content-center">
             <div class="col mb-5">
                 <div class="card h-100">
                     <!-- Product image-->
                     <a href="{% url 'product_detail' product_id=12 %}">
-                        <img class="card-img-top" src="{% static 'images/love-berry-much-500.webp' %}" alt="love you poster"  loading="lazy" />
+                        <img class="card-img-top" src="{% static 'images/love-berry-much-500.webp' %}" alt="love you poster"  loading="lazy">
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -28,7 +27,7 @@
                 <div class="card h-100">
                     <!-- Product image-->
                     <a href="{% url 'product_detail' product_id=10 %}">
-                        <img class="card-img-top" src="{% static 'images/bright-winner-poster-500.webp' %}" alt="bright nature poster"  loading="lazy" />
+                        <img class="card-img-top" src="{% static 'images/bright-winner-poster-500.webp' %}" alt="bright nature poster"  loading="lazy">
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -47,7 +46,7 @@
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">New</div>
                     <!-- Product image-->
                     <a href="{% url 'product_detail' product_id=2 %}">
-                        <img class="card-img-top" src="{% static 'images/purple-plant-xl-poster-500.webp' %}" alt="purple plant poster" loading="lazy" />
+                        <img class="card-img-top" src="{% static 'images/purple-plant-xl-poster-500.webp' %}" alt="purple plant poster" loading="lazy">
                     </a>
                     <!-- Product details-->
                     <div class="card-body p-4">
@@ -64,7 +63,7 @@
                 <div class="card h-100">
                     <!-- Product image-->
                     <a href="{% url 'product_detail' product_id=14 %}">
-                        <img class="card-img-top" src="{% static 'images/daisy-ned-poster-500.webp' %}" alt="Daisy & Ned poster" loading="lazy" />
+                        <img class="card-img-top" src="{% static 'images/daisy-ned-poster-500.webp' %}" alt="Daisy & Ned poster" loading="lazy">
                     </a>
                     <!-- Sale badge-->
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Top Seller</div>
@@ -79,6 +78,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </section>
 
 <!-- New Arrivals Section end-->
