@@ -87,14 +87,86 @@ Other manual tests have taken place.
 I went through the customer journey procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
 
 
+### Home Page Features
 
-|     |                 TEST                 |                            INSIGHTS                                                                                                                                     |     RESULT        |
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
 | :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
-| 01  |   test column 1 line 1               |                             HTML5 and CSS3                            Learn the basic underpinnings behind HTML 5 awith new CSS training [README](https://gi            | Passed    |
-| 02  |   test column 1 line 2               |                               JavaScript                             Using JavaScript to create a game. For loops, functions, methods, cond                             | Passed    |
-| 03  |   test column 1 line 3               |                                Python                              Use Python to create a project. Created a portal for contractors with Google API.                    | Passed    |
-| 04  |   test column 1 line 4               |                        Full Stack Toolkit                            Using Django, buo share their favourite spot. [README](https://github.com/todia                    | Passed    |
-| 05  |   test column 1 line 5               |                        Specialisation project                         Learn about functions and methods to manage an application's logic flow                           | Passed    |
+| 01  |   Click navigation bar log           |                             User is redirected to the home page.          | Pass    |
+| 02  |   Add term to search bar, e.g. abstract             |                               Products and images related to the term appear                                 | Pass    |
+| 03  |   Click on My Account in navbar              |                              Menu dropdown with page options                                 | Pass    |
+| 04  |   Click on shopping bag              |                        Taken to shopping bag page                               | Pass    |
+| 05  |   Shop Now button clicked              |                        Taken to all products page                                               | Pass    |
+| 06  |   Shop Now button clicked              |                        Taken to all products page                                               | Pass    |
+| 07  |   Images under "Featured Products" clicked            |                        Taken to all product display page for that image                                             | Pass    |
+| 08  |   Link in footer clicked           |                        Taken to approriate page on site and off site                                            | Pass    |
+
+
+### Navigation Bar Features
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Click register page under MY Account logo       |                            Taken to page to sign up        | Pass    |
+| 02  |   Click Contact Us link under My Account logo            |                   Taken to contact us form                                | Pass    |
+| 03  |   Click on Login under My Account logo            |                              Taken to sign in page                             | Pass    |
+| 04  |   Click on pages under MORE on navbar             |                        Taken to appropriate page                          | Pass    |
+| 05  |   Click on SORT POSTERS menu in navbar              |                       Products are sorted in order selected e.g. a-z, z-a etc                                           | Pass    |
+| 06  |   Click on category under Posters menu            |                        Taken to all appropriate category | Pass    |
+
+### Authentication Pages
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Click on pages to register, login or logout      |                            Appropriate page is shown along with success message     | Pass    |
+| 02  |   Click link for new password            |                   Taken to form to enter email and email sent out to user with password change link                               | Pass    |
+
+
+### Product Page
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Visit products page      |                            All products show up     | Pass    |
+| 02  |   Click on specific product            |                   Taken to product display page | Pass    |
+| 03  |   Click on add to wishlist           |                              Taken to signin if not registered or success message shows saying product added to wishlist                         | Pass    |
+| 04  |   Click on quantity             |                        Quantity number is increased and decreased                         | Pass    |
+| 05  |   Click on size             |                       Large or extra large size selected                                         | Pass    |
+| 06  |   Click on add review           |    Review can be added only if user is registered/logged in | Pass    |
+| 07  |   Click add to cart           |    Product added to cart, success message shows to confirm                                         | Pass    |
+| 08  |   Click go to secure checkout button          |                        Taken to checkout area                                            | Pass    |
+
+### Checkout Page
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Order summary available    |                            Order summary appears with thumbnail product image | Pass    |
+| 02  |   Cost of order is visible           |                   Order summary, total order, shipping and grand total all shown | Pass    |
+| 03  |   Full personal details         |                              Form to take full customer details is visible. Any errors made are shown to user via messages                        | Pass    |
+| 04  |   Credit card area visible            |       Area to add payment details is visible                       | Pass    |
+| 05  |   Guest Checkout message            |          Message for guests to register for an account                                     | Pass    |
+| 06  |   Adjust Bag Button          |    User can go back to bag - any details added are removed automatically | Pass    |
+| 07  |   Complete order       |    Payment is taken and spinner appears                                         | Pass    |
+| 08  |   Checkout Success          |                       Order summary appears on screen. Success message is shown. Email sent to customer. If logged in details saved to profile                                        | Pass    |
+
+### Profile Page
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   User registers    |                            Profile is created | Pass    |
+| 02  |   User selects to save delivery details     |                   Delivery details and phone number shown on profile page | Pass    |
+| 03  |   Orders saved to profile     |                 Past orders made by customers are available on their profile                     | Pass    |
+| 04  |   Delivery details update           |      Delivery details can be updated in profile                     | Pass    |
+
+### Wish List Page
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Product Added to Wishlist    |                            Success message shows that item added | Pass    |
+| 02  |   User visits wishlist         |                   Product shown with thumbnail image and description | Pass    |
+| 03  |   Delete wish list item       |                              User can delete item. Success message shown that item will be deleted. Success message shows item has been removed.                     | Pass    |
 
 ## UI testing
 
@@ -183,7 +255,7 @@ I used the CSS Validation service to test the site. I have been testing using th
 
 
 
-
+# HTML VALIDATION LEFT TO DO
 
 
 
