@@ -152,11 +152,11 @@ def checkout_success(request, order_number):
 
     if request.user.is_authenticated:
         profile = BuyerProfile.objects.get(user=request.user)
-        # Attach buyer's profile to the order
+        # Attach buyers profile to the order
         order.buyer_profile = profile
         order.save()
 
-        # Save the buyer's info
+        # Save the buyers info
         if save_info:
             profile_data = {
                 "default_street_address1": order.street_address1,

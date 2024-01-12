@@ -92,7 +92,7 @@ p {
 .btn-outline-black {
     background: white;
     color: #45526e !important; 
-    /* border: 1px solid #45526e; */
+    border: 1px solid #45526e;
 }
 
 .btn-outline-black:hover,

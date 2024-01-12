@@ -27,6 +27,7 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 - [Newsletter Page](#newsletter-page)
 - [Events Page](#events-page)
 - [Compliance Pages](#compliance-pages)
+- [Footer](#footer)
 
 [UI Testing](#ui-testing)
 
@@ -171,9 +172,10 @@ I went through the customer journey procedure myself and three other people test
 | 03  |   Click on add to wishlist           |                              Taken to signin if not registered or success message shows saying product added to wishlist                         | Pass    |
 | 04  |   Click on quantity             |                        Quantity number is increased and decreased                         | Pass    |
 | 05  |   Click on size             |                       Large or extra large size selected                                         | Pass    |
-| 06  |   Click on add review           |    Review can be added only if user is registered/logged in | Pass    |
-| 07  |   Click add to cart           |    Product added to cart, success message shows to confirm                                         | Pass    |
-| 08  |   Click go to secure checkout button          |                        Taken to checkout area                                            | Pass    |
+| 06  |   Add to cart without size             |                      User can not add the product without selecting a size                                       | Fail. Customers can add product. Needs further investigation.    |
+| 07  |   Click on add review           |    Review can be added only if user is registered/logged in | Pass    |
+| 08  |   Click add to cart           |    Product added to cart, success message shows to confirm                                         | Pass    |
+| 09  |   Click go to secure checkout button          |                        Taken to checkout area                                            | Pass    |
 
 #### Checkout Page
 
@@ -239,7 +241,12 @@ I went through the customer journey procedure myself and three other people test
 
 #### Compliance Pages
 
-The link in the footer takes a user to the specific page as expected. This includes the shipping, terms & conditions, refund and privacy policy page - pass
+The links in the footer takes a user to the specific page as expected. This includes the shipping, terms & conditions, refund and privacy policy page - pass
+
+
+#### Footer
+
+All links lead to the correct pages. External links open in a new window.
 
 
 ## UI testing
