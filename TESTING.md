@@ -203,8 +203,8 @@ I went through the customer journey procedure myself and three other people test
 | :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
 | 01  |   User taken to contact us page via footer link  |                            Footer links work | Pass    |
 | 02  |   User must select reason for contact    |                 Message shown if not selected                   | Pass    |
-| 03  |   Email not required if registered          |      Email shows in confirmation message | Pass    |
-| 04  |   Thank you message       |    Thank you message appears after sending form | Pass    |
+| 03  |   Email or username automatically added if registered          |      Email and user name added in Admin area | Pass    |
+| 04  |   Thank you message       |    Thank you message appears after sending form. If user is registered their username and email appears in thank you message. If the user is not registered the username does not appear. | Pass    |
 | 05  |   Offer button on page      |    User taken to clearance and deals categories                                | Pass    |
 
 
@@ -278,7 +278,7 @@ The eCommerce store looks and functions as intended on different browsers.
 | 1700 px Desktop | <img src="readme/testing/rm-screen-1700.png" alt="Laptop" width="70%">  |
 | Laptop  |  <img src="readme/testing/rm-screen-1280.png" alt="Laptop" width="70%">   |
 | iPad Air - Tablet |  <img src="readme/testing/rm-screen-ipad-air.png" alt="iPad" width="70%">   |
-| Mobile - Pixel 7  |  <img src="readme/testing/rm-screen-pixel7.png" alt="Mobile" width="70%">  |
+| Mobile - Pixel 7  |  <img src="readme/testing/rm-screen-pixel7.png" alt="Mobile" width="50%">  |
 
 ## Code Validation
 

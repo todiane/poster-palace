@@ -1,7 +1,7 @@
 <!-- Adding Reviews content-->
 <div class="overlay"></div>
 <div class="container-fluid my-5 col-10">
-       <h2 class="fw-bolder fs-5 mb-4">Reviews</h2>
+       <h2 class="fw-bolder fs-5 mb-4">Reviews for {{ product.name }}</h2>
        
     {% if request.user.is_authenticated %}
         <form method="POST" action="{% url 'submit_review' product.id %}">
@@ -40,7 +40,6 @@
 <!-- displays reviews-->
 {% for review in reviews %}
 <div class="container-fluid my-5 col-10">
-    <h2 class="fw-bolder fs-5 mb-4">Customer Reviews for {{ product.name }}</h2>
     <div class="icontext w-100">
         <div class="text">
             <span class="date text-muted float-md-right">{{review.updated_at}}</span>

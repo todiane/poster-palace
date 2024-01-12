@@ -938,9 +938,13 @@ An unregistered user will include their email address
 
 <img src="readme/images/rm-contact-us-unregistered.png" width="90%"><br><br>
 
-After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page.
+After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page. This is the page if they are a non-registerd user.
 
 <img src="readme/images/rm-contact-us-success.png" width="90%"><br><br>
+
+This is the page if they are a registered user.
+
+<img src="readme/images/rm-contact-us-success-registered-user.png" width="90%"><br><br>
 
 Below the contact form are a few frequently asked questions
 
