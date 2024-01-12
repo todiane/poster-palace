@@ -73,33 +73,39 @@ Manual tests were conducted in the admin area to ensure everything is working. T
 
 Admin Area - Role based access control successful - users are unable to log into the admin area
 
-<img src="readme/testing/rm-testing-admin.png" width="90%"><br><br>
+<img src="readme/testing/rm-testing-admin.png" width="80%"><br><br>
 
 In the admin area products/categories/reviews can be added, edited and deleted. The following manual tests took place to ensure they all worked.
 
 Reviews area:
-<img src="readme/testing/rm-admin-reviews.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-reviews.png" width="80%"><br><br>
 
 Review selected and ready to delete - PASSED
-<img src="readme/testing/rm-admin-reviews-delete.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-reviews-delete.png" width="80%"><br><br>
 
 Confirm deletion of review - PASSED
-<img src="readme/testing/rm-admin-reviews-delete-confirm.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-reviews-delete-confirm.png" width="80%"><br><br>
 
 Success message to show review has been deleted - PASSED
-<img src="readme/testing/rm-admin-reviews-delete-success.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-reviews-delete-success.png" width="80%"><br><br>
 
 Highlight orders to be deleted - PASSED
-<img src="readme/testing/rm-admin-delete-orders.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-delete-orders.png" width="80%"><br><br>
 
 Confirmation of order deletion - PASSED
-<img src="readme/testing/rm-admin-delete-orders-confirm.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-admin-delete-orders-confirm.png" width="80%"><br><br>
 
 Adding new categories - PASSED
-<img src="readme/testing/rm-admin-category.png" width="90%"><br><br>
+<img src="readme/testing/rm-admin-category.png" width="80%"><br><br>
 
 Adding new products - PASSED
-<img src="readme/testing/rm-admin-add-product.png" width="90%"><br><br>
+<img src="readme/testing/rm-admin-add-product.png" width="80%"><br><br>
 
 **Emails via gmail:**
 Emails are received (to the gmail account being used to send emails to customers) when a new order is placed. If an email is incorrect admin is also told about that too. These emails are just test@test.com emails used when testing checkout.
@@ -280,19 +286,21 @@ I have been using linter and flake8 to test for code errors. Flake8 is installed
 
 Using the command python -m flake8 I was given a list of changes that needed to be made. I changed most of what was suggested however there are a few lines that remain over 79 characters because it broke the code when I added it to another line. I will continue working on removing as many of them as I can but a few may remain after project submission.
 
-<img src="readme/testing/rm-flake8-messages.png" width="90%"><br><br>
+<img src="readme/testing/rm-flake8-messages.png" width="50%"><br><br>
 
 I also used the Code Instiute [Python Linter](https://pep8ci.herokuapp.com/) to test the py files. Again, where lines of code were long and I didn't want to risk breaking the site by changing them e.g. see settings image below, I left the code intact.
 
 Settings.py
 
-<img src="readme/testing/rm-python-settings.png" width="90%"><br><br>
+<img src="readme/testing/rm-python-settings.png" width="70%"><br><br>
 
 Views.py - in main project
-<img src="readme/testing/rm-python-project-views.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-python-project-views.png" width="70%"><br><br>
 
 Url pages - all url pages were tested within ALL APPS and are without errors 
-<img src="readme/testing/rm-python-url.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-python-url.png" width="70%"><br><br>
 
 The following were tested within each app 
 
@@ -308,7 +316,7 @@ Also tested were any
 
 Even though using PEP8 and the CI Linter may seem like doubling up on work the linter did catch a few additional issues that using -m flak8 didn't, plus the CI linter is easier to work with rather than a long list of issues that need to be looked through.
 
-<img src="readme/testing/rm-python-apps.png" width="90%"><br><br>
+<img src="readme/testing/rm-python-apps.png" width="70%"><br><br>
 
 
 Once I had completed the store I used the [Black code formatter](https://pypi.org/project/black/) to ensure the code is formatted correctly.
@@ -324,9 +332,11 @@ I used the CSS Validation service to test the site. I have been testing using th
 All javascript was put through the [JSHINT tool](https://jshint.com/)
 
 countryfield.js
-<img src="readme/testing/rm-jshint-countryfield.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-jshint-countryfield.png" width="70%"><br><br>
 stripe_elements.js
-<img src="readme/testing/rm-jshint-stripe.png" width="90%"><br><br>
+
+<img src="readme/testing/rm-jshint-stripe.png" width="70%"><br><br>
 
 
 ## HTML Validation
@@ -351,9 +361,9 @@ stripe_elements.js
 | Contact Us FAQ| <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
 | Events | <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
 | Newsletter | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
-| Wish List | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
-| Choosing Poster Article | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
-| All Compliance Pages | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
+| Wish List | <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Choosing Poster Article | <img src="readme/testing/rm-html-checker-success.png" width="90%"> |
+| All Compliance Pages | <img src="readme/testing/rm-html-checker-success.png" width="90%"> |
 | Footer | <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
 
 The newsletter and event pages contains errors because of the code provided by MailChimp for the newsletter, which I didn't want to tamper with so those errors remain.
@@ -374,59 +384,59 @@ The scripts being in the header also caused lower scores and I added defer in so
 #### Index Page: 
 Accessibility was given a score of 90% first time around because of a missing ```<ul>``` element in the mobile header. Once that was added the score increased to 100% but the navbar stopped working on larger screens so I removed it.
 
-<img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br>
+<img src="readme/testing/rm-lighthouse-accessibility.png" width="70%"><br>
 
-<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse.png" width="70%"><br><br>
 
 SEO was given a 100% score overall
 
-<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-seo.png" width="70%"><br><br>
 
 #### Registration Page:
 
-<img src="readme/testing/rm-lighthouse-signup.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-signup.png" width="70%"><br><br>
 
 #### Login Page:
 
-<img src="readme/testing/rm-lighthouse-login.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-login.png" width="70%"><br><br>
 
 #### Forgotten Password Page:
 
-<img src="readme/testing/rm-lighthouse-password-forgot.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-password-forgot.png" width="70%"><br><br>
 
 #### Products Page:
 PNG images reduced score and can be changed to webp
 Test results the same across all pages e.g. sort category price high to low, a-z, z-a, low to high price.
 
-<img src="readme/testing/rm-lighthouse-products.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-products.png" width="70%"><br><br>
 
 #### Checkout Page:
 
-<img src="readme/testing/rm-lighthouse-checkout.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-checkout.png" width="70%"><br><br>
 
 #### Checkout Success Page:
 
-<img src="readme/testing/rm-lighthouse-checkout-success.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-checkout-success.png" width="70%" height="auto"><br><br>
 
 #### Profile Page:
 
-<img src="readme/testing/rm-lighthouse-profile.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-profile.png" width="70%"><br><br>
 
 #### About Page:
 
-<img src="readme/testing/rm-lighthouse-about.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-about.png" width="70%" height="auto"><br><br>
 
 #### Contact Us Page:
 
-<img src="readme/testing/rm-lighthouse-contact-us.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-contact-us.png" width="70%"><br><br>
 
 #### Newsletter Page:
 
-<img src="readme/testing/rm-lighthouse-newsletter.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-newsletter.png" width="70%"><br><br>
 
 #### Event Page:
 
-<img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
+<img src="readme/testing/rm-lighthouse-eventpage.png" width="70%"><br><br>
 
 
 
@@ -480,7 +490,9 @@ class ReviewForm(forms.ModelForm):
 - [Black code formatter](https://pypi.org/project/black/)
 - [Code Institute Python Tool](https://pep8ci.herokuapp.com/)
 - [JSHINT tool](https://jshint.com/)
-- Web Development Tool - Google Lighthouse
+- [HTML validator](https://validator.w3.org/nu/#textarea)
+- [CSS validator](https://jigsaw.w3.org/css-validator/)
+- [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 
 
 
