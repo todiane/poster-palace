@@ -3,38 +3,35 @@
 
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-
 <!--Top section -->
 <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                <div class="image-container my-5">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <div class="image-container my-5">
                 <img class="card-img-top img-fluid" src="{{ about.image.url }}" alt="{{ about.title }}">
-                </div>
             </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="product-details-container mb-5 mt-md-5">
-                        <h1 class="logo-font my-4">{{ about.title }}</h1>
-                        <p class=" my-3">{{ about.subtitle }}</p>
-                        {{ about.content|safe }}
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
-                            <span class="icon"><i class="fas fa-chevron-left"></i></span>
-                            <span class="text-uppercase">Start Shopping</span>
-                        </a>
-                    </div>
-                </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="product-details-container mb-5 mt-md-5">
+                <h1 class="logo-font my-4">{{ about.title }}</h1>
+                <p class=" my-3">{{ about.subtitle }}</p>
+                {{ about.content|safe }}
+                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-3">
+                    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                    <span class="text-uppercase">Start Shopping</span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
-    
-{% endblock %}
 
+{% endblock %}

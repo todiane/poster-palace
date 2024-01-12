@@ -12,8 +12,23 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 ## CONTENTS
 
 [Features Testing](#features-testing)
-    - [Admin Features](#admin-features)
-    - [Store Features](#store-features)
+
+[Admin Features](#admin-features)
+
+[Store Features](#store-features)
+- [Home Page Features](#home-page-features)
+- [Navigation Bar Features](#navigation-bar-features)
+- [Authentication Pages](#authentication-pages)
+- [Product Page](#product-page)
+- [Checkout Page](#checkout-page)
+- [Profile Page](#profile-page)
+- [Contact Us Page](#contact-us-page)
+- [Wish List Page](#wish-list-page)
+- [Newsletter Page](#newsletter-page)
+- [Events Page](#events-page)
+- [Compliance Pages](#compliance-pages)
+
+[UI Testing](#ui-testing)
 
 [Browser Compatibility](#browser-compatibility)
 
@@ -21,12 +36,28 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 [Code Validation](#code-validation)
 
-    - [CSS Validation](#css-validation)
-    - [HTML Validation](#html-validation)
+- [CSS Validation](#css-validation)
+
+- [JavaScript Validation](#javascript-validation)
+
+- [HTML Validation](#html-validation)
+
+<br>
+
+[Lighthouse Validation](#lighthouse-validation)
+
+- [index](#index-page)
+- [registration](#registration-page )
+- [login](#login-page)
+- [forgotten password](#forgotten-password-page)
+- [products page](#products-page)
+- [checkout page](#checkout-page-1)
+- [checkout success page](#checkout-success-page)
+- [contact us page](#contact-us-page-1)
+- [newsletter page](#newsletter-page-1)
+- [event page](#event-page)
 
 [Bugs](#bugs)
-
-[Lighthouse](#lighthouse)
 
 [Resources](#resources)
 
@@ -75,6 +106,8 @@ Emails are received (to the gmail account being used to send emails to customers
 
 <img src="readme/testing/rm-testing-email.png" width="90%"><br><br>
 
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+
 ### Store Features
 
 Tests have been undertaken to ensure the registration, email confirmation, confirming email, log-in, log out and password request all work.
@@ -87,7 +120,7 @@ Other manual tests have taken place.
 I went through the customer journey procedure myself and three other people tested the site and the checkout process as well as adding a review and using the wishlist. Below are the results
 
 
-### Home Page Features
+#### Home Page Features
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
 | :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
@@ -101,7 +134,7 @@ I went through the customer journey procedure myself and three other people test
 | 08  |   Link in footer clicked           |                        Taken to approriate page on site and off site                                            | Pass    |
 
 
-### Navigation Bar Features
+#### Navigation Bar Features
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
@@ -113,7 +146,7 @@ I went through the customer journey procedure myself and three other people test
 | 05  |   Click on SORT POSTERS menu in navbar              |                       Products are sorted in order selected e.g. a-z, z-a etc                                           | Pass    |
 | 06  |   Click on category under Posters menu            |                        Taken to all appropriate category | Pass    |
 
-### Authentication Pages
+#### Authentication Pages
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
@@ -122,7 +155,7 @@ I went through the customer journey procedure myself and three other people test
 | 02  |   Click link for new password            |                   Taken to form to enter email and email sent out to user with password change link                               | Pass    |
 
 
-### Product Page
+#### Product Page
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
@@ -136,7 +169,7 @@ I went through the customer journey procedure myself and three other people test
 | 07  |   Click add to cart           |    Product added to cart, success message shows to confirm                                         | Pass    |
 | 08  |   Click go to secure checkout button          |                        Taken to checkout area                                            | Pass    |
 
-### Checkout Page
+#### Checkout Page
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
 | :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
@@ -149,7 +182,7 @@ I went through the customer journey procedure myself and three other people test
 | 07  |   Complete order       |    Payment is taken and spinner appears                                         | Pass    |
 | 08  |   Checkout Success          |                       Order summary appears on screen. Success message is shown. Email sent to customer. If logged in details saved to profile                                        | Pass    |
 
-### Profile Page
+#### Profile Page
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
@@ -159,7 +192,17 @@ I went through the customer journey procedure myself and three other people test
 | 03  |   Orders saved to profile     |                 Past orders made by customers are available on their profile                     | Pass    |
 | 04  |   Delivery details update           |      Delivery details can be updated in profile                     | Pass    |
 
-### Wish List Page
+#### Contact Us Page
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   User taken to contact us page via footer link  |                            Footer links work | Pass    |
+| 02  |   User must select reason for contact    |                 Message shown if not selected                   | Pass    |
+| 03  |   Email not required if registered          |      Email shows in confirmation message | Pass    |
+| 04  |   Thank you message       |    Thank you message appears after sending form | Pass    |
+| 05  |   Offer button on page      |    User taken to clearance and deals categories                                | Pass    |
+
+
+#### Wish List Page
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
@@ -167,6 +210,31 @@ I went through the customer journey procedure myself and three other people test
 | 01  |   Product Added to Wishlist    |                            Success message shows that item added | Pass    |
 | 02  |   User visits wishlist         |                   Product shown with thumbnail image and description | Pass    |
 | 03  |   Delete wish list item       |                              User can delete item. Success message shown that item will be deleted. Success message shows item has been removed.                     | Pass    |
+
+#### Newsletter Page
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   User taken to newsletter page via footer link  |                            Footer links work | Pass    |
+| 02  |   Register for newsletter     |                 User can sign up to newsletter via form on page                    | Pass    |
+| 03  |   Register for newsletter           |      User can sign up to newsletter via pop out form on homepage                   | Pass    |
+| 04  |   Thank you message       |    Thank you message appears after registering | Pass    |
+| 05  |   Start shopping button on newsletter page      |    User taken to all products                                    | Pass    |
+
+
+#### Events Page
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   User taken to events page via MORE menu in navbar   |                  Navbar link works | Pass    |
+| 02  |   User can register for newsletter        |       Sign up form on events page works                                | Pass    |
+| 03  |   Thank you message       |    Thank you message appears after registering | Pass    |
+| 04  |   User can view pdf          |                     Link to PDF of winners opens in new window                                    | Pass    |
+| 05  |   User can click on product images        |                     Product images take user to display page of relevant product                               | Pass    |
+
+
+#### Compliance Pages
+
+The link in the footer takes a user to the specific page as expected. This includes the shipping, terms & conditions, refund and privacy policy page - pass
+
 
 ## UI testing
 
@@ -182,7 +250,6 @@ Bootstrap is a responsive language so the mobile-first design approach has been 
 | Search features remain visible on all screen sizes  |  PASS  |
 
 
-
 ## Browser Compatibility
 
 Layout: The layout and appearance of the site has been tested for consistency throughout browsers. Browers tested include the main four:
@@ -193,6 +260,8 @@ Layout: The layout and appearance of the site has been tested for consistency th
 - Microsoft Edge
 
 All links were tested and working. All pages load as expected and all features work as expected.
+
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
 ## Responsiveness
 
@@ -250,13 +319,114 @@ I used the CSS Validation service to test the site. I have been testing using th
 
 <img src="readme/testing/rm-css-validation.png" width="90%"><br><br>
 
+## JavaScript Validation
+
+All javascript was put through the [JSHINT tool](https://jshint.com/)
+
+countryfield.js
+<img src="readme/testing/rm-jshint-countryfield.png" width="90%"><br><br>
+stripe_elements.js
+<img src="readme/testing/rm-jshint-stripe.png" width="90%"><br><br>
+
 
 ## HTML Validation
 
+| Page | Validation Image | 
+|:---|:---: |
+| Base.html  |  <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Index  |  <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Main Navbar |  <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Mobile Navbar |  <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Register |  <img src="readme/testing/rm-html-checker-success.png" width="90%"> |
+| Log In |  <img src="readme/testing/rm-html-checker-success.png" width="90%"> |
+| Log Out | <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Product | <img src="readme/testing/rm-html-checker-success.png" width="90%">    |
+| Product Details | <img src="readme/testing/rm-html-checker-success.png" width="90%">    |
+| Checkout |  <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Checkout Success | <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
+| Profile |  <img src="readme/testing/rm-html-checker-success.png" width="90%"> |
+| About Us |<img src="readme/testing/rm-html-checker-success.png" width="90%">   |
+| Contact Us | <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Contact Us Success | <img src="readme/testing/rm-html-checker-success.png" width="90%">  |
+| Contact Us FAQ| <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
+| Events | <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
+| Newsletter | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
+| Wish List | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
+| Choosing Poster Article | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
+| All Compliance Pages | <img src="readme/testing/rm-html-checker-newsletter-page.png" width="90%">  |
+| Footer | <img src="readme/testing/rm-html-checker-success.png" width="90%">   |
+
+The newsletter and event pages contains errors because of the code provided by MailChimp for the newsletter, which I didn't want to tamper with so those errors remain.
+
+The products page highlighted errors due to the sort selector, but nothing to do with the html code itself.
 
 
-# HTML VALIDATION LEFT TO DO
+<p align="right">(<a href="#table-of-content">back to top</a>)</p>
 
+## Lighthouse Validation
+
+The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint". 
+
+The scripts being in the header also caused lower scores and I added defer in some, defer in the Stripes linked caused it to stop working so I removed it.
+
+***All pages scored 90% or above for accessibility.***
+
+#### Index Page: 
+Accessibility was given a score of 90% first time around because of a missing ```<ul>``` element in the mobile header. Once that was added the score increased to 100% but the navbar stopped working on larger screens so I removed it.
+
+<img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br>
+
+<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
+
+SEO was given a 100% score overall
+
+<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
+
+#### Registration Page:
+
+<img src="readme/testing/rm-lighthouse-signup.png" width="90%"><br><br>
+
+#### Login Page:
+
+<img src="readme/testing/rm-lighthouse-login.png" width="90%"><br><br>
+
+#### Forgotten Password Page:
+
+<img src="readme/testing/rm-lighthouse-password-forgot.png" width="90%"><br><br>
+
+#### Products Page:
+PNG images reduced score and can be changed to webp
+Test results the same across all pages e.g. sort category price high to low, a-z, z-a, low to high price.
+
+<img src="readme/testing/rm-lighthouse-products.png" width="90%"><br><br>
+
+#### Checkout Page:
+
+<img src="readme/testing/rm-lighthouse-checkout.png" width="90%"><br><br>
+
+#### Checkout Success Page:
+
+<img src="readme/testing/rm-lighthouse-checkout-success.png" width="90%"><br><br>
+
+#### Profile Page:
+
+<img src="readme/testing/rm-lighthouse-profile.png" width="90%"><br><br>
+
+#### About Page:
+
+<img src="readme/testing/rm-lighthouse-about.png" width="90%"><br><br>
+
+#### Contact Us Page:
+
+<img src="readme/testing/rm-lighthouse-contact-us.png" width="90%"><br><br>
+
+#### Newsletter Page:
+
+<img src="readme/testing/rm-lighthouse-newsletter.png" width="90%"><br><br>
+
+#### Event Page:
+
+<img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
 
 
 
@@ -304,68 +474,12 @@ class ReviewForm(forms.ModelForm):
 
 ```
 
-
-## Lighthouse Validation
-
-The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint". 
-
-The scripts being in the header also caused lower scores and I added defer in some, defer in the Stripes linked caused it to stop working so I removed it.
-
-***All pages scored 90% or above for accessibility.***
-
-**Index Page:** Accessibility was given a score of 90% first time around because of a missing ```<ul>``` element in the mobile header. Once that was added the score increased to 100% but the navbar stopped working on larger screens so I removed it.
-
-<img src="readme/testing/rm-lighthouse-accessibility.png" width="90%"><br><br>
-
-<img src="readme/testing/rm-lighthouse.png" width="90%"><br><br>
-
-SEO was given a 100% score overall
-
-<img src="readme/testing/rm-lighthouse-seo.png" width="90%"><br><br>
-
-**Registration Page**
-<img src="readme/testing/rm-lighthouse-signup.png" width="90%"><br><br>
-
-**Login Page:**
-<img src="readme/testing/rm-lighthouse-login.png" width="90%"><br><br>
-
-**Forgotten Password Page:**
-<img src="readme/testing/rm-lighthouse-password-forgot.png" width="90%"><br><br>
-
-**Products Page:** PNG images reduced score and can be changed to webp
-Test results the same across all pages e.g. sort category price high to low, a-z, z-a, low to high price.
-<img src="readme/testing/rm-lighthouse-products.png" width="90%"><br><br>
-
-**Checkout Page:**
-<img src="readme/testing/rm-lighthouse-checkout.png" width="90%"><br><br>
-
-**Checkout Success Page:**
-<img src="readme/testing/rm-lighthouse-checkout-success.png" width="90%"><br><br>
-
-**Profile Page:**
-<img src="readme/testing/rm-lighthouse-profile.png" width="90%"><br><br>
-
-**About Page:**
-<img src="readme/testing/rm-lighthouse-about.png" width="90%"><br><br>
-
-**Contact Us Page:**
-<img src="readme/testing/rm-lighthouse-contact-us.png" width="90%"><br><br>
-
-**Newsletter Page:**
-<img src="readme/testing/rm-lighthouse-newsletter.png" width="90%"><br><br>
-
-**Event Page:**
-<img src="readme/testing/rm-lighthouse-eventpage.png" width="90%"><br><br>
-
-
-
-
-
 ## Resources
 
 - [Pep 8 for code standards](https://peps.python.org/pep-0008/)
 - [Black code formatter](https://pypi.org/project/black/)
 - [Code Institute Python Tool](https://pep8ci.herokuapp.com/)
+- [JSHINT tool](https://jshint.com/)
 - Web Development Tool - Google Lighthouse
 
 
