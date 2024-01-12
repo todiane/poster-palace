@@ -275,10 +275,10 @@ The eCommerce store looks and functions as intended on different browsers.
 
 | Test | Screenshot View | 
 |:---|:---: |
-| 1700 px Desktop |  ![Desktop](readme/testing/rm-screen-1700.png)  |
-| Laptop  |  ![Laptop](readme/testing/rm-screen-1280.png)  |
-| iPad Air - Tablet |  ![iPad](readme/testing/rm-screen-ipad-air.png)  |
-| Mobile - Pixel 7  |  ![Mobile](readme/testing/rm-screen-pixel7.png)  |
+| 1700 px Desktop | <img src="readme/testing/rm-screen-1700.png" alt="Laptop" width="70%">  |
+| Laptop  |  <img src="readme/testing/rm-screen-1280.png" alt="Laptop" width="70%">   |
+| iPad Air - Tablet |  <img src="readme/testing/rm-screen-ipad-air.png" alt="iPad" width="70%">   |
+| Mobile - Pixel 7  |  <img src="readme/testing/rm-screen-pixel7.png" alt="Mobile" width="70%">  |
 
 ## Code Validation
 
