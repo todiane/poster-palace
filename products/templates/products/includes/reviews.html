@@ -6,6 +6,12 @@
     {% if request.user.is_authenticated %}
         <form method="POST" action="{% url 'submit_review' product.id %}">
             {% csrf_token %}
+                <!-- Add the following code to display rating error -->
+                {% if form.rating.errors %}
+                    <div class="alert alert-danger">
+                        {{ form.rating.errors.0 }}
+                    </div>
+                {% endif %}
             <label>Share your thoughts. How much do you rate: {{ product.name }}?</label>
             <br>
             <!-- Star Ratings section -->

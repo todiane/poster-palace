@@ -80,38 +80,40 @@ def product_detail(request, product_id):
 
 
 def submit_review(request, product_id):
-    """Logged in Users can leave a review"""
-    url = request.META.get("HTTP_REFERER")
-    if request.method == "POST":
-        form = ReviewForm(request.POST)
-        if form.is_valid():
-            try:
-                reviews = Reviews.objects.get(
-                    user__id=request.user.id, product__id=product_id
-                )
-                form = ReviewForm(request.POST, instance=reviews)
-                form.save()
-                messages.success(request, "Your review has been updated.")
+    """ Logged in Users can leave a review"""
+    url = request.META.get('HTTP_REFERER')
+    if request.method == 'POST':
+        try:
+            reviews = Reviews.objects.get(user__id=request.user.id, product__id=product_id)
+            form = ReviewForm(request.POST, instance=reviews)
+            form.save()
+            messages.success(request, 'Your review has been updated.')
+
+            return redirect(url)
+
+        except Reviews.DoesNotExist:
+            form = ReviewForm(request.POST)
+            if form.is_valid():
+                data = Reviews()
+                data.subject = form.cleaned_data['subject']
+                data.rating = form.cleaned_data['rating']
+                data.review = form.cleaned_data['review']
+                data.ip = request.META.get('REMOTE_ADDR')
+                data.product_id = product_id
+                data.user_id = request.user.id
+                data.save()
+                messages.success(request, 'Your review has been submitted!')
 
                 return redirect(url)
+    else:
+        # Check if the 'rating' field has an error
+        if 'rating' in form.errors:
+            # Add a custom error message for the 'rating' field
+            form.add_error('rating', 'Please give this product a rating')
 
-            except Reviews.DoesNotExist:
-                form = ReviewForm(request.POST)
-                if form.is_valid():
-                    data = Reviews()
-                    data.subject = form.cleaned_data["subject"]
-                    data.rating = form.cleaned_data["rating"]
-                    data.review = form.cleaned_data["review"]
-                    data.ip = request.META.get("REMOTE_ADDR")
-                    data.product_id = product_id
-                    data.user_id = request.user.id
-                    data.save()
-                    messages.success(request, "Your review has been submitted!")
+    form = YourReviewForm()
 
-                    return redirect(url)
-                else:
-                    # return the form with errors to the template
-                    return render(request, 'products/product_detail.html', {'form': form})
+    return render(request, 'reviews.html', {'form': form})
 
 
 """Compliance Pages for shipping, terms, privacy"""
