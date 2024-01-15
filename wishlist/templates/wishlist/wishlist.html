@@ -16,6 +16,7 @@
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
                     <h2 class="logo-font my-4">Your Wishlist</h2>
+                    {% if poster_wishlist %} 
                     {% for item in poster_wishlist %}
                         <div class="row" style="margin-bottom: 20px;">
                             <div class="col-4">
@@ -29,6 +30,15 @@
                             </div>
                         </div>
                     {% endfor %}
+                    {% else %} 
+                    <p>Your wishlist is empty.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mb-5 mt-2">
+                            <span class="icon"><i class="fas fa-chevron-left"></i></span>
+                            <span class="text-uppercase">Start Shopping</span>
+                        </a>
+                    </div>
+                    {% endif %}
                 </div>
             </div>
 
@@ -36,13 +46,6 @@
                 <div class="product-details-container mb-5 mt-md-5">
                     <!-- choosing a poster content -->
                     {% include 'wishlist/choosing_poster.html' %}
-
-                    <div class="d-flex justify-content-center">
-                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mb-5 mt-2">
-                            <span class="icon"><i class="fas fa-chevron-left"></i></span>
-                            <span class="text-uppercase">Start Shopping</span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -55,7 +58,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="deleteModalLabel">Confirm Deletion</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">

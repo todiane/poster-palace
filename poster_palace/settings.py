@@ -31,19 +31,19 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    '8000-todiane-posterpalace-tkjbeti4r4n.ws-eu107.gitpod.io',
     'posterpalace-a7414f135cf3.herokuapp.com',
+    'localhost',
 
 ]
 
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-todiane-posterpalace-tkjbeti4r4n.ws-eu107.gitpod.io/',
+    'https://posterpalace-a7414f135cf3.herokuapp.com/',
 ]
 
 

@@ -113,14 +113,14 @@ Emails are received (to the gmail account being used to send emails to customers
 
 <img src="readme/testing/rm-testing-email.png" width="90%"><br><br>
 
-<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+<p align="right">(<a href="#contents">back to top</a>)</p>
 
 ### Store Features
 
 Tests have been undertaken to ensure the registration, email confirmation, confirming email, log-in, log out and password request all work.
 Also tested has been the shopping journey from adding to wishlist, adding and removing products to shopping cart and checking out as an anonymous buyer as well as a registered buyer.
 The process of adding a review has been tested for buyers and also for unregistered users.
-This has all been documented on the [READ ME IS HERE](https://github.com/todiane/poster-palace)
+This has all been documented on the [READ ME HERE](https://github.com/todiane/poster-palace)
 
 Other manual tests have taken place. 
 
@@ -274,7 +274,7 @@ Layout: The layout and appearance of the site has been tested for consistency th
 
 All links were tested and working. All pages load as expected and all features work as expected.
 
-<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+<p align="right">(<a href="#contents">back to top</a>)</p>
 
 ## Responsiveness
 
@@ -378,7 +378,7 @@ The newsletter and event pages contains errors because of the code provided by M
 The products page highlighted errors due to the sort selector, but nothing to do with the html code itself.
 
 
-<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+<p align="right">(<a href="#contents">back to top</a>)</p>
 
 ## Lighthouse Validation
 
@@ -451,6 +451,8 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 
 - When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. The ability to add size and an add to cart button have been included in future implementation.
 
+- When writing a review the star rating is required as a minimum. A buyer cannot add a review without it. If they complete the title and review box but do not select a star rating nothing happens. I have tried to include an error message to let them know if the star rating is not selected but despite using different code (and help from tutor support) the error message does not display.
+
 - Phone number area on checkout form let me put in letters. It should be numbers only and an attempt was made to change that but this broke the checkout process. Further investigation into making it work is needed.
 
 - There is an error message in the browser after checkout
@@ -503,4 +505,4 @@ class ReviewForm(forms.ModelForm):
 
 
 
-<p align="right">(<a href="#table-of-content">back to top</a>)</p>
+<p align="right">(<a href="#contents">back to top</a>)</p>

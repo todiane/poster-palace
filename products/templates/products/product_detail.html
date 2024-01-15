@@ -120,8 +120,18 @@
     </div>
 <!--start review section-->
 {% include 'products/includes/reviews.html' %}
-    
+
+{% if messages %}
+<ul class="messages">
+  {% for message in messages %}
+    <li class="{{ message.tags }}">{{ message }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% endblock %}
+
+
 
 {% block postloadjs %}
 {{ block.super }}

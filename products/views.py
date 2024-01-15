@@ -79,6 +79,7 @@ def product_detail(request, product_id):
     return render(request, "products/product_detail.html", context)
 
 
+
 def submit_review(request, product_id):
     """ Logged in Users can leave a review"""
     url = request.META.get('HTTP_REFERER')
@@ -86,10 +87,13 @@ def submit_review(request, product_id):
         try:
             reviews = Reviews.objects.get(user__id=request.user.id, product__id=product_id)
             form = ReviewForm(request.POST, instance=reviews)
-            form.save()
-            messages.success(request, 'Your review has been updated.')
-
-            return redirect(url)
+            if form.is_valid(): # check if the form is valid
+                form.save()
+                messages.success(request, 'Your review has been updated.')
+                return redirect(url)
+            else: # if the form is not valid, show the errors
+                messages.error(request, form.errors)
+                return redirect(url)
 
         except Reviews.DoesNotExist:
             form = ReviewForm(request.POST)
@@ -103,17 +107,15 @@ def submit_review(request, product_id):
                 data.user_id = request.user.id
                 data.save()
                 messages.success(request, 'Your review has been submitted!')
-
+                return redirect(url)
+            else: # if the form is not valid, show the errors
+                messages.error(request, form.errors)
                 return redirect(url)
     else:
-        # Check if the 'rating' field has an error
-        if 'rating' in form.errors:
-            # Add a custom error message for the 'rating' field
-            form.add_error('rating', 'Please give this product a rating')
-
-    form = YourReviewForm()
+        form = ReviewForm()
 
     return render(request, 'reviews.html', {'form': form})
+
 
 
 """Compliance Pages for shipping, terms, privacy"""

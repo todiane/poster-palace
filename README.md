@@ -73,11 +73,13 @@
 
 Poster Palace - Beautify your room. Uplift your spirit.
 
-The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters to beautify your room and uplift your spirit. These high quality, designer inspired posters are made with eco-friendly sustainable materials and are statement pieces meant for display at home or in the office. They have been designed for customers looking for unique and impactful wall art.
+The place to buy large (61 x 91 cm or 24.02 x 35.83 inches) and extra large (80 x 120 cm or 31.50 x 47.24 inches) posters. These high quality, designer inspired posters are made with eco-friendly sustainable materials and are statement pieces meant for display at home or in the office. They have been designed for customers looking for unique and impactful wall art.
 
 [DEPLOYED SITE IS HERE](https://posterpalace-a7414f135cf3.herokuapp.com/)  |  [ADMIN PANEL IS HERE](https://posterpalace-a7414f135cf3.herokuapp.com/admin)
 
 <details>
+
+<br>
 
 To "purchase" products/test checkout using fake credit card details you can use:
 
@@ -100,6 +102,8 @@ The development of this store specialising in large and extra-large posters and 
 
 <details>
 
+<br>
+
 **Market Demand:** 
 While there are a number of sites offering posters in a large range of sizes, there are very few offering larger sizes in posters making it an underserved market. The business embraces a niche focus catering to customers searching for larger sized posters, providing an opportunity to differentiate from competitors and attract customers looking for a specialised product.
 
@@ -116,7 +120,7 @@ The key characteristic of potential buyers is their appreciation for visually im
 
 - Travel enthusiasts, music lovers, sports enthusiasts, art admirers, etc. who might be interested in purchasing niche poster designs for home decor.
 
-- Parents looking to decorate their child’s room with large bright, fun posters.
+- Parents looking to decorate their childs room with large bright, fun posters.
 
 <br>
 
@@ -166,6 +170,8 @@ As well as employing advanced User Experience Design to build this Full-Stack we
 
 <details>
 
+<br>
+
 **Develop a Comprehensive Product Catalog:** 
 Design an appealing selection of posters in a variety of different areas, e.g. nature, zodiac, children etc.
 
@@ -204,6 +210,8 @@ Develop strategies to engage with customers and create a community around the br
 The above objectives outline the business logic needed to create this project, which led to the development of the following outcomes (achieved results):
 
 <details>
+
+<br>
 
 **Functional eCommerce Platform:** 
 A fully operational online store with a relational database that allows users to browse, select, and purchase posters to be delivered to their homes. The fully responsive platform provides a wide range of products for sale and is managed using role-based access to control the flow of information and ensure data is secure.
@@ -418,11 +426,11 @@ Based on the MVT model and above questions, the following EPICS were created
 
 - SEO/Online Marketing
 
-</details>
+
 
 User stories were added to these epics and you can read the acceptance criteria and tasks completed via my [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
 
-<details>
+
 
 **Store Creation**
 
@@ -485,8 +493,9 @@ The design of this store was developed with minimalism in mind. Colours and font
 
 The store was developed using a mobile-first approach with strong emphasis on accessibility for all including strong readable font, spaced out display and minimal use of dark fonts on dark colours etc.
 
-<br>
 <details>
+
+<br>
 
 The typical list > detail view pattern is used so that users can find a product and easily add it to their basket.
 
@@ -503,6 +512,8 @@ This led to some key considerations when designing the store including:
 ### User Experience (UX) Design:
 
 <details>
+
+<br>
 
 **User Research:** Understand the target audience, their needs, and behaviours. Conduct usability testing.
 
@@ -527,6 +538,8 @@ This led to some key considerations when designing the store including:
 ### User Interface (UI) Design:
 
 <details>
+
+<br>
 
 **Visual Hierarchy:** A clear visual hierarchy is in place that guides users through the content. Important elements of the store are highlighted using images, size, colour and placement. Above-the-fold marketing was implemented on the home page.
 
@@ -555,6 +568,8 @@ This database schema defines the structure and relationships for this store. I u
 Once users register a file is created that stores their username and password plus any additional information provided. Users are then allocated a profile and have the ability to add products to their wishlist and purchase products. 
 
 <details>
+
+<br>
 
 I created the database structure using [dbdiagram.io](https://dbdiagram.io/d) and django-dbml. After installing django-dbml and adding it to my list of apps in the settings file, I ran the command
 
@@ -786,7 +801,7 @@ Poster Palace contains the follow:
 
 ### Admin
 
-The admin area is kept secure thanks to the allocation of roles. By default all users are treated as customers and have access to the main store only. Superusers are given roles which allow them to create, read, edit and delete information.
+The admin area is kept secure thanks to the allocation of roles. By default all users are treated as customers and have access to the main store only. Superusers are given roles which allow them to create, read, edit and delete information in the admin area.
 
 <details>
 
@@ -839,7 +854,7 @@ This newsletter has been set to appear every 3 days of a person visiting. If thi
 
 ## Navigation
 
-The navigation bar has designed to provide visitors with multiple ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
+The navigation bar has been designed to provide visitors with multiple ways to search for and find products. The first section is SORT POSTERS where users can sort according to price (ascending and decending) and category (a-z and z-a). 
 
 The second section lets users sort posters according to their category name.
 
@@ -923,26 +938,26 @@ It uses the same format as the product display page and features an image on the
 
 ## Contact us app
 
-The contact us app includes a model with user choices. They can select why they are getting in touch and then leave a message.
+The contact us app includes a model with user choices. Users can select why they are getting in touch and then leave a message.
 
 <details>
 
 <img src="readme/images/rm-contact-us-reason.png" width="90%"><br><br>
 
 
-If a user is registered they do not have to include their email address as we have that information logged.
+If a user is registered and logged in they do not have to include their email address as we have that information logged. By default their user name is also included and the option to include their full name is available.
 
 <img src="readme/images/rm-contact-us-page.png" width="90%"><br><br>
 
-An unregistered user will include their email address
+An unregistered/logged out user will be asked for their email address
 
 <img src="readme/images/rm-contact-us-unregistered.png" width="90%"><br><br>
 
-After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page. This is the page if they are a non-registerd user.
+After sending the message a receipt of the message they sent appears on the screen and an invitation to visit the latest offers page. This is the page if they are not logged in/unregistered.
 
 <img src="readme/images/rm-contact-us-success.png" width="90%"><br><br>
 
-This is the page if they are a registered user.
+This is the page if they are a registered user and logged in.
 
 <img src="readme/images/rm-contact-us-success-registered-user.png" width="90%"><br><br>
 
@@ -1107,6 +1122,10 @@ The wish list app includes a model/view/template only available to registered us
 
 <img src="readme/images/rm-delete-wishlist-item.png" width="90%"><br><br>
 
+<img src="readme/images/rm-delete-wishlist-item-confirmed.png" width="90%"><br><br>
+
+<img src="readme/images/rm-delete-wishlist-success.png" width="90%"><br><br>
+
 If an unregistered user clicks on the "Add to wish list" button they are automatically re-directed to the sign in page and asked to sign in before they can save a poster to the wish list.
 
 
@@ -1117,6 +1136,8 @@ If an unregistered user clicks on the "Add to wish list" button they are automat
 This is an area managed by superusers to promote brand awareness. Included is a page to the newsletter and a page to a quarterly design competition. This competition encourages people to register for the newsletter to get information on the next event. 
 
 <details>
+
+<br>
 
 <img src="readme/images/rm-newsletter-page.png" width="90%"><br><br>
 
@@ -1131,6 +1152,8 @@ The poster competition is held 4 times a year. Newsletter subscribers are invite
 ## Online Marketing
 
 <details>
+
+<br>
 
 While the newsletter and events page are two ways that are used to promote the website and new products, there are also two social media pages. Pinterest is popular with people looking for design ideas so along with a Facebook page, a Pinterest page was also created.
 
@@ -1167,6 +1190,8 @@ The main keywords for this store are:
 - extra large posters
 
 Open Graph meta tags were also used so the title and description of the site appears on social media if the link is shared.
+
+<img src="readme/images/rm-social-media-share.png" width="90%"><br><br>
 
 These keywords are weaved into the fabric of any web content written for the site and into naming the images. Two types of poster that the store wants to focus on promoting heavily includes
 
