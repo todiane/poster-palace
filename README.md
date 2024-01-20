@@ -978,7 +978,7 @@ Messages are sent to the admin area.
 
 ## Products app
 
-The products app includes a model/view to display all products on the page. Users can use the search bar to sort products into different categories. 
+The products app includes a model/view to display all products on the page. Users can add a product directly to the cart or select to read the product details. By default the cart will add 1 item to the bag. Users can also use the search bar to sort products into different categories. 
 
 <details>
 

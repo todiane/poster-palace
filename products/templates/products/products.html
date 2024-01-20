@@ -85,9 +85,18 @@
                                                 {{ product.averageReview }} / 5
                                                 based on {{ product.countReview }} review(s)
                                             </small>
-                                        {% else %}
-                                            <small class="text-muted">No Rating</small>
-                                        {% endif %}
+                                            {% else %}
+                                                <small class="text-muted">No Rating</small>
+                                            {% endif %}
+                                            <p class="small mt-1 mb-0"></p>
+                                                <a class='btn btn-light text-muted text-small' href="{% url 'product_detail' product.id %}">
+                                                    Product Details <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
+                                            </p>
+                                            <a href="{% url 'add_to_bag' product.id %}" 
+                                                aria-label="Add {{ product.name }} to Bag" 
+                                                class="btn btn-black rounded-0 mt-2">Buy Now</a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -121,9 +130,9 @@
 <!-- product display section ends-->
 
     <!-- arrow up button-->
-    <div class="btt-button shadow-sm rounded-0 border border-black">
+    <div class="btt-button shadow-sm rounded-0 border border-warning">
         <a class="btt-link d-flex h-100">
-            <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>
+            <i class="fas fa-arrow-up text-warning mx-auto my-auto"></i>
         </a>	
     </div>
 {% endblock %}

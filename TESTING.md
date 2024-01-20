@@ -19,7 +19,8 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 - [Home Page Features](#home-page-features)
 - [Navigation Bar Features](#navigation-bar-features)
 - [Authentication Pages](#authentication-pages)
-- [Product Page](#product-page)
+- [Products Page](#products-page)
+- [Product Detail](#product-detail-page)
 - [Checkout Page](#checkout-page)
 - [Profile Page](#profile-page)
 - [Contact Us Page](#contact-us-page)
@@ -51,7 +52,7 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 - [registration](#registration-page )
 - [login](#login-page)
 - [forgotten password](#forgotten-password-page)
-- [products page](#products-page)
+- [products page](#products-page-1)
 - [checkout page](#checkout-page-1)
 - [checkout success page](#checkout-success-page)
 - [contact us page](#contact-us-page-1)
@@ -162,12 +163,21 @@ I went through the customer journey procedure myself and three other people test
 | 02  |   Click link for new password            |                   Taken to form to enter email and email sent out to user with password change link                               | Pass    |
 
 
-#### Product Page
+#### Products Page
 
 
 |     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
 | :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
 | 01  |   Visit products page      |                            All products show up     | Pass    |
+| 02  |   Click on details button            |                   User taken to product display page | Pass    |
+| 03  |   Click on 'Buy Now' button            |                   User adds product to their bag and success message is displayed.  | Pass    |
+
+#### Product Detail Page
+
+
+|     |                 TEST                 |                            EXPECTED ACTION                                                                                                                              |     RESULT        |
+| :-: | :----------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :-----------------|
+| 01  |   Visit product detail page      |                            All details are shown     | Pass    |
 | 02  |   Click on specific product            |                   Taken to product display page | Pass    |
 | 03  |   Click on add to wishlist           |                              Taken to signin if not registered or success message shows saying product added to wishlist                         | Pass    |
 | 04  |   Click on quantity             |                        Quantity number is increased and decreased                         | Pass    |

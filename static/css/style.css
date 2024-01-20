@@ -28,6 +28,10 @@ p {
     
 }
 
+.small-font {
+    font-size: smaller;
+}
+
 
  /* -------------------------------- Footer */
 
@@ -40,7 +44,7 @@ p {
 }
 
 .footer-dark {
-    position: relative;
+    /* position: relative; */
     color:#f0f9ff;
     background-color:#45526e;
     width: 100%;
