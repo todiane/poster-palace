@@ -1484,12 +1484,10 @@ Use Ctrl (or Cmd) + click to open in new window.
 
 - [Collapse faq on contact page](https://getbootstrap.com/docs/4.1/components/collapse/)
 
-- [Photo gallery on homepage](https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/)
-
 
 - [XML-Sitemap](https://www.xml-sitemaps.com/) - Used to create sitemap
 
-- [Cookie Banner](https://pypi.org/project/django-cookiebanner/) - used to handle consent management
+- [Wireframes](https://www.sketchwow.com/) - Made using sketchwow
 
 - [Perplexity AI](https://perplexity.ai) - To help with product descriptions, which were adapted into my own words and to fit SEO.
 
