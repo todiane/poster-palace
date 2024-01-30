@@ -717,35 +717,57 @@ Below is the visual relationship diagram for Poster Palace:
 
 When designing the structure of the store I kept my focus on the need to create a mobile first web-based application that has both a user interface (front end) and server-side database (back end) stored in a central location.
 
-Using the Boutique Ado template meant that I stuck with the structure of the template for the most part, only making the homepage very different.
+Using the Boutique Ado template meant that I stuck with the structure of the template for the most part, only making the homepage different.
 
 <details>
 
-My focus influenced my prototypes which are shown as handdrawn wireframes below:
+My focus influenced my prototypes which are shown as wireframes below:
 
-Home page with mobile home page
+Home page with mobile home page - I wanted to ensure that any visitors are encourage to enter the products page without getting distracted by too much information. 
 
-<img src="readme/images/rm-wireframe-homepage.jpg" width="50%"><br><br>
+After a short introduction a large SHOP NOW button is available which takes the user through to the products page.
 
-<img src="readme/images/rm-wireframe-homepage-mobile.jpg" width="50%"><br><br>
+A few featured products are shown but the userr needs to click through for details and more information.
 
-About and Newsletter  - used product display structure. Events page created using three sections to highlight the event, current winners and the products of past winners.
+<img src="readme/images/rm-wireframe-homepage.png" width="75%"><br><br>
 
-<img src="readme/images/rm-wireframe-aboutus.jpg" width="50%"><br><br>
+<img src="readme/images/rm-wireframe-homepage-mobile.png" width="75%"><br><br>
 
-Contact Us - Idea for FAQ section not included
+About and Newsletter pages  - both pages use the product display structure. Events page created using three sections to highlight the event, current winners and the products of past winners.
 
-<img src="readme/images/rm-wireframe-contact-us.jpg" width="50%"><br><br>
+<img src="readme/images/rm-wireframe-aboutus.png" width="75%"><br><br>
 
-Products Page and display products as per Boutique Ado templates
+Events Page - highlights details of the competition. The ability to sign up for our newsletter and information on previous winners.
 
-<img src="readme/images/rm-wireframe-products-page.jpg" width="50%"><br><br>
+<img src="readme/images/rm-wireframe-events.png" width="75%"><br><br>
 
-<img src="readme/images/rm-wireframe-display-product.jpg" width="50%"><br><br>
+Contact Us - with FAQ section.
 
-Shopping bag and checkout also as per Boutique Ado templates
+<img src="readme/images/rm-wireframe-contactus.png" width="75%"><br><br>
 
-<img src="readme/images/rm-wireframe-shopping-bag.jpg" width="50%"><br><br>
+Success message after submitting contact us form.
+
+<img src="readme/images/rm-wireframe-contact-page-success.png" width="75%"><br><br>
+
+Products Page and display products as per Boutique Ado templates.
+
+<img src="readme/images/rm-wireframe-products-page.png" width="75%"><br><br>
+
+Display page includes any reviews that have been added to the product.
+
+<img src="readme/images/rm-wireframe-display-product.png" width="75%"><br><br>
+
+Shopping bag and checkout also as per Boutique Ado templates.
+
+<img src="readme/images/rm-wireframe-shopping-bag.png" width="75%"><br><br>
+
+Checkout form asks for full delivery details. Anonymous user can checkout and an announcement letting user know they are checking out as a guest appears.
+
+<img src="readme/images/rm-wireframe-checkout.png" width="75%"><br><br>
+
+If a user choses to register their order history is included on their profile page along with the ability to update their delivery details.
+
+<img src="readme/images/rm-wireframe-profile.png" width="75%"><br><br>
 
 
 </details>
@@ -1488,7 +1510,7 @@ Use Ctrl (or Cmd) + click to open in new window.
 I thought I would take a break after completing Project Four but instead I went straight into developing this project. It really helped me feel as if I knew Django well and I was able to put a lot of pieces together quickly. Having access to the [Boutique Ado walkthrough](https://github.com/Code-Institute-Solutions/Boutique-Ado) was a massive help as I have never had to deal with things like adding payment processes or creating checkout systems. 
 
 I am still not a fan of developing a plan and sticking to it lol
-My brain wants me to create something and then decide what stays, what goes and what needs to be added. This is one of the reasons I ask myself all those questions I added. It keeps me focus on setting a plan and following it.
+My brain wants me to create something and then decide what stays, what goes and what needs to be added. This is one of the reasons I ask myself all those questions I added. It keeps me focused on setting a plan and following it.
 
 
 There was nothing overwhelmingly difficult about this project but it was still challenging and not without its frustrations. I am still trying to understand how you can replicate code in exactly the same way and the first one works as it does and yet the one you copied doesn't - even though they are the same. Understanding that it's not you (code) its me goes a long way to helping me through these frustrations. I have now come to accept that the life of a developer is filled with things that may never make sense - they just need to be solved and debugged. 
