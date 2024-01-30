@@ -459,7 +459,9 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 
 ## Bugs
 
-- When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. The ability to add size and an add to cart button have been included in future implementation.
+- When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. 
+
+- Another size issue is making a size a required field. I have tried to change the size model (as per my commits) in different ways so that a size must be selected but I wasn't able to get it to work, despite help from tutor support. I didn't want to change the model too many times in case the database ended up corrupted (as it did in the past) and so it is possible to add a product without selecting a size and the order will still go through. I could have added javascript to validate the size and bring up an error if a size wasn't selected but that only really changes the client side validation and I want to be able to add server side validation. Updating this is something I am focused on learning how to achieve so I can update the site at some point.
 
 - When writing a review the star rating is required as a minimum. A buyer cannot add a review without it. If they complete the title and review box but do not select a star rating nothing happens. I have tried to include an error message to let them know if the star rating is not selected but despite using different code (and help from tutor support) the error message does not display.
 
