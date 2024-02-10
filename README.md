@@ -1026,9 +1026,10 @@ In the future the reviews form will only be shown to customers who purchase a pr
 
 ## Compliance
 
+
 Compliance has been included as views/templates in the products app, although in terms of managing compliance it falls under online marketing. These pages provide important information that needs to be included on an ecommerce store. This includes:
 
-</details>
+<details>
 
 Terms Of Service Policy
 
@@ -1279,6 +1280,8 @@ Please see my separate [Testing MD page HERE](/TESTING.md) that includes informa
 
 Deployment took place soon after installing Django, ElephantSQL and Cloudinary.
 
+<details>
+
 #### Installing libraries
 
 The following steps outline all libraries needed for successful deployment on Heroku. All neccessary-requirements and settings updates will not be discussed in this section as they are assumed as logical follow-up steps to installments. For a full explanation of how to install these libraries, refer to the links provided in [Technology Used](#technology-used).
@@ -1427,6 +1430,8 @@ Chose from HTTPS, SSH and GitClub CLI format and copy (preferably HTTPS)
 In your IDE open Git Bash
 Enter the command git clone followed by the copied URL
 Your clone was created
+
+</details>
 
 
 <p align="right">(<a href="#table-of-content">back to top</a>)</p>
