@@ -496,14 +496,36 @@ In order to run the tests, I ran the following command:
 python3 manage.py test
 ```
 
-To create the coverage report, I ran the following commands:
+To create the coverage report, I  first installed coverage
 
 ```
+pip install coverage
+
+```
+
+Then I was able to run any of the following commands:
+
+```
+
+coverage run manage.py test
+
 coverage run --source=name-of-app manage.py test
 
 coverage report
 
 ```
+
+To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
+
+```
+
+coverage html
+
+python3 -m http.server
+
+```
+
+TestCase was used to test models and views. As there is no database needed for tessting urls SimpleTestCase was used.
 
 Below are the results from the various apps on my application that I've tested:
 
