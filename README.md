@@ -458,7 +458,7 @@ User stories were added to these epics and you can read the acceptance criteria 
 
 - As a buyer I receive email confirmation after purchase so I can keep track of my orders.
 
-- As a buyer, I can leave reviews for products I’ve purchased so that I can share my experience with others.
+- As a registered user, I can leave reviews for products I’ve purchased so that I can share my experience with others.
 
 
 **Admin Management**

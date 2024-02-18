@@ -15,12 +15,13 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 [Admin Features](#admin-features)
 
+
 [Store Features](#store-features)
 - [Home Page Features](#home-page-features)
 - [Navigation Bar Features](#navigation-bar-features)
 - [Authentication Pages](#authentication-pages)
 - [Products Page](#products-page)
-- [Product Detail](#product-detail-page)
+- [Product Detail & Reviews](#product-detail-page)
 - [Checkout Page](#checkout-page)
 - [Profile Page](#profile-page)
 - [Contact Us Page](#contact-us-page)
@@ -58,6 +59,8 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 - [contact us page](#contact-us-page-1)
 - [newsletter page](#newsletter-page-1)
 - [event page](#event-page)
+
+[Behaviour Driven Testing](#behaviour-driven-testing)
 
 [Bugs](#bugs)
 
@@ -455,7 +458,25 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 
 <img src="readme/testing/rm-lighthouse-eventpage.png" width="70%"><br><br>
 
+## Behaviour Driven Testing
 
+Behaviour driven tests have been carried out based on user stories and using the Gerkin format. The behaviour of each story was tested to ensure the 'Scenario', 'Given', 'When' 'Then' and 'And' aspects of testing work correctly. For example:
+
+**Behaviour Driven Test**
+
+**SCENARIO:** "As a buyer I receive email confirmation after purchase"
+
+Given: That a user has purchased a product
+
+And: Their email has been received and is correct
+
+When: The sale goes through
+
+Then: The system will automatically generate an email
+
+And: It will be sent to the buyer as confirmation of their purchase
+
+The behaviour driven tests have been included inside each user story on the [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
 
 ## Bugs
 
