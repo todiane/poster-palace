@@ -62,9 +62,13 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 [Behaviour Driven Testing](#behaviour-driven-testing)
 
+[Automated Testing](#automated-testing)
+
 [Bugs](#bugs)
 
 [Resources](#resources)
+
+[Retrospective](#retrospective)
 
 <br>
 
@@ -478,11 +482,38 @@ And: It will be sent to the buyer as confirmation of their purchase
 
 The behaviour driven tests have been included inside each user story on the [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
 
+## Automated Testing
+
+I have set up the database in the settings file so that I can change from the production database to the development database (DEVELOPMENT_DB) during testing. The production database contains all the products and users. The development database is free of products/users and so can be used to test as if the project is just beginning.
+
+I had originally set up a number of tests (as you can see from my commits) but wasn't sure if they were correct so deleted them.
+
+Tests were written, and added to the tests folder, for models, views, urls and the registration process. The Django built-in unit testing framework was used to test the applications functionality.
+
+In order to run the tests, I ran the following command:
+
+```
+python3 manage.py test
+```
+
+To create the coverage report, I ran the following commands:
+
+```
+coverage run --source=name-of-app manage.py test
+
+coverage report
+
+```
+
+Below are the results from the various apps on my application that I've tested:
+
+#ADD TEST IMAGE HERE
+
 ## Bugs
 
 - When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. 
 
-- Another size issue is making a size a required field. I have tried to change the size model (as per my commits) in different ways so that a size must be selected but I wasn't able to get it to work, despite help from tutor support. I didn't want to change the model too many times in case the database ended up corrupted (as it did in the past) and so it is possible to add a product without selecting a size and the order will still go through. I could have added javascript to validate the size and bring up an error if a size wasn't selected but that only really changes the client side validation and I want to be able to add server side validation. Updating this is something I am focused on learning how to achieve so I can update the site at some point.
+- Another size issue is making a size a required field. I have tried to change the size model (as per my commits) in different ways so that a size must be selected but I wasn't able to get it to work, despite help from tutor support. I didn't want to change the model too many times in case the database ended up corrupted, so it is possible to add a product without selecting a size and the order will still go through. I could have added javascript to validate the size and bring up an error if a size wasn't selected but that only really changes the client side validation and I want to be able to add server side validation. This is something I am focused on learning how to achieve so I can update the site at some point.
 
 - When writing a review the star rating is required as a minimum. A buyer cannot add a review without it. If they complete the title and review box but do not select a star rating nothing happens. I have tried to include an error message to let them know if the star rating is not selected but despite using different code (and help from tutor support) the error message does not display.
 
@@ -535,7 +566,11 @@ class ReviewForm(forms.ModelForm):
 - [HTML validator](https://validator.w3.org/nu/#textarea)
 - [CSS validator](https://jigsaw.w3.org/css-validator/)
 - [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
+- [TestCase](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#testcase)
+- [Django Testing](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
 
+## Retrospective
 
+Manual testing is a straight forward process that I have performed many times and find easy to complete. After completing the project, and because my submission date isn't until April 24 (it is Feburary at the time of writing this) I decided to learn more about automated testing. I still struggle to understand the concept a little and went over the CI training material again. Going back to the Javascript training and watching the Testing Paradigms video reminded me about behaviour driven testing, which I added to my project. In the same video it mentioned that testing can be carried out after the creation of code which is what made me add more testing to my project. I still have some work to do to really appreciate the value of test driven data and will continue learning about this area of coding. With so many different testing options available to save confusion I need to decide on a testing framework and focus on learning that until I understand how it works.
 
 <p align="right">(<a href="#contents">back to top</a>)</p>
