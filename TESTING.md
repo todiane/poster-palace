@@ -76,6 +76,8 @@ This is the testing information for my project 5 eCommerce store Poster Palace
 
 A thorough manual testing process was undertaken to ensure all parts of the store worked as it should. Both the admin area and the main store were tested.
 
+<details>
+
 ### Admin Features:
 
 Manual tests were conducted in the admin area to ensure everything is working. There was an error when deleting orders and the necessary refactoring of code took place to remove that error. 
@@ -121,6 +123,8 @@ Emails are received (to the gmail account being used to send emails to customers
 
 <img src="readme/testing/rm-testing-email.png" width="90%"><br><br>
 
+</details>
+
 <p align="right">(<a href="#contents">back to top</a>)</p>
 
 ### Store Features
@@ -129,6 +133,8 @@ Tests have been undertaken to ensure the registration, email confirmation, confi
 Also tested has been the shopping journey from adding to wishlist, adding and removing products to shopping cart and checking out as an anonymous buyer as well as a registered buyer.
 The process of adding a review has been tested for buyers and also for unregistered users.
 This has all been documented on the [READ ME HERE](https://github.com/todiane/poster-palace)
+
+<details>
 
 Other manual tests have taken place. 
 
@@ -265,6 +271,7 @@ The links in the footer takes a user to the specific page as expected. This incl
 
 All links lead to the correct pages. External links open in a new window.
 
+</details>
 
 ## UI testing
 
@@ -306,7 +313,9 @@ The eCommerce store looks and functions as intended on different browsers.
 
 ## Code Validation
 
-I have been using linter and flake8 to test for code errors. Flake8 is installed and being used to ensure PEP8 python standard
+I have been using linter and flake8 to test for code errors. Flake8 is installed and being used to ensure PEP8 python standard.
+
+<details>
 
 Using the command python -m flake8 I was given a list of changes that needed to be made. I changed most of what was suggested however there are a few lines that remain over 79 characters because it broke the code when I added it to another line. I will continue working on removing as many of them as I can but a few may remain after project submission.
 
@@ -351,6 +360,8 @@ I used the CSS Validation service to test the site. I have been testing using th
 
 <img src="readme/testing/rm-css-validation.png" width="90%"><br><br>
 
+</details>
+
 ## JavaScript Validation
 
 All javascript was put through the [JSHINT tool](https://jshint.com/)
@@ -364,6 +375,8 @@ stripe_elements.js
 
 
 ## HTML Validation
+
+<details>
 
 | Page | Validation Image | 
 |:---|:---: |
@@ -394,12 +407,16 @@ The newsletter and event pages contains errors because of the code provided by M
 
 The products page highlighted errors due to the sort selector, but nothing to do with the html code itself.
 
+</details>
+
 
 <p align="right">(<a href="#contents">back to top</a>)</p>
 
 ## Lighthouse Validation
 
 The original lighthouse score for the index page was 80% so I had to add aria tags to my footer, add "defer" to some of the scripts in base.html, reduce the size of the images on the homepage plus save them as webp rather than png. The score increased to 90%. The remaining issue is the box at the top of the page with web content in it, which Lighthouse refers to as the "largest contentful paint". 
+
+<details>
 
 The scripts being in the header also caused lower scores and I added defer in some, defer in the Stripes linked caused it to stop working so I removed it.
 
@@ -462,9 +479,13 @@ Test results the same across all pages e.g. sort category price high to low, a-z
 
 <img src="readme/testing/rm-lighthouse-eventpage.png" width="70%"><br><br>
 
+</details>
+
 ## Behaviour Driven Testing
 
 Behaviour driven tests have been carried out based on user stories and using the Gerkin format. The behaviour of each story was tested to ensure the 'Scenario', 'Given', 'When' 'Then' and 'And' aspects of testing work correctly. For example:
+
+<details>
 
 **Behaviour Driven Test**
 
@@ -482,9 +503,14 @@ And: It will be sent to the buyer as confirmation of their purchase
 
 The behaviour driven tests have been included inside each user story on the [GitHub Project Page](https://github.com/users/todiane/projects/10/views/1)
 
+
+</details>
+
 ## Automated Testing
 
 I have set up the database in the settings file so that I can change from the production database to the development database (DEVELOPMENT_DB) during testing. The production database contains all the products and users. The development database is free of products/users and so can be used to test as if the project is just beginning.
+
+<details>
 
 I had originally set up a number of tests (as you can see from my commits) but wasn't sure if they were correct so deleted them.
 
@@ -515,23 +541,36 @@ coverage report
 
 ```
 
-To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
+To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following command:
 
 ```
 
-coverage html
+coverage html - generates the htmlcov/index.html file to view the report
 
-python3 -m http.server
 
 ```
+
+Important to add the following to the gitignore file
+
+```
+.coverage
+htmlcov/
+
+```
+
 
 TestCase was used to test models and views. As there is no database needed for tessting urls SimpleTestCase was used.
 
 Below are the results from the various apps on my application that I've tested:
 
-#ADD TEST IMAGE HERE
+<img src="readme/testing/automated_testing.png" width="90%">
+<img src="readme/testing/automated_testing1.png" width="90%"><br><br>
+
+</details>
 
 ## Bugs
+
+<details>
 
 - When saving a product to the wishlist you can not select a size. If you select XL size an error occurs. Doesn’t always happen on heroku, but size isn't an option for the wishlist, just the product. 
 
@@ -579,6 +618,8 @@ class ReviewForm(forms.ModelForm):
 
 ```
 
+</details>
+
 ## Resources
 
 - [Pep 8 for code standards](https://peps.python.org/pep-0008/)
@@ -590,9 +631,24 @@ class ReviewForm(forms.ModelForm):
 - [Google Lighthouse](https://chromewebstore.google.com/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk)
 - [TestCase](https://docs.djangoproject.com/en/4.2/topics/testing/tools/#testcase)
 - [Django Testing](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Testing)
+- [Mastering Django Unit Testing](https://www.youtube.com/watch?v=N_HLNV2UQjg)
 
 ## Retrospective
 
-Manual testing is a straight forward process that I have performed many times and find easy to complete. After completing the project, and because my submission date isn't until April 24 (it is Feburary at the time of writing this) I decided to learn more about automated testing. I still struggle to understand the concept a little and went over the CI training material again. Going back to the Javascript training and watching the Testing Paradigms video reminded me about behaviour driven testing, which I added to my project. In the same video it mentioned that testing can be carried out after the creation of code which is what made me add more testing to my project. I still have some work to do to really appreciate the value of test driven data and will continue learning about this area of coding. With so many different testing options available to save confusion I need to decide on a testing framework and focus on learning that until I understand how it works.
+Manual testing is a straight forward process that I have performed many times and find easy to complete. After completing the project I decided to learn more about automated testing. 
+
+<details>
+
+I still struggle to understand the concept a little and went over the CI training material again. Going back to the Javascript training and watching the Testing Paradigms video reminded me about behaviour driven testing, which I added to my project. In the same video it mentioned that testing can be carried out after the creation of code which is why I decided to add automated testing to my project. 
+
+Separating the database and using the development database that had none of the current content/information made it similar to starting from zero and adding testing.
+
+The training suggested that tests can be carried out in a folder or under each individual app. I opted to put the tests in a folder but adding all the views became a little confusing so in the future I will add tests within their own app.
+
+I still have some work to do to really appreciate the value of test driven data and will continue learning about this area of coding. 
+
+With so many different testing options available to save confusion I need to decide on a testing framework and focus on learning that until I understand how it works.
+
+</details>
 
 <p align="right">(<a href="#contents">back to top</a>)</p>

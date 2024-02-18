@@ -1,10 +1,12 @@
 from django.test import TestCase, Client
 from django.urls import reverse, resolve
 from django.contrib.auth.models import User
+
 from checkout.models import Order, OrderLineItem
 from profiles.models import BuyerProfile
 from products.models import Category, Product, Reviews
 from contact.models import Contact
+from wishlist.models import WishList
 
 
 # Testing checkout cart and profile models
@@ -65,10 +67,10 @@ class TestOrderLineItemModel(TestCase):
         creating and saving a new test user, product, and order
         """
         self.user = User.objects.create(
-            username='SallySmith',
-            email='ssmith@gmail.com',
+            username='MikeSmith',
+            email='msmith@gmail.com',
             password='S1mile48',
-            id='1',
+            id='8',
         )
         self.user.save()
 
@@ -92,8 +94,8 @@ class TestOrderLineItemModel(TestCase):
         self.my_order = Order.objects.create(
                 order_number='260124GDB051177MY8DE1C0DC',
                 user_profile=self.profiles,
-                full_name='Sally Smith',
-                email='ssmith@gmail.com',
+                full_name='Mike Smith',
+                email='msmith@gmail.com',
                 phone_number='60134541',
                 country='United Kingdom',
                 postcode='TF75ME',
@@ -107,13 +109,13 @@ class TestOrderLineItemModel(TestCase):
                 original_bag='bag',
                 stripe_pid='pid'
                 )
-        self.new_oderlineitem = OrderLineItem.objects.create(
+        self.new_orderlineitem = OrderLineItem.objects.create(
             order=self.my_order,
             product=self.product,
             quantity=2,
             lineitem_total=55.90
         )
-        self.new_oderlineitem.save()
+        self.new_orderlineitem.save()
 
     def test_orderlineitem_creation(self):
         self.assertEqual(OrderLineItem.objects.count(), 1)
