@@ -581,6 +581,8 @@ Below are the results from my coverage report:
 
 - Phone number area on checkout form let me put in letters. It should be numbers only and an attempt was made to change that but this broke the checkout process. Further investigation into making it work is needed.
 
+- Creating a sticky footer. Despite trying I have been unable to create a sticky footer and discovering how to include this in Django is something I need to learn.
+
 - There is an error message in the browser after checkout
 
 ```Uncaught (in promise) Error: Could not establish connection. Receiving end does not exist.```

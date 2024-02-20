@@ -1252,6 +1252,8 @@ With scalability in mind, I have considered some elements that will be introduce
 - When saving to the wish list an option will be included so that users are able to select the size they want as well 
 as the product and an add to cart button will be included.
 
+- If a user is on a product page and clicks on the 'log in to leave a review' I want them to be taken directly to the review area for that product rather than to the default area after logging in.
+
 - A blog app will be added to help with the community engagement plan, influencer marketing and for search engine optimisation purposes.
 
 - Customisation will be provided. The ability to let customers add words to posters or use their own images.
