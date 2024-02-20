@@ -508,13 +508,15 @@ The behaviour driven tests have been included inside each user story on the [Git
 
 ## Automated Testing
 
-I have set up the database in the settings file so that I can change from the production database to the development database (DEVELOPMENT_DB) during testing. The production database contains all the products and users. The development database is free of products/users and so can be used to test as if the project is just beginning.
+I had originally set up a number of tests (as you can see from my commits) but wasn't sure if they were correct so deleted them.
+Tests have been written, and added to the tests folder, for models, views, and urls. 
 
 <details>
 
-I had originally set up a number of tests (as you can see from my commits) but wasn't sure if they were correct so deleted them.
+I have set up the database in the settings file so that I can change from the production database to the development database (DEVELOPMENT_DB) during testing. The development database is free of products/users and so can be used to test as if the project is just beginning.
 
-Tests were written, and added to the tests folder, for models, views, urls and the registration process. The Django built-in unit testing framework was used to test the applications functionality.
+
+The Django built-in unit testing framework was used to test the applications functionality.
 
 In order to run the tests, I ran the following command:
 
@@ -547,10 +549,11 @@ To see the HTML version of the reports, and find out whether some pieces of code
 
 coverage html - generates the htmlcov/index.html file to view the report
 
+python -m http.server
 
 ```
 
-Important to add the following to the gitignore file
+The following files were added to gitignore
 
 ```
 .coverage
@@ -558,13 +561,11 @@ htmlcov/
 
 ```
 
-
 TestCase was used to test models and views. As there is no database needed for tessting urls SimpleTestCase was used.
 
-Below are the results from the various apps on my application that I've tested:
+Below are the results from my coverage report:
 
-<img src="readme/testing/automated_testing.png" width="90%">
-<img src="readme/testing/automated_testing1.png" width="90%"><br><br>
+<img src="readme/testing/test-coverage-report.png" width="90%"><br><br>
 
 </details>
 
