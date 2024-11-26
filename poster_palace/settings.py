@@ -35,15 +35,15 @@ DEBUG = False
 
 
 ALLOWED_HOSTS = [
-    'posterpalace-a7414f135cf3.herokuapp.com',
-    'localhost',
+    'poster-palace-production.up.railway.app',
+    'localhost', '127.0.0.1', '0.0.0.0'
 
 ]
 
 # CSRF_TRUSTED
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://posterpalace-a7414f135cf3.herokuapp.com/',
+    'https://poster-palace-production.up.railway.app/',
  
 ]
 
